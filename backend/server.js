@@ -7,7 +7,13 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 5050;
 
+
+
+
+
 app.use(cors());
+
+
 app.use(express.json());
 
 // ---------------------------
@@ -173,7 +179,9 @@ app.get('/api/recommendations', (req, res) => {
 // Start server
 // ---------------------------
 console.log('Starting Express server...');
-const server = app.listen(PORT, () => {
-  console.log(`✅ API running on http://localhost:${PORT}`);
+const HOST = '0.0.0.0';
+const server = app.listen(PORT, HOST, () => {
+  console.log(`✅ API running on http://${HOST}:${PORT}`);
 });
 server.on('error', (e) => console.error('❌ server error:', e));
+

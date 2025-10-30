@@ -1,5 +1,5 @@
 // frontend/script.js
-const BASE_URL = 'http://localhost:5050';
+const BASE_URL = 'https://lifeless-spooky-haunting-wrqqgvwq5gx6395gv-5050.app.github.dev';
 const PREF_KEY = 'sr_prefs_v1';
 
 const form = document.getElementById('searchForm');
