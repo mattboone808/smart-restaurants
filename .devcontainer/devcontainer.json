@@ -13,5 +13,15 @@
       "visibility": "private"
     }
   },
-  "postCreateCommand": "npm install --prefix backend"
+  "postCreateCommand": "npm install --prefix backend",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ritwickdey.liveserver"
+      ],
+      "settings": {
+        "liveServer.settings.root": "/frontend"
+      }
+    }
+  }
 }
