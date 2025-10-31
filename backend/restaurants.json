@@ -1,288 +1,287 @@
 [
-    {
-      "id": 1,
-      "name": "Bella Luna Bistro",
-      "city": "Austin",
-      "cuisine": "Italian",
-      "rating": 4.7,
-      "price": "$$",
-      "address": "123 Congress Ave, Austin, TX",
-      "tables": 4,
-      "hours": {
-        "mon": [["11:00","22:00"]],
-        "tue": [["11:00","22:00"]],
-        "wed": [["11:00","22:00"]],
-        "thu": [["11:00","22:00"]],
-        "fri": [["11:00","23:00"]],
-        "sat": [["11:00","23:00"]],
-        "sun": [["11:00","21:00"]]
-      }
-    },
-    {
-      "id": 2,
-      "name": "Sakura Garden",
-      "city": "Austin",
-      "cuisine": "Japanese",
-      "rating": 4.6,
-      "price": "$$$",
-      "address": "45 2nd St, Austin, TX",
-      "tables": 3,
-      "hours": {
-        "mon": [["11:30","14:30"], ["17:30","22:00"]],
-        "tue": [["11:30","14:30"], ["17:30","22:00"]],
-        "wed": [["11:30","14:30"], ["17:30","22:00"]],
-        "thu": [["11:30","14:30"], ["17:30","22:00"]],
-        "fri": [["11:30","14:30"], ["17:30","22:30"]],
-        "sat": [["12:00","22:30"]],
-        "sun": [["12:00","21:00"]]
-      }
-    },
-    {
-      "id": 3,
-      "name": "El Rancho Verde",
-      "city": "Dallas",
-      "cuisine": "Mexican",
-      "rating": 4.4,
-      "price": "$",
-      "address": "9 Barton Springs Rd, Dallas, TX",
-      "tables": 6,
-      "hours": {
-        "mon": [["10:00","21:00"]],
-        "tue": [["10:00","21:00"]],
-        "wed": [["10:00","21:00"]],
-        "thu": [["10:00","21:00"]],
-        "fri": [["10:00","22:00"]],
-        "sat": [["10:00","22:00"]],
-        "sun": [["10:00","21:00"]]
-      }
-    },
-    {
-      "id": 4,
-      "name": "Spice Route Kitchen",
-      "city": "Dallas",
-      "cuisine": "Indian",
-      "rating": 4.5,
-      "price": "$$",
-      "address": "210 Elm St, Dallas, TX",
-      "tables": 5,
-      "hours": {
-        "mon": [["11:00","21:30"]],
-        "tue": [["11:00","21:30"]],
-        "wed": [["11:00","21:30"]],
-        "thu": [["11:00","21:30"]],
-        "fri": [["11:00","22:00"]],
-        "sat": [["11:00","22:00"]],
-        "sun": [["11:00","21:00"]]
-      }
-    },
-    {
-      "id": 5,
-      "name": "Pho 88",
-      "city": "Dallas",
-      "cuisine": "Vietnamese",
-      "rating": 4.3,
-      "price": "$",
-      "address": "77 Bryan St, Dallas, TX",
-      "tables": 5,
-      "hours": {
-        "mon": [["11:00","21:00"]],
-        "tue": [["11:00","21:00"]],
-        "wed": [["11:00","21:00"]],
-        "thu": [["11:00","21:00"]],
-        "fri": [["11:00","21:30"]],
-        "sat": [["11:00","21:30"]],
-        "sun": [["11:00","20:00"]]
-      }
-    },
-    {
-      "id": 6,
-      "name": "Green Leaf Café",
-      "city": "Dallas",
-      "cuisine": "Vegetarian",
-      "rating": 4.2,
-      "price": "$$",
-      "address": "12 Main St, Dallas, TX",
-      "tables": 2,
-      "hours": {
-        "mon": [],
-        "tue": [["11:00","20:00"]],
-        "wed": [["11:00","20:00"]],
-        "thu": [["11:00","20:00"]],
-        "fri": [["11:00","21:00"]],
-        "sat": [["10:00","21:00"]],
-        "sun": [["10:00","18:00"]]
-      }
-    },
-    {
-      "id": 7,
-      "name": "The Pit Master",
-      "city": "Houston",
-      "cuisine": "BBQ",
-      "rating": 4.6,
-      "price": "$$",
-      "address": "100 Bayou St, Houston, TX",
-      "tables": 8,
-      "hours": {
-        "mon": [["11:00","22:00"]],
-        "tue": [["11:00","22:00"]],
-        "wed": [["11:00","22:00"]],
-        "thu": [["11:00","22:00"]],
-        "fri": [["11:00","22:00"]],
-        "sat": [["11:00","22:00"]],
-        "sun": [["11:00","21:00"]]
-      }
-    },
-    {
-      "id": 8,
-      "name": "Gulf Coast Grill",
-      "city": "Houston",
-      "cuisine": "Seafood",
-      "rating": 4.5,
-      "price": "$$$",
-      "address": "401 Market Square, Houston, TX",
-      "tables": 4,
-      "hours": {
-        "mon": [["11:30","22:00"]],
-        "tue": [["11:30","22:00"]],
-        "wed": [["11:30","22:00"]],
-        "thu": [["11:30","22:00"]],
-        "fri": [["11:30","23:00"]],
-        "sat": [["12:00","23:00"]],
-        "sun": [["12:00","21:00"]]
-      }
-    },
-    {
-      "id": 9,
-      "name": "Falafel Hub",
-      "city": "Houston",
-      "cuisine": "Mediterranean",
-      "rating": 4.1,
-      "price": "$",
-      "address": "88 Travis St, Houston, TX",
-      "tables": 3,
-      "hours": {
-        "mon": [["10:00","20:00"]],
-        "tue": [["10:00","20:00"]],
-        "wed": [["10:00","20:00"]],
-        "thu": [["10:00","20:00"]],
-        "fri": [["10:00","21:00"]],
-        "sat": [["10:00","21:00"]],
-        "sun": [["11:00","19:00"]]
-      }
-    },
-    {
-      "id": 10,
-      "name": "Tandoori Flame",
-      "city": "Austin",
-      "cuisine": "Indian",
-      "rating": 4.6,
-      "price": "$$",
-      "address": "311 5th St, Austin, TX",
-      "tables": 6,
-      "hours": {
-        "mon": [["11:00","22:00"]],
-        "tue": [["11:00","22:00"]],
-        "wed": [["11:00","22:00"]],
-        "thu": [["11:00","22:00"]],
-        "fri": [["11:00","23:00"]],
-        "sat": [["12:00","23:00"]],
-        "sun": [["12:00","21:00"]]
-      }
-    },
-    {
-      "id": 11,
-      "name": "Ramen Dojo",
-      "city": "Austin",
-      "cuisine": "Ramen",
-      "rating": 4.5,
-      "price": "$$",
-      "address": "555 Red River, Austin, TX",
-      "tables": 5,
-      "hours": {
-        "mon": [["18:00","02:00"]],
-        "tue": [["18:00","02:00"]],
-        "wed": [["18:00","02:00"]],
-        "thu": [["18:00","02:00"]],
-        "fri": [["18:00","02:00"]],
-        "sat": [["18:00","02:00"]],
-        "sun": [["18:00","01:00"]]
-      }
-    },
-    {
-      "id": 12,
-      "name": "Taqueria Sol",
-      "city": "Austin",
-      "cuisine": "Mexican",
-      "rating": 4.3,
-      "price": "$",
-      "address": "21 Cesar Chavez, Austin, TX",
-      "tables": 7,
-      "hours": {
-        "mon": [["10:00","21:00"]],
-        "tue": [["10:00","21:00"]],
-        "wed": [["10:00","21:00"]],
-        "thu": [["10:00","21:00"]],
-        "fri": [["10:00","22:00"]],
-        "sat": [["10:00","22:00"]],
-        "sun": [["10:00","20:00"]]
-      }
-    },
-    {
-      "id": 13,
-      "name": "Bistro Provence",
-      "city": "Dallas",
-      "cuisine": "French",
-      "rating": 4.7,
-      "price": "$$$$",
-      "address": "700 McKinney Ave, Dallas, TX",
-      "tables": 4,
-      "hours": {
-        "mon": [["17:00","22:00"]],
-        "tue": [["17:00","22:00"]],
-        "wed": [["17:00","22:00"]],
-        "thu": [["17:00","22:00"]],
-        "fri": [["17:00","23:00"]],
-        "sat": [["17:00","23:00"]],
-        "sun": [["17:00","21:00"]]
-      }
-    },
-    {
-      "id": 14,
-      "name": "Hummus House",
-      "city": "Houston",
-      "cuisine": "Middle Eastern",
-      "rating": 4.4,
-      "price": "$",
-      "address": "2020 Westheimer Rd, Houston, TX",
-      "tables": 3,
-      "hours": {
-        "mon": [["11:00","21:00"]],
-        "tue": [["11:00","21:00"]],
-        "wed": [["11:00","21:00"]],
-        "thu": [["11:00","21:00"]],
-        "fri": [["11:00","22:00"]],
-        "sat": [["11:00","22:00"]],
-        "sun": [["11:00","20:00"]]
-      }
-    },
-    {
-      "id": 15,
-      "name": "Burger Barn",
-      "city": "Austin",
-      "cuisine": "American",
-      "rating": 4.0,
-      "price": "$",
-      "address": "900 Dean Keeton, Austin, TX",
-      "tables": 9,
-      "hours": {
-        "mon": [["11:00","20:00"]],
-        "tue": [["11:00","20:00"]],
-        "wed": [["11:00","20:00"]],
-        "thu": [["11:00","20:00"]],
-        "fri": [["11:00","21:00"]],
-        "sat": [["11:00","21:00"]],
-        "sun": [["11:00","19:00"]]
-      }
+  {
+    "id": 1,
+    "name": "Thames Street Oyster House",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "rating": 4.8,
+    "price": "$$$",
+    "address": "1728 Thames St, Baltimore, MD",
+    "tables": 8,
+    "hours": {
+      "mon": [["11:30","22:00"]],
+      "tue": [["11:30","22:00"]],
+      "wed": [["11:30","22:00"]],
+      "thu": [["11:30","22:00"]],
+      "fri": [["11:30","23:00"]],
+      "sat": [["11:30","23:00"]],
+      "sun": [["11:30","21:00"]]
     }
-  ]
-  
+  },
+  {
+    "id": 2,
+    "name": "La Tavola",
+    "city": "Baltimore",
+    "cuisine": "Italian",
+    "rating": 4.6,
+    "price": "$$",
+    "address": "248 Albemarle St, Baltimore, MD",
+    "tables": 6,
+    "hours": {
+      "mon": [["11:00","22:00"]],
+      "tue": [["11:00","22:00"]],
+      "wed": [["11:00","22:00"]],
+      "thu": [["11:00","22:00"]],
+      "fri": [["11:00","23:00"]],
+      "sat": [["11:00","23:00"]],
+      "sun": [["11:00","21:00"]]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Ekiben",
+    "city": "Baltimore",
+    "cuisine": "Asian Fusion",
+    "rating": 4.9,
+    "price": "$$",
+    "address": "1622 Eastern Ave, Baltimore, MD",
+    "tables": 5,
+    "hours": {
+      "mon": [["11:00","21:00"]],
+      "tue": [["11:00","21:00"]],
+      "wed": [["11:00","21:00"]],
+      "thu": [["11:00","21:00"]],
+      "fri": [["11:00","22:00"]],
+      "sat": [["11:00","22:00"]],
+      "sun": [["11:00","20:00"]]
+    }
+  },
+  {
+    "id": 4,
+    "name": "The Food Market",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "rating": 4.7,
+    "price": "$$",
+    "address": "1017 W 36th St, Baltimore, MD",
+    "tables": 7,
+    "hours": {
+      "mon": [["17:00","22:00"]],
+      "tue": [["17:00","22:00"]],
+      "wed": [["17:00","22:00"]],
+      "thu": [["17:00","22:00"]],
+      "fri": [["17:00","23:00"]],
+      "sat": [["10:00","23:00"]],
+      "sun": [["10:00","21:00"]]
+    }
+  },
+  {
+    "id": 5,
+    "name": "The Helmand",
+    "city": "Baltimore",
+    "cuisine": "Afghan",
+    "rating": 4.8,
+    "price": "$$",
+    "address": "806 N Charles St, Baltimore, MD",
+    "tables": 5,
+    "hours": {
+      "mon": [["17:00","21:00"]],
+      "tue": [["17:00","21:00"]],
+      "wed": [["17:00","21:00"]],
+      "thu": [["17:00","21:00"]],
+      "fri": [["17:00","22:00"]],
+      "sat": [["17:00","22:00"]],
+      "sun": [["17:00","21:00"]]
+    }
+  },
+  {
+    "id": 6,
+    "name": "Miss Shirley’s Cafe",
+    "city": "Baltimore",
+    "cuisine": "Breakfast & Brunch",
+    "rating": 4.6,
+    "price": "$$",
+    "address": "750 E Pratt St, Baltimore, MD",
+    "tables": 8,
+    "hours": {
+      "mon": [["07:00","15:00"]],
+      "tue": [["07:00","15:00"]],
+      "wed": [["07:00","15:00"]],
+      "thu": [["07:00","15:00"]],
+      "fri": [["07:00","15:00"]],
+      "sat": [["07:00","16:00"]],
+      "sun": [["07:00","16:00"]]
+    }
+  },
+  {
+    "id": 7,
+    "name": "Rusty Scupper",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "rating": 4.5,
+    "price": "$$$",
+    "address": "402 Key Hwy, Baltimore, MD",
+    "tables": 10,
+    "hours": {
+      "mon": [["11:00","22:00"]],
+      "tue": [["11:00","22:00"]],
+      "wed": [["11:00","22:00"]],
+      "thu": [["11:00","22:00"]],
+      "fri": [["11:00","23:00"]],
+      "sat": [["11:00","23:00"]],
+      "sun": [["11:00","21:00"]]
+    }
+  },
+  {
+    "id": 8,
+    "name": "Samos Greek Island Grill",
+    "city": "Baltimore",
+    "cuisine": "Greek",
+    "rating": 4.4,
+    "price": "$",
+    "address": "600 Oldham St, Baltimore, MD",
+    "tables": 5,
+    "hours": {
+      "mon": [["10:30","21:00"]],
+      "tue": [["10:30","21:00"]],
+      "wed": [["10:30","21:00"]],
+      "thu": [["10:30","21:00"]],
+      "fri": [["10:30","22:00"]],
+      "sat": [["10:30","22:00"]],
+      "sun": [["11:00","20:00"]]
+    }
+  },
+  {
+    "id": 9,
+    "name": "Charmed Kitchen",
+    "city": "Baltimore",
+    "cuisine": "Vegan",
+    "rating": 4.3,
+    "price": "$$",
+    "address": "312 Park Ave, Baltimore, MD",
+    "tables": 3,
+    "hours": {
+      "mon": [["11:00","20:00"]],
+      "tue": [["11:00","20:00"]],
+      "wed": [["11:00","20:00"]],
+      "thu": [["11:00","20:00"]],
+      "fri": [["11:00","21:00"]],
+      "sat": [["11:00","21:00"]],
+      "sun": [["11:00","19:00"]]
+    }
+  },
+  {
+    "id": 10,
+    "name": "LP Steamers",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "rating": 4.6,
+    "price": "$$",
+    "address": "1100 E Fort Ave, Baltimore, MD",
+    "tables": 8,
+    "hours": {
+      "mon": [["11:00","22:00"]],
+      "tue": [["11:00","22:00"]],
+      "wed": [["11:00","22:00"]],
+      "thu": [["11:00","22:00"]],
+      "fri": [["11:00","23:00"]],
+      "sat": [["11:00","23:00"]],
+      "sun": [["11:00","21:00"]]
+    }
+  },
+  {
+    "id": 11,
+    "name": "Clavel Mezcaleria",
+    "city": "Baltimore",
+    "cuisine": "Mexican",
+    "rating": 4.7,
+    "price": "$$",
+    "address": "225 W 23rd St, Baltimore, MD",
+    "tables": 6,
+    "hours": {
+      "mon": [["17:00","23:00"]],
+      "tue": [["17:00","23:00"]],
+      "wed": [["17:00","23:00"]],
+      "thu": [["17:00","23:00"]],
+      "fri": [["17:00","00:00"]],
+      "sat": [["17:00","00:00"]],
+      "sun": [["17:00","22:00"]]
+    }
+  },
+  {
+    "id": 12,
+    "name": "Duck Duck Goose",
+    "city": "Baltimore",
+    "cuisine": "French",
+    "rating": 4.5,
+    "price": "$$$",
+    "address": "814 S Broadway, Baltimore, MD",
+    "tables": 4,
+    "hours": {
+      "mon": [["17:00","22:00"]],
+      "tue": [["17:00","22:00"]],
+      "wed": [["17:00","22:00"]],
+      "thu": [["17:00","22:00"]],
+      "fri": [["17:00","23:00"]],
+      "sat": [["10:00","23:00"]],
+      "sun": [["10:00","21:00"]]
+    }
+  },
+  {
+    "id": 13,
+    "name": "Blue Moon Cafe",
+    "city": "Baltimore",
+    "cuisine": "Breakfast & Brunch",
+    "rating": 4.4,
+    "price": "$",
+    "address": "1621 Aliceanna St, Baltimore, MD",
+    "tables": 4,
+    "hours": {
+      "mon": [["07:00","14:00"]],
+      "tue": [["07:00","14:00"]],
+      "wed": [["07:00","14:00"]],
+      "thu": [["07:00","14:00"]],
+      "fri": [["07:00","14:00"]],
+      "sat": [["07:00","15:00"]],
+      "sun": [["07:00","15:00"]]
+    }
+  },
+  {
+    "id": 14,
+    "name": "Forno Restaurant & Wine Bar",
+    "city": "Baltimore",
+    "cuisine": "Contemporary American",
+    "rating": 4.5,
+    "price": "$$",
+    "address": "17 N Eutaw St, Baltimore, MD",
+    "tables": 5,
+    "hours": {
+      "mon": [["17:00","22:00"]],
+      "tue": [["17:00","22:00"]],
+      "wed": [["17:00","22:00"]],
+      "thu": [["17:00","22:00"]],
+      "fri": [["17:00","23:00"]],
+      "sat": [["17:00","23:00"]],
+      "sun": [["17:00","21:00"]]
+    }
+  },
+  {
+    "id": 15,
+    "name": "Papi’s Tacos",
+    "city": "Baltimore",
+    "cuisine": "Mexican",
+    "rating": 4.3,
+    "price": "$",
+    "address": "1703 Aliceanna St, Baltimore, MD",
+    "tables": 6,
+    "hours": {
+      "mon": [["11:00","22:00"]],
+      "tue": [["11:00","22:00"]],
+      "wed": [["11:00","22:00"]],
+      "thu": [["11:00","22:00"]],
+      "fri": [["11:00","23:00"]],
+      "sat": [["11:00","23:00"]],
+      "sun": [["11:00","21:00"]]
+    }
+  }
+]
