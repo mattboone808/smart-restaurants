@@ -1,16 +1,11 @@
 {
   "name": "Smart Restaurants DevContainer",
-  "forwardPorts": [5050, 5500, 5501, 5502],
+  "forwardPorts": [5050],
   "portsAttributes": {
     "5050": {
       "label": "Backend API",
       "onAutoForward": "openBrowser",
       "visibility": "public"
-    },
-    "5500": {
-      "label": "Frontend (Live Server)",
-      "onAutoForward": "openBrowser",
-      "visibility": "private"
     }
   },
   "postCreateCommand": "npm install --prefix backend",
