@@ -1,5 +1,15 @@
 // frontend/script.js
-const BASE_URL = 'https://lifeless-spooky-haunting-wrqqgvwq5gx6395gv-5050.app.github.dev';
+// Automatically detect the backend address 
+const BASE_URL = (() => {
+  const host = window.location.hostname; // e.g., capstone-5502.app.github.dev
+  if (host.endsWith('app.github.dev')) {
+    // Replace the frontend port (550x) with the backend port (5050)
+    return 'https://' + host.replace(/-\d+\.app\.github\.dev$/, '-5050.app.github.dev');
+  }
+  // Fallback for local development
+  return 'http://localhost:5050';
+})();
+
 const PREF_KEY = 'sr_prefs_v1';
 
 const form = document.getElementById('searchForm');
