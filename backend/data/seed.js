@@ -6,7 +6,7 @@ const dbPath = path.resolve(__dirname, '../restaurants.db'); // output DB here
 const schemaPath = path.resolve(__dirname, '../sql/schema.sql');
 const dataPath = path.resolve(__dirname, '../data/restaurants.json');
 
-const schema = fs.readFileSync(schemaPath, 'utf8');
+const schema = fs.readFileSync(path.join(__dirname, 'schema.sql'), 'utf-8');
 const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
 const db = new Database(dbPath);

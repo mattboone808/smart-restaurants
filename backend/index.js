@@ -1,7 +1,7 @@
 const Database = require('better-sqlite3');
 const path = require('path');
 
-const dbPath = path.resolve(__dirname, '../restaurants.db');
+const dbPath = path.resolve(__dirname, 'data', '../restaurants.db');
 const db = new Database(dbPath);
 
 const exists = db.prepare(
