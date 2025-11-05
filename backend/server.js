@@ -14,7 +14,8 @@ app.use(express.json());
 // ---------------------------
 // Load dataset (still used for in-memory reservations)
 // ---------------------------
-const DATA_PATH = path.join(__dirname, 'restaurants.json');
+const DATA_PATH = path.join(__dirname, 'data', 'restaurants.json');
+
 let RESTAURANTS = JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'));
 
 // In-memory reservations
