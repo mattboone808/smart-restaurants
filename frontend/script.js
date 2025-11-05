@@ -1,13 +1,31 @@
 // frontend/script.js
-const BASE_URL = 'http://localhost:5050';
-const PREF_KEY = 'sr_prefs_v1';
+// Automatically detect the backend address, with a manual override option.
+const BASE_URL = (() => {
+  // 1) Manual override (optional): set window.BACKEND_URL before this file loads.
+  if (window.BACKEND_URL) return window.BACKEND_URL;
+
+  const host = window.location.hostname; // e.g., 127.0.0.1, localhost, capstone-5502.app.github.dev
+
+  // 2) GitHub Codespaces / app.github.dev (frontend port -> backend 5050)
+  if (host.endsWith('app.github.dev')) {
+    // Replace the trailing "-<port>.app.github.dev" with "-5050.app.github.dev"
+    return 'https://' + host.replace(/-\d+\.app\.github\.dev$/, '-5050.app.github.dev');
+  }
+
+  // 3) Local dev (Live Server / plain localhost)
+  if (host === 'localhost' || host === '127.0.0.1') {
+    return 'http://localhost:5050';
+  }
+
+  // 4) Fallback: same-origin (useful if you ever reverse-proxy /api)
+  return `${window.location.protocol}//${host}${window.location.port ? ':' + window.location.port : ''}`;
+})();
 
 const form = document.getElementById('searchForm');
 const resultsEl = document.getElementById('results');
 const statusEl = document.getElementById('status');
 const priceEl = document.getElementById('priceInput');
 const openNowEl = document.getElementById('openNowCheck');
-const savePrefsBtn = document.getElementById('savePrefsBtn');
 
 // Modal elements
 let reserveModal; // Bootstrap modal instance
@@ -18,8 +36,36 @@ const resDate = document.getElementById('resDate');
 const resTime = document.getElementById('resTime');
 const reserveBtn = document.getElementById('reserveSubmit');
 
+// -----------------------
+// Helpers
+// -----------------------
 function setStatus(msg, type = 'secondary') {
   statusEl.innerHTML = msg ? `<div class="alert alert-${type} py-2">${msg}</div>` : '';
+}
+
+// Snap any HH:mm string to :00 or :30 (rounding: <15 -> :00, <45 -> :30, else next hour :00)
+function snapToHalfHour(hhmm) {
+  if (!hhmm) return hhmm;
+  const [hStr, mStr] = hhmm.split(':');
+  let h = Number(hStr);
+  const m = Number(mStr);
+  if (Number.isNaN(h) || Number.isNaN(m)) return hhmm;
+  const snapped = m < 15 ? 0 : (m < 45 ? 30 : 60);
+  if (snapped === 60) h = (h + 1) % 24;
+  const hh = String(h).padStart(2, '0');
+  const mm = String(snapped === 60 ? 0 : snapped).padStart(2, '0');
+  return `${hh}:${mm}`;
+}
+
+// Default to the next half-hour from now
+function nextHalfHour() {
+  const d = new Date();
+  d.setSeconds(0, 0);
+  const mins = d.getMinutes();
+  d.setMinutes(mins < 30 ? 30 : 60);
+  const hh = String(d.getHours()).padStart(2, '0');
+  const mm = String(d.getMinutes()).padStart(2, '0');
+  return `${hh}:${mm}`;
 }
 
 function cardHtml(r) {
@@ -33,8 +79,7 @@ function cardHtml(r) {
           ${typeof r.tables === 'number' ? ` • <strong>${r.tables} tables total</strong>` : ''}
         </p>
         <div class="mb-2">
-          <span class="badge bg-success">⭐ ${r.rating}</span>
-          ${r.open_now ? '<span class="badge bg-info ms-2">Open now</span>' : ''}
+          ${r.open_now ? '<span class="badge bg-info">Open now</span>' : '<span class="badge bg-secondary">Closed</span>'}
         </div>
         <div class="mt-auto d-grid">
           <button class="btn btn-outline-primary" data-id="${r.id}" data-action="reserve" ${r.open_now ? '' : 'disabled'}>
@@ -85,41 +130,53 @@ async function search(evt) {
   }
 }
 
-// Save preferences locally
-savePrefsBtn.addEventListener('click', () => {
-  const prefs = {
-    city: document.getElementById('cityInput').value.trim(),
-    cuisine: document.getElementById('cuisineInput').value.trim(),
-    price: priceEl.value,
-    open_now: openNowEl.checked
-  };
-  localStorage.setItem(PREF_KEY, JSON.stringify(prefs));
-  setStatus('Preferences saved! Open the Recommendations tab to explore.', 'success');
+// -----------------------
+// Time input enforcement
+// -----------------------
+// If you also set step="1800" on the <input type="time"> in index.html, the UI will restrict selection.
+// These listeners ensure any free-typed time snaps properly too.
+resTime.addEventListener('change', () => {
+  resTime.value = snapToHalfHour(resTime.value);
+});
+resTime.addEventListener('blur', () => {
+  resTime.value = snapToHalfHour(resTime.value);
 });
 
-// Click → open reservation modal
+// -----------------------
+// Reservation flow
+// -----------------------
 resultsEl.addEventListener('click', (e) => {
   const btn = e.target.closest('button[data-action="reserve"]');
   if (!btn) return;
   const id = btn.getAttribute('data-id');
   resRestaurantId.value = id;
-  if (!reserveModal) reserveModal = new bootstrap.Modal(document.getElementById('reserveModal'));
+
+  // Set a sensible default time if empty
+  if (!resTime.value) resTime.value = nextHalfHour();
+
+  if (!reserveModal) {
+    reserveModal = new bootstrap.Modal(document.getElementById('reserveModal'));
+  }
   reserveModal.show();
 });
 
-// Submit reservation
 reserveBtn.addEventListener('click', async () => {
+  // Defensive snap before sending to backend
+  resTime.value = snapToHalfHour(resTime.value);
+
   const payload = {
     restaurantId: resRestaurantId.value,
     name: resName.value.trim(),
     partySize: Number(resParty.value),
     date: resDate.value, // YYYY-MM-DD
-    time: resTime.value  // HH:mm
+    time: resTime.value  // HH:mm snapped to :00 or :30
   };
+
   if (!payload.restaurantId || !payload.name || !payload.partySize || !payload.date || !payload.time) {
     alert('Please complete all fields.');
     return;
   }
+
   try {
     const res = await fetch(`${BASE_URL}/api/reservations`, {
       method: 'POST',
@@ -145,5 +202,5 @@ reserveBtn.addEventListener('click', async () => {
 form.addEventListener('submit', search);
 
 // Initial state (no auto-search)
-setStatus('Enter a city and/or cuisine, then press Search. Save preferences for recommendations.', 'secondary');
+setStatus('Enter a city and/or cuisine, then press Search.', 'secondary');
 resultsEl.innerHTML = '';

@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "name": "Thames Street Oyster House",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$$",
+    "address": "1728 Thames St, Baltimore, MD",
+    "tables": 8,
+    "hours": {
+      "mon": [["11:30","22:00"]],
+      "tue": [["11:30","22:00"]],
+      "wed": [["11:30","22:00"]],
+      "thu": [["11:30","22:00"]],
+      "fri": [["11:30","23:00"]],
+      "sat": [["11:30","23:00"]],
+      "sun": [["11:30","21:00"]]
+    }
+  },
+  {
+    "id": 2,
+    "name": "La Tavola",
+    "city": "Baltimore",
+    "cuisine": "Italian",
+    "price": "$$",
+    "address": "248 Albemarle St, Baltimore, MD",
+    "tables": 6,
+    "hours": {
+      "mon": [["11:00","22:00"]],
+      "tue": [["11:00","22:00"]],
+      "wed": [["11:00","22:00"]],
+      "thu": [["11:00","22:00"]],
+      "fri": [["11:00","23:00"]],
+      "sat": [["11:00","23:00"]],
+      "sun": [["11:00","21:00"]]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Ekiben",
+    "city": "Baltimore",
+    "cuisine": "Asian Fusion",
+    "price": "$$",
+    "address": "1622 Eastern Ave, Baltimore, MD",
+    "tables": 5,
+    "hours": {
+      "mon": [["11:00","21:00"]],
+      "tue": [["11:00","21:00"]],
+      "wed": [["11:00","21:00"]],
+      "thu": [["11:00","21:00"]],
+      "fri": [["11:00","22:00"]],
+      "sat": [["11:00","22:00"]],
+      "sun": [["11:00","20:00"]]
+    }
+  },
+  {
+    "id": 4,
+    "name": "The Food Market",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$",
+    "address": "1017 W 36th St, Baltimore, MD",
+    "tables": 7,
+    "hours": {
+      "mon": [["17:00","22:00"]],
+      "tue": [["17:00","22:00"]],
+      "wed": [["17:00","22:00"]],
+      "thu": [["17:00","22:00"]],
+      "fri": [["17:00","23:00"]],
+      "sat": [["10:00","23:00"]],
+      "sun": [["10:00","21:00"]]
+    }
+  },
+  {
+    "id": 5,
+    "name": "The Helmand",
+    "city": "Baltimore",
+    "cuisine": "Afghan",
+    "price": "$$",
+    "address": "806 N Charles St, Baltimore, MD",
+    "tables": 5,
+    "hours": {
+      "mon": [["17:00","21:00"]],
+      "tue": [["17:00","21:00"]],
+      "wed": [["17:00","21:00"]],
+      "thu": [["17:00","21:00"]],
+      "fri": [["17:00","22:00"]],
+      "sat": [["17:00","22:00"]],
+      "sun": [["17:00","21:00"]]
+    }
+  },
+  {
+    "id": 6,
+    "name": "Miss Shirley’s Cafe",
+    "city": "Baltimore",
+    "cuisine": "Breakfast & Brunch",
+    "price": "$$",
+    "address": "750 E Pratt St, Baltimore, MD",
+    "tables": 8,
+    "hours": {
+      "mon": [["07:00","15:00"]],
+      "tue": [["07:00","15:00"]],
+      "wed": [["07:00","15:00"]],
+      "thu": [["07:00","15:00"]],
+      "fri": [["07:00","16:00"]],
+      "sat": [["07:00","16:00"]],
+      "sun": [["07:00","16:00"]]
+    }
+  },
+  {
+    "id": 7,
+    "name": "Rusty Scupper",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$$",
+    "address": "402 Key Hwy, Baltimore, MD",
+    "tables": 10,
+    "hours": {
+      "mon": [["11:00","22:00"]],
+      "tue": [["11:00","22:00"]],
+      "wed": [["11:00","22:00"]],
+      "thu": [["11:00","22:00"]],
+      "fri": [["11:00","23:00"]],
+      "sat": [["11:00","23:00"]],
+      "sun": [["11:00","21:00"]]
+    }
+  },
+  {
+    "id": 8,
+    "name": "Samos Greek Island Grill",
+    "city": "Baltimore",
+    "cuisine": "Greek",
+    "price": "$",
+    "address": "600 Oldham St, Baltimore, MD",
+    "tables": 5,
+    "hours": {
+      "mon": [["10:30","21:00"]],
+      "tue": [["10:30","21:00"]],
+      "wed": [["10:30","21:00"]],
+      "thu": [["10:30","21:00"]],
+      "fri": [["10:30","22:00"]],
+      "sat": [["10:30","22:00"]],
+      "sun": [["11:00","20:00"]]
+    }
+  },
+  {
+    "id": 9,
+    "name": "Charmed Kitchen",
+    "city": "Baltimore",
+    "cuisine": "Vegan",
+    "price": "$$",
+    "address": "312 Park Ave, Baltimore, MD",
+    "tables": 3,
+    "hours": {
+      "mon": [["11:00","20:00"]],
+      "tue": [["11:00","20:00"]],
+      "wed": [["11:00","20:00"]],
+      "thu": [["11:00","20:00"]],
+      "fri": [["11:00","21:00"]],
+      "sat": [["11:00","21:00"]],
+      "sun": [["11:00","19:00"]]
+    }
+  },
+  {
+    "id": 10,
+    "name": "LP Steamers",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$",
+    "address": "1100 E Fort Ave, Baltimore, MD",
+    "tables": 8,
+    "hours": {
+      "mon": [["11:00","22:00"]],
+      "tue": [["11:00","22:00"]],
+      "wed": [["11:00","22:00"]],
+      "thu": [["11:00","22:00"]],
+      "fri": [["11:00","23:00"]],
+      "sat": [["11:00","23:00"]],
+      "sun": [["11:00","21:00"]]
+    }
+  },
+  {
+    "id": 11,
+    "name": "Clavel Mezcaleria",
+    "city": "Baltimore",
+    "cuisine": "Mexican",
+    "price": "$$",
+    "address": "225 W 23rd St, Baltimore, MD",
+    "tables": 6,
+    "hours": {
+      "mon": [["17:00","23:00"]],
+      "tue": [["17:00","23:00"]],
+      "wed": [["17:00","23:00"]],
+      "thu": [["17:00","23:00"]],
+      "fri": [["17:00","00:00"]],
+      "sat": [["17:00","00:00"]],
+      "sun": [["17:00","22:00"]]
+    }
+  },
+  {
+    "id": 12,
+    "name": "Duck Duck Goose",
+    "city": "Baltimore",
+    "cuisine": "French",
+    "price": "$$$",
+    "address": "814 S Broadway, Baltimore, MD",
+    "tables": 4,
+    "hours": {
+      "mon": [["17:00","22:00"]],
+      "tue": [["17:00","22:00"]],
+      "wed": [["17:00","22:00"]],
+      "thu": [["17:00","22:00"]],
+      "fri": [["17:00","23:00"]],
+      "sat": [["10:00","23:00"]],
+      "sun": [["10:00","21:00"]]
+    }
+  },
+  {
+    "id": 13,
+    "name": "Blue Moon Cafe",
+    "city": "Baltimore",
+    "cuisine": "Breakfast & Brunch",
+    "price": "$",
+    "address": "1621 Aliceanna St, Baltimore, MD",
+    "tables": 4,
+    "hours": {
+      "mon": [["07:00","14:00"]],
+      "tue": [["07:00","14:00"]],
+      "wed": [["07:00","14:00"]],
+      "thu": [["07:00","14:00"]],
+      "fri": [["07:00","14:00"]],
+      "sat": [["07:00","15:00"]],
+      "sun": [["07:00","15:00"]]
+    }
+  },
+  {
+    "id": 14,
+    "name": "Forno Restaurant & Wine Bar",
+    "city": "Baltimore",
+    "cuisine": "Contemporary American",
+    "price": "$$",
+    "address": "17 N Eutaw St, Baltimore, MD",
+    "tables": 5,
+    "hours": {
+      "mon": [["17:00","22:00"]],
+      "tue": [["17:00","22:00"]],
+      "wed": [["17:00","22:00"]],
+      "thu": [["17:00","22:00"]],
+      "fri": [["17:00","23:00"]],
+      "sat": [["17:00","23:00"]],
+      "sun": [["17:00","21:00"]]
+    }
+  },
+  {
+    "id": 15,
+    "name": "Papi’s Tacos",
+    "city": "Baltimore",
+    "cuisine": "Mexican",
+    "price": "$",
+    "address": "1703 Aliceanna St, Baltimore, MD",
+    "tables": 6,
+    "hours": {
+      "mon": [["11:00","22:00"]],
+      "tue": [["11:00","22:00"]],
+      "wed": [["11:00","22:00"]],
+      "thu": [["11:00","22:00"]],
+      "fri": [["11:00","23:00"]],
+      "sat": [["11:00","23:00"]],
+      "sun": [["11:00","21:00"]]
+    }
+  }
+]

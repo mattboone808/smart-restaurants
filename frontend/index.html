@@ -12,7 +12,9 @@
       <span class="navbar-brand mb-0 h1">🍽️ Smart Restaurants</span>
       <div class="d-flex gap-3">
         <a class="nav-link" href="./index.html">Search</a>
+        <!-- Phase 2: Recommendations link (temporarily disabled)
         <a class="nav-link" href="./recommendations.html">Recommendations</a>
+        -->
       </div>
     </div>
   </nav>
@@ -45,9 +47,11 @@
       <div class="col-12 col-md-2 d-grid">
         <button id="searchBtn" type="submit" class="btn btn-primary">Search</button>
       </div>
+      <!-- Phase 2: Save Preferences button (temporarily removed)
       <div class="col-12 col-md-3 d-grid">
         <button id="savePrefsBtn" type="button" class="btn btn-outline-secondary">Save as My Preferences</button>
       </div>
+      -->
     </form>
 
     <div id="status"></div>
@@ -78,7 +82,8 @@
               </div>
               <div class="col-6">
                 <label class="form-label">Time</label>
-                <input id="resTime" type="time" class="form-control" required />
+                <!-- 30-minute increments -->
+                <input id="resTime" type="time" class="form-control" required step="1800" min="00:00" max="23:30" />
               </div>
             </form>
           </div>
