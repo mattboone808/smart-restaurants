@@ -109,20 +109,20 @@
 },
 {
   "id": 7,
-  "name": "Ampersea",
+  "name": "Kohinoor Restaurant",
   "city": "Baltimore",
-  "cuisine": "American / Seafood",
-  "price": "$$$",
-  "address": "1417 Thames St, Baltimore, MD 21231",
-  "tables": 0,
+  "cuisine": "Indian",
+  "price": "$$",
+  "address": "5926 York Rd, Baltimore, MD 21212",
+  "tables": 14,
   "hours": {
-      "mon": [ [ "11:00", "22:00" ] ],
-      "tue": [ [ "11:00", "22:00" ] ],
-      "wed": [ [ "11:00", "22:00" ] ],
-      "thu": [ [ "11:00", "22:00" ] ],
-      "fri": [ [ "11:00", "22:00" ] ],
-      "sat": [ [ "11:00", "23:00" ] ],
-      "sun": [ [ "11:00", "22:00" ] ]
+    "mon": [["12:00", "24:00"]],
+    "tue": [["12:00", "24:00"]],
+    "wed": [["12:00", "24:00"]],
+    "thu": [["12:00", "24:00"]],
+    "fri": [["12:00", "24:00"]],
+    "sat": [["12:00", "24:00"]],
+    "sun": [["12:00", "24:00"]]
   }
 },
 {
@@ -397,19 +397,19 @@
 },
 {
   "id": 23,
-  "name": "Blackwall Hitch Baltimore",
+  "name": "Picante Taco",
   "city": "Baltimore",
-  "cuisine": "Seafood",
-  "price": "$$$",
-  "address": "700 E Pratt St, Baltimore, MD 21202",
-  "tables": 0,
+  "cuisine": "Mexican",
+  "price": "$",
+  "address": "411 S High St, Baltimore, MD 21202",
+  "tables": 10,
   "hours": {
-      "mon": [ [ "11:00", "21:00" ] ],
-      "tue": [ [ "11:00", "21:00" ] ],
-      "wed": [ [ "11:00", "21:00" ] ],
-      "thu": [ [ "11:00", "21:00" ] ],
-      "fri": [ [ "11:00", "22:00" ] ],
-      "sat": [ [ "11:00", "22:00" ] ],
+      "mon": [ [ "11:00", "22:00" ] ],
+      "tue": [ [ "11:00", "22:00" ] ],
+      "wed": [ [ "11:00", "22:00" ] ],
+      "thu": [ [ "11:00", "22:00" ] ],
+      "fri": [ [ "11:00", "23:00" ] ],
+      "sat": [ [ "11:00", "23:00" ] ],
       "sun": [ [ "11:00", "21:00" ] ]
   }
 },
