@@ -15,7 +15,6 @@
       "fri": [ [ "11:00", "02:00" ] ],
       "sat": [ [ "11:00", "02:00" ] ],
       "sun": [ [ "11:00", "02:00" ] ]
-  }
 },
 {
   "id": 2,
@@ -33,7 +32,6 @@
       "fri": [ [ "11:30", "24:00" ] ],
       "sat": [ [ "11:30", "24:00" ] ],
       "sun": [ [ "11:30", "23:00" ] ]
-  }
 },
 {
   "id": 3,
@@ -51,7 +49,6 @@
       "fri": [ [ "17:00", "22:00" ] ],
       "sat": [ [ "17:00", "22:00" ] ],
       "sun": [ [ "17:00", "22:00" ] ]
-  }
 },
 {
   "id": 4,
@@ -69,7 +66,6 @@
       "fri": [ [ "11:00", "22:00" ] ],
       "sat": [ [ "11:00", "22:00" ] ],
       "sun": [ [ "11:00", "21:00" ] ]
-  }
 },
 {
   "id": 5,
@@ -87,7 +83,6 @@
       "fri": [ [ "16:30", "23:00" ] ],
       "sat": [ [ "16:30", "23:00" ] ],
       "sun": [ [ "11:00", "22:00" ] ]
-  }
 },
 {
   "id": 6,
@@ -105,28 +100,9 @@
       "fri": [ [ "12:00", "22:00" ] ],
       "sat": [ [ "12:00", "23:00" ] ],
       "sun": [ [ "12:00", "21:00" ] ]
-  }
 },
 {
   "id": 7,
-  "name": "Kohinoor Restaurant",
-  "city": "Baltimore",
-  "cuisine": "Indian",
-  "price": "$$",
-  "address": "5926 York Rd, Baltimore, MD 21212",
-  "tables": 14,
-  "hours": {
-    "mon": [["12:00", "24:00"]],
-    "tue": [["12:00", "24:00"]],
-    "wed": [["12:00", "24:00"]],
-    "thu": [["12:00", "24:00"]],
-    "fri": [["12:00", "24:00"]],
-    "sat": [["12:00", "24:00"]],
-    "sun": [["12:00", "24:00"]]
-  }
-},
-{
-  "id": 8,
   "name": "Angeli's Pizzeria",
   "city": "Baltimore",
   "cuisine": "Italian",
@@ -141,10 +117,9 @@
       "fri": [ [ "11:00", "23:00" ] ],
       "sat": [ [ "11:00", "23:00" ] ],
       "sun": [ [ "11:00", "22:00" ] ]
-  }
 },
 {
-  "id": 9,
+  "id": 8,
   "name": "Angie's Seafood",
   "city": "Baltimore",
   "cuisine": "Seafood",
@@ -159,10 +134,9 @@
       "fri": [ [ "12:00", "24:00" ] ],
       "sat": [ [ "12:00", "24:00" ] ],
       "sun": [ [ "12:00", "10:00" ] ]
-  }
 },
 {
-  "id": 10,
+  "id": 9,
   "name": "Applebee's Grill + Bar",
   "city": "Baltimore",
   "cuisine": "American",
@@ -177,10 +151,9 @@
       "fri": [ [ "11:30", "24:00" ] ],
       "sat": [ [ "11:30", "24:00" ] ],
       "sun": [ [ "11:30", "23:00" ] ]
-  }
 },
 {
-  "id": 11,
+  "id": 10,
   "name": "Avenue Kitchen & Bar",
   "city": "Baltimore",
   "cuisine": "American",
@@ -195,10 +168,9 @@
       "fri": [ [ "12:00", "24:00" ] ],
       "sat": [ [ "11:00", "24:00" ] ],
       "sun": [ [ "11:00", "22:00" ] ]
-  }
 },
 {
-  "id": 12,
+  "id": 11,
   "name": "Azumi Sushi Bar",
   "city": "Baltimore",
   "cuisine": "Japanese / Sushi / Teppanyaki",
@@ -213,10 +185,9 @@
       "fri": [ [ "12:00", "23:00" ] ],
       "sat": [ [ "12:00", "23:00" ] ],
       "sun": [ [ "16:00", "22:00" ] ]
-  }
 },
 {
-  "id": 13,
+  "id": 12,
   "name": "B&O American Brasserie",
   "city": "Baltimore",
   "cuisine": "American",
@@ -231,10 +202,9 @@
       "fri": [ [ "06:30", "23:00" ] ],
       "sat": [ [ "08:00", "23:00" ] ],
       "sun": [ [ "08:00", "22:00" ] ]
-  }
 },
 {
-  "id": 14,
+  "id": 13,
   "name": "Bab Alyemen",
   "city": "Baltimore",
   "cuisine": "American",
@@ -249,10 +219,9 @@
       "fri": [ [ "11:30", "22:00" ] ],
       "sat": [ [ "11:30", "22:00" ] ],
       "sun": [ [ "11:30", "22:00" ] ]
-  }
 },
 {
-  "id": 15,
+  "id": 14,
   "name": "Baltimore Brewhouse",
   "city": "Baltimore",
   "cuisine": "Breakfast & Brunch",
@@ -267,10 +236,9 @@
       "fri": [ [ "07:00", "15:00" ] ],
       "sat": [ [ "07:00", "15:00" ] ],
       "sun": [ [ "07:00", "15:00" ] ]
-  }
 },
 {
-  "id": 16,
+  "id": 15,
   "name": "Bao Di",
   "city": "Baltimore",
   "cuisine": "Seafood",
@@ -285,10 +253,9 @@
       "fri": [ [ "11:00", "23:00" ] ],
       "sat": [ [ "11:00", "23:00" ] ],
       "sun": [ [ "11:00", "21:00" ] ]
-  }
 },
 {
-  "id": 17,
+  "id": 16,
   "name": "Barrel House Tavern",
   "city": "Baltimore",
   "cuisine": "American / Tavern",
@@ -303,10 +270,9 @@
       "fri": [ [ "17:00", "23:00" ] ],
       "sat": [ [ "17:00", "23:00" ] ],
       "sun": [ [ "17:00", "22:00" ] ]
-  }
 },
 {
-  "id": 18,
+  "id": 17,
   "name": "Be More Thai Restaurant",
   "city": "Baltimore",
   "cuisine": "Thai",
@@ -321,10 +287,9 @@
       "fri": [ [ "11:30", "22:30" ] ],
       "sat": [ [ "11:30", "22:30" ] ],
       "sun": [ [ "11:30", "22:00" ] ]
-  }
 },
 {
-  "id": 19,
+  "id": 18,
   "name": "Be-One Korean BBQ",
   "city": "Baltimore",
   "cuisine": "Korean",
@@ -339,10 +304,9 @@
       "fri": [ [ "11:45", "22:45" ] ],
       "sat": [ [ "11:00", "22:45" ] ],
       "sun": [ [ "12:00", "22:30" ] ]
-  }
 },
 {
-  "id": 20,
+  "id": 19,
   "name": "Benny's",
   "city": "Baltimore",
   "cuisine": "Italian",
@@ -357,10 +321,9 @@
       "fri": [ [ "17:00", "22:00" ] ],
       "sat": [ [ "12:00", "22:00" ] ],
       "sun": [ [ "12:00", "20:00" ] ]
-  }
 },
 {
-  "id": 21,
+  "id": 20,
   "name": "Birroteca Baltimore",
   "city": "Baltimore",
   "cuisine": "Italian",
@@ -375,10 +338,9 @@
       "fri": [ [ "16:00", "21:30" ] ],
       "sat": [ [ "16:00", "21:30" ] ],
       "sun": [ [ "12:00", "19:30" ] ]
-  }
 },
 {
-  "id": 22,
+  "id": 21,
   "name": "Blackwall Hitch",
   "city": "Baltimore",
   "cuisine": "Seafood",
@@ -393,46 +355,9 @@
       "fri": [ [ "11:00", "22:00" ] ],
       "sat": [ [ "10:00", "22:00" ] ],
       "sun": [ [ "10:00", "21:00" ] ]
-  }
 },
 {
-  "id": 23,
-  "name": "Picante Taco",
-  "city": "Baltimore",
-  "cuisine": "Mexican",
-  "price": "$",
-  "address": "411 S High St, Baltimore, MD 21202",
-  "tables": 10,
-  "hours": {
-      "mon": [ [ "11:00", "22:00" ] ],
-      "tue": [ [ "11:00", "22:00" ] ],
-      "wed": [ [ "11:00", "22:00" ] ],
-      "thu": [ [ "11:00", "22:00" ] ],
-      "fri": [ [ "11:00", "23:00" ] ],
-      "sat": [ [ "11:00", "23:00" ] ],
-      "sun": [ [ "11:00", "21:00" ] ]
-  }
-},
-{
-  "id": 24,
-  "name": "BLK Swan",
-  "city": "Baltimore",
-  "cuisine": "American",
-  "price": "$$",
-  "address": "1302 Fleet St, Baltimore, MD 21202",
-  "tables": 13,
-  "hours": {
-      "mon": [ [ "17:00", "24:00" ] ],
-      "tue": [ [ "17:00", "24:00" ] ],
-      "wed": [ [ "11:00", "24:00" ] ],
-      "thu": [ [ "11:00", "24:00" ] ],
-      "fri": [ [ "11:00", "01:00" ] ],
-      "sat": [ [ "10:00", "01:00" ] ],
-      "sun": [ [ "11:00", "23:00" ] ]
-  }
-},
-{
-  "id": 25,
+  "id": 22,
   "name": "BLK Swan (Harbor East)",
   "city": "Baltimore",
   "cuisine": "New American",
@@ -447,10 +372,9 @@
       "fri": [ [ "17:00", "01:00" ] ],
       "sat": [ [ "10:00", "01:00" ] ],
       "sun": [ [ "10:00", "24:00" ] ]
-  }
 },
 {
-  "id": 26,
+  "id": 23,
   "name": "Blue Moon Cafe",
   "city": "Baltimore",
   "cuisine": "Breakfast & Brunch",
@@ -465,28 +389,9 @@
       "fri": [ [ "07:00", "15:00" ] ],
       "sat": [ [ "07:00", "15:00" ] ],
       "sun": [ [ "07:00", "15:00" ] ]
-  }
 },
 {
-  "id": 27,
-  "name": "Blue Moon Café",
-  "city": "Baltimore",
-  "cuisine": "Breakfast / Brunch",
-  "price": "$$",
-  "address": "1621 Aliceanna St, Baltimore, MD 21231",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "07:00", "15:00" ] ],
-      "tue": [ [ "07:00", "15:00" ] ],
-      "wed": [ [ "07:00", "15:00" ] ],
-      "thu": [ [ "07:00", "15:00" ] ],
-      "fri": [ [ "07:00", "15:00" ] ],
-      "sat": [ [ "07:00", "15:00" ] ],
-      "sun": [ [ "07:00", "15:00" ] ]
-  }
-},
-{
-  "id": 28,
+  "id": 24,
   "name": "Blue Moon Too",
   "city": "Baltimore",
   "cuisine": "Breakfast & Brunch",
@@ -501,10 +406,9 @@
       "fri": [ [ "07:00", "15:00" ] ],
       "sat": [ [ "07:00", "15:00" ] ],
       "sun": [ [ "07:00", "15:00" ] ]
-  }
 },
 {
-  "id": 29,
+  "id": 25,
   "name": "Bmore Seafood",
   "city": "Baltimore",
   "cuisine": "Seafood",
@@ -519,10 +423,9 @@
       "fri": [ [ "12:00", "23:00" ] ],
       "sat": [ [ "12:00", "23:00" ] ],
       "sun": [ [ "12:00", "22:00" ] ]
-  }
 },
 {
-  "id": 30,
+  "id": 26,
   "name": "Bodhi Federal Hill",
   "city": "Baltimore",
   "cuisine": "Thai",
@@ -537,10 +440,9 @@
       "fri": [ [ "11:00", "01:00" ] ],
       "sat": [ [ "11:00", "01:00" ] ],
       "sun": [ [ "11:00", "22:00" ] ]
-  }
 },
 {
-  "id": 31,
+  "id": 27,
   "name": "Cafe 1908",
   "city": "Baltimore",
   "cuisine": "Seafood",
@@ -555,10 +457,9 @@
       "fri": [ [ "8:00", "23:00" ] ],
       "sat": [ [ "11:00", "23:00" ] ],
       "sun": [ [ "12:00", "20:00" ] ]
-  }
 },
 {
-  "id": 32,
+  "id": 28,
   "name": "Cafe Dear Leon",
   "city": "Baltimore",
   "cuisine": "Breakfast & Brunch",
@@ -573,10 +474,9 @@
       "fri": [ [ "06:00", "15:00" ] ],
       "sat": [ [ "06:00", "15:00" ] ],
       "sun": [ [ "06:00", "15:00" ] ]
-  }
 },
 {
-  "id": 33,
+  "id": 29,
   "name": "Cafe Fili",
   "city": "Baltimore",
   "cuisine": "Lebanese",
@@ -591,10 +491,9 @@
       "fri": [ [ "08:00", "19:00" ] ],
       "sat": [ [ "08:00", "19:00" ] ],
       "sun": [ [ "09:00", "16:00" ] ]
-  }
 },
 {
-  "id": 34,
+  "id": 30,
   "name": "Carrabba's Italian Grill",
   "city": "Baltimore",
   "cuisine": "Italian",
@@ -609,10 +508,9 @@
       "fri": [ [ "11:00", "23:00" ] ],
       "sat": [ [ "11:00", "23:00" ] ],
       "sun": [ [ "11:00", "21:00" ] ]
-  }
 },
 {
-  "id": 35,
+  "id": 31,
   "name": "Chachi's",
   "city": "Baltimore",
   "cuisine": "American",
@@ -627,10 +525,9 @@
       "fri": [ [ "17:00", "22:00" ] ],
       "sat": [ [ "17:00", "22:00" ] ],
       "sun": [ [ "17:00", "22:00" ] ]
-  }
 },
 {
-  "id": 36,
+  "id": 32,
   "name": "Charleston",
   "city": "Baltimore",
   "cuisine": "American",
@@ -645,10 +542,9 @@
       "fri": [ [ "17:00", "21:30" ] ],
       "sat": [ [ "17:00", "21:30" ] ],
       "sun": [ [ "17:00", "20:30" ] ]
-  }
 },
 {
-  "id": 37,
+  "id": 33,
   "name": "Charleston Restaurant",
   "city": "Baltimore",
   "cuisine": "Fine Dining / New American",
@@ -663,10 +559,9 @@
       "fri": [ [ "17:00", "21:30" ] ],
       "sat": [ [ "17:00", "21:30" ] ],
       "sun": [ [ "17:00", "20:30" ] ]
-  }
 },
 {
-  "id": 38,
+  "id": 34,
   "name": "Charm City Thai Kitchen",
   "city": "Baltimore",
   "cuisine": "Thai",
@@ -681,10 +576,9 @@
       "fri": [ [ "14:00", "03:00" ] ],
       "sat": [ [ "14:00", "03:00" ] ],
       "sun": [ [ "14:00", "03:00" ] ]
-  }
 },
 {
-  "id": 39,
+  "id": 35,
   "name": "Charmed Kitchen",
   "city": "Baltimore",
   "cuisine": "Breakfast & Brunch",
@@ -699,10 +593,9 @@
       "fri": [ [ "07:00", "21:00" ] ],
       "sat": [ [ "08:00", "21:00" ] ],
       "sun": [ [ "08:00", "11:00" ] ]
-  }
 },
 {
-  "id": 40,
+  "id": 36,
   "name": "Cinghiale",
   "city": "Baltimore",
   "cuisine": "Italian",
@@ -717,10 +610,9 @@
       "fri": [ [ "11:30", "22:00" ] ],
       "sat": [ [ "17:00", "22:00" ] ],
       "sun": [ [ "17:00", "22:00" ] ]
-  }
 },
 {
-  "id": 41,
+  "id": 37,
   "name": "Circus Bar & Restaurant",
   "city": "Baltimore",
   "cuisine": "American",
@@ -735,10 +627,9 @@
       "fri": [ [ "12:00", "02:00" ] ],
       "sat": [ [ "12:00", "02:00" ] ],
       "sun": [ [ "12:00", "02:00" ] ]
-  }
 },
 {
-  "id": 42,
+  "id": 38,
   "name": "Clavel",
   "city": "Baltimore",
   "cuisine": "Mexican / Taqueria",
@@ -753,10 +644,9 @@
       "fri": [ [ "17:00", "23:00" ] ],
       "sat": [ [ "17:00", "23:00" ] ],
       "sun": [ [ "Closed" ] ]
-  }
 },
 {
-  "id": 43,
+  "id": 39,
   "name": "Clock Restoration",
   "city": "Baltimore",
   "cuisine": "American",
@@ -771,13 +661,29 @@
       "fri": [ [ "12:00", "22:00" ] ],
       "sat": [ [ "11:00", "22:00" ] ],
       "sun": [ [ "12:00", "21:00" ] ]
-  }
 },
 {
-  "id": 44,
+  "id": 40,
+  "name": "Connie's Chicken & Waffles",
+  "city": "Baltimore",
+  "cuisine": "Southern / Soul Food",
+  "price": "address",
+  "address": "222 N Charles St, Baltimore, MD 21201",
+  "tables": 0,
+  "hours": {
+    "mon": [ [ "07:30", "15:00" ] ],
+    "tue": [ [ "07:30", "15:00" ] ],
+    "wed": [ [ "07:30", "15:00" ] ],
+    "thu": [ [ "07:30", "15:00" ] ],
+    "fri": [ [ "07:30", "15:00" ] ],
+    "sat": [ [ "07:30", "15:00" ] ],
+    "sun": [ [ "07:30", "15:00" ] ]
+},
+{
+  "id": 41,
   "name": "CookHouse",
   "city": "Baltimore",
-  "cuisine":"New American",
+  "cuisine": "New American",
   "price": "$$$",
   "address": "1501 Bolton St, Baltimore, MD 21217",
   "tables": 17,
@@ -789,10 +695,9 @@
     "fri": [["18:00", "22:00"]],
     "sat": [["18:00", "01:00"]],
     "sun": [["Closed"]]
-  }
 },
 {
-  "id": 45,
+  "id": 42,
   "name": "Costas Inn",
   "city": "Baltimore",
   "cuisine": "Seafood",
@@ -807,10 +712,9 @@
       "fri": [ [ "11:00", "22:00" ] ],
       "sat": [ [ "11:00", "22:00" ] ],
       "sun": [ [ "11:00", "21:00" ] ]
-  }
 },
 {
-  "id": 46,
+  "id": 43,
   "name": "Costiera",
   "city": "Baltimore",
   "cuisine": "Italian",
@@ -825,28 +729,9 @@
       "fri": [ [ "16:00", "22:00" ] ],
       "sat": [ [ "16:00", "22:00" ] ],
       "sun": [ [ "Closed" ] ]
-  }
 },
 {
-  "id": 47,
-  "name": "David and Dad's Cafe",
-  "city": "Baltimore",
-  "cuisine": "Breakfast & Brunch",
-  "price": "$",
-  "address": "115 N Charles St, Baltimore, MD 21201",
-  "tables": 17,
-  "hours": {
-      "mon": [ [ "06:30", "15:00" ] ],
-      "tue": [ [ "06:30", "15:00" ] ],
-      "wed": [ [ "06:30", "15:00" ] ],
-      "thu": [ [ "06:30", "15:00" ] ],
-      "fri": [ [ "06:30", "15:00" ] ],
-      "sat": [ [ "08:00", "13:00" ] ],
-      "sun": [ [ "Closed" ] ]
-  }
-},
-{
-  "id": 48,
+  "id": 44,
   "name": "Dalesio's of Little Italy",
   "city": "Baltimore",
   "cuisine": "Italian",
@@ -861,10 +746,26 @@
     "fri": [["16:00", "22:00"]],
     "sat": [["12:00", "22:00"]],
     "sun": [["Closed"]]
-  }
 },
 {
-  "id": 49,
+  "id": 45,
+  "name": "David and Dad's Cafe",
+  "city": "Baltimore",
+  "cuisine": "Breakfast & Brunch",
+  "price": "$",
+  "address": "115 N Charles St, Baltimore, MD 21201",
+  "tables": 17,
+  "hours": {
+      "mon": [ [ "06:30", "15:00" ] ],
+      "tue": [ [ "06:30", "15:00" ] ],
+      "wed": [ [ "06:30", "15:00" ] ],
+      "thu": [ [ "06:30", "15:00" ] ],
+      "fri": [ [ "06:30", "15:00" ] ],
+      "sat": [ [ "08:00", "13:00" ] ],
+      "sun": [ [ "Closed" ] ]
+},
+{
+  "id": 46,
   "name": "Dear Charles",
   "city": "Baltimore",
   "cuisine": "Breakfast & Brunch",
@@ -879,10 +780,9 @@
       "fri": [ [ "07:00", "22:00" ] ],
       "sat": [ [ "07:00", "22:00" ] ],
       "sun": [ [ "07:00", "22:00" ] ]
-  }
 },
 {
-  "id": 50,
+  "id": 47,
   "name": "Dooby's",
   "city": "Baltimore",
   "cuisine": "Asian Fusion",
@@ -897,10 +797,9 @@
       "fri": [ [ "08:00", "18:00" ] ],
       "sat": [ [ "08:00", "18:00" ] ],
       "sun": [ [ "08:00", "15:00" ] ]
-  }
 },
 {
-  "id": 51,
+  "id": 48,
   "name": "Duck Duck Goose",
   "city": "Baltimore",
   "cuisine": "French",
@@ -915,10 +814,9 @@
       "fri": [ [ "17:00", "23:00" ] ],
       "sat": [ [ "10:00", "23:00" ] ],
       "sun": [ [ "10:00", "21:00" ] ]
-  }
 },
 {
-  "id": 52,
+  "id": 49,
   "name": "EJJI",
   "city": "Baltimore",
   "cuisine": "Ramen",
@@ -933,10 +831,9 @@
       "fri": [ [ "11:00", "19:00" ] ],
       "sat": [ [ "11:00", "19:00" ] ],
       "sun": [ [ "11:00", "17:00" ] ]
-  }
 },
 {
-  "id": 53,
+  "id": 50,
   "name": "Ekiben",
   "city": "Baltimore",
   "cuisine": "Asian Fusion",
@@ -951,10 +848,26 @@
       "fri": [ [ "11:00", "23:00" ] ],
       "sat": [ [ "11:00", "23:00" ] ],
       "sun": [ [ "Closed" ] ]
-  }
 },
 {
-  "id": 54,
+  "id": 51,
+  "name": "Facci Ristorante",
+  "city": "Baltimore",
+  "cuisine": "Italian",
+  "price": "address",
+  "address": "414 Light St, Baltimore, MD 21202",
+  "tables": 0,
+  "hours": {
+    "mon": [ [ "11:00", "22:00" ] ],
+    "tue": [ [ "11:00", "22:00" ] ],
+    "wed": [ [ "11:00", "22:00" ] ],
+    "thu": [ [ "11:00", "22:00" ] ],
+    "fri": [ [ "11:00", "23:00" ] ],
+    "sat": [ [ "11:00", "23:00" ] ],
+    "sun": [ [ "11:00", "22:00" ] ]
+},
+{
+  "id": 52,
   "name": "Foraged",
   "city": "Baltimore",
   "cuisine": "New American / Farm-to-table",
@@ -969,10 +882,9 @@
       "fri": [ [ "17:00", "22:00" ] ],
       "sat": [ [ "17:00", "22:00" ] ],
       "sun": [ [ "17:00", "21:00" ] ]
-  }
 },
 {
-  "id": 55,
+  "id": 53,
   "name": "Gertrude’s Chesapeake Kitchen",
   "city": "Baltimore",
   "cuisine": "Chesapeake / Fine Dining",
@@ -1002,10 +914,9 @@
         [ "10:00", "15:00" ],
         [ "17:00", "19:00" ]
       ]
-    }
 },
 {
-  "id": 56,
+  "id": 54,
   "name": "Jano Ethiopian Cuisine & Bar",
   "city": "Baltimore",
   "cuisine": "Ethiopian",
@@ -1020,10 +931,26 @@
       "fri": [ [ "11:00", "22:00" ] ],
       "sat": [ [ "11:00", "22:00" ] ],
       "sun": [ [ "11:00", "22:00" ] ]
-  }
 },
 {
-  "id": 57,
+  "id": 55,
+  "name": "Kohinoor Restaurant",
+  "city": "Baltimore",
+  "cuisine": "Indian",
+  "price": "$$",
+  "address": "5926 York Rd, Baltimore, MD 21212",
+  "tables": 14,
+  "hours": {
+    "mon": [["12:00", "24:00"]],
+    "tue": [["12:00", "24:00"]],
+    "wed": [["12:00", "24:00"]],
+    "thu": [["12:00", "24:00"]],
+    "fri": [["12:00", "24:00"]],
+    "sat": [["12:00", "24:00"]],
+    "sun": [["12:00", "24:00"]]
+},
+{
+  "id": 56,
   "name": "Kona Grill (Inner Harbor)",
   "city": "Baltimore",
   "cuisine": "American / Sushi / Grill",
@@ -1038,7 +965,23 @@
       "fri": [ [ "11:00", "01:00" ] ],
       "sat": [ [ "11:00", "01:00" ] ],
       "sun": [ [ "10:00", "23:00" ] ]
-  }
+},
+{
+  "id": 57,
+  "name": "La Calle",
+  "city": "Baltimore",
+  "cuisine": "Mexican",
+  "price": "address",
+  "address": "623 S Broadway, Baltimore, MD 21231",
+  "tables": 0,
+  "hours": {
+    "mon": [ [ "17:00", "22:00" ] ],
+    "tue": [ [ "17:00", "22:00" ] ],
+    "wed": [ [ "17:00", "22:00" ] ],
+    "thu": [ [ "17:00", "22:00" ] ],
+    "fri": [ [ "17:00", "22:00" ] ],
+    "sat": [ [ "17:00", "22:00" ] ],
+    "sun": []
 },
 {
   "id": 58,
@@ -1056,7 +999,6 @@
       "fri": [ [ "17:00", "22:00" ] ],
       "sat": [ [ "17:00", "22:00" ] ],
       "sun": [ [ "17:00", "21:00" ] ]
-  }
 },
 {
   "id": 59,
@@ -1074,28 +1016,9 @@
       "fri": [ [ "11:30", "23:00" ] ],
       "sat": [ [ "11:30", "23:00" ] ],
       "sun": [ [ "11:30", "21:00" ] ]
-  }
 },
 {
   "id": 60,
-  "name": "La Tavola",
-  "city": "Baltimore",
-  "cuisine": "Italian",
-  "price": "$$$",
-  "address": "248 Albemarle St, Baltimore, MD 21202",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "Closed" ] ],
-      "tue": [ [ "Closed" ] ],
-      "wed": [ [ "16:00", "22:00" ] ],
-      "thu": [ [ "11:30", "22:00" ] ],
-      "fri": [ [ "11:30", "22:00" ] ],
-      "sat": [ [ "11:30", "22:00" ] ],
-      "sun": [ [ "11:30", "22:00" ] ]
-  }
-},
-{
-  "id": 61,
   "name": "Little Donna’s",
   "city": "Baltimore",
   "cuisine": "American / Pizza",
@@ -1110,10 +1033,9 @@
       "fri": [ [ "17:00", "22:30" ] ],
       "sat": [ [ "17:00", "22:30" ] ],
       "sun": [ [ "Closed" ] ]
-  }
 },
 {
-  "id": 62,
+  "id": 61,
   "name": "Loch Bar",
   "city": "Baltimore",
   "cuisine": "Seafood / Tavern",
@@ -1128,10 +1050,9 @@
       "fri": [ [ "11:00", "24:00" ] ],
       "sat": [ [ "11:00", "24:00" ] ],
       "sun": [ [ "11:00", "22:30" ] ]
-  }
 },
 {
-  "id": 63,
+  "id": 62,
   "name": "Locust Point Steamers",
   "city": "Baltimore",
   "cuisine": "Seafood / Crab House",
@@ -1146,10 +1067,9 @@
       "fri": [ [ "11:30", "22:00" ] ],
       "sat": [ [ "11:30", "22:00" ] ],
       "sun": [ [ "11:30", "21:00" ] ]
-  }
 },
 {
-  "id": 64,
+  "id": 63,
   "name": "LP Steamers",
   "city": "Baltimore",
   "cuisine": "Seafood",
@@ -1164,10 +1084,9 @@
       "fri": [ [ "11:00", "21:30" ] ],
       "sat": [ [ "11:00", "21:30" ] ],
       "sun": [ [ "11:00", "21:30" ] ]
-  }
 },
 {
-  "id": 65,
+  "id": 64,
   "name": "Maximón",
   "city": "Baltimore",
   "cuisine": "Latin / South American",
@@ -1208,10 +1127,9 @@
         [ "11:00", "15:00" ],
         [ "17:00", "22:00" ]
       ]
-    }
 },
 {
-  "id": 66,
+  "id": 65,
   "name": "Miss Shirley’s Cafe",
   "city": "Baltimore",
   "cuisine": "Breakfast & Brunch",
@@ -1226,10 +1144,9 @@
       "fri": [ [ "08:00", "15:00" ] ],
       "sat": [ [ "08:00", "15:00" ] ],
       "sun": [ [ "08:00", "15:00" ] ]
-  }
 },
 {
-  "id": 67,
+  "id": 66,
   "name": "Morton’s The Steakhouse",
   "city": "Baltimore",
   "cuisine": "Steakhouse / Seafood",
@@ -1244,10 +1161,9 @@
       "fri": [ [ "17:00", "22:00" ] ],
       "sat": [ [ "17:00", "22:00" ] ],
       "sun": [ [ "17:00", "21:00" ] ]
-  }
 },
 {
-  "id": 68,
+  "id": 67,
   "name": "Nancy By SNAC",
   "city": "Baltimore",
   "cuisine": "American / Modern",
@@ -1262,10 +1178,9 @@
       "fri": [ [ "11:30", "21:30" ] ],
       "sat": [ [ "11:30", "21:30" ] ],
       "sun": [ [ "11:30", "21:30" ] ]
-  }
 },
 {
-  "id": 69,
+  "id": 68,
   "name": "Nick’s Fish House",
   "city": "Baltimore",
   "cuisine": "Seafood / Waterfront",
@@ -1280,10 +1195,9 @@
       "fri": [ [ "11:30", "23:00" ] ],
       "sat": [ [ "11:30", "23:00" ] ],
       "sun": [ [ "11:30", "22:00" ] ]
-  }
 },
 {
-  "id": 70,
+  "id": 69,
   "name": "Noir Restaurant & Lounge (Belvedere Square)",
   "city": "Baltimore",
   "cuisine": "Lounge / Modern American",
@@ -1298,10 +1212,9 @@
       "fri": [ [ "17:00", "03:00" ] ],
       "sat": [ [ "17:00", "03:00" ] ],
       "sun": [ [ "17:00", "02:00" ] ]
-  }
 },
 {
-  "id": 71,
+  "id": 70,
   "name": "On the Hill Cafe",
   "city": "Baltimore",
   "cuisine": "Cafe / American",
@@ -1316,10 +1229,9 @@
       "fri": [ [ "07:00", "15:00" ] ],
       "sat": [ [ "07:00", "15:00" ] ],
       "sun": [ [ "Closed" ] ]
-  }
 },
 {
-  "id": 72,
+  "id": 71,
   "name": "Ouzo Bay",
   "city": "Baltimore",
   "cuisine": "Greek / Seafood",
@@ -1334,7 +1246,23 @@
       "fri": [ [ "11:30", "23:00" ] ],
       "sat": [ [ "11:30", "23:00" ] ],
       "sun": [ [ "11:30", "21:00" ] ]
-  }
+},
+{
+  "id": 72,
+  "name": "Ovenbird Bakery",
+  "city": "Baltimore",
+  "cuisine": "Bakery / Cafe",
+  "price": "address",
+  "address": "3925 Gough St Ste 2, Baltimore, MD 21224",
+  "tables": 0,
+  "hours": {
+    "mon": [ [ "08:00", "19:00" ] ],
+    "tue": [ [ "08:00", "19:00" ] ],
+    "wed": [ [ "08:00", "19:00" ] ],
+    "thu": [ [ "08:00", "19:00" ] ],
+    "fri": [ [ "08:00", "19:00" ] ],
+    "sat": [ [ "08:00", "16:00" ] ],
+    "sun": [ [ "08:00", "15:00" ] ]
 },
 {
   "id": 73,
@@ -1352,7 +1280,6 @@
       "fri": [ [ "17:00", "23:00" ] ],
       "sat": [ [ "17:00", "23:00" ] ],
       "sun": [ [ "Closed" ] ]
-  }
 },
 {
   "id": 74,
@@ -1370,7 +1297,6 @@
       "fri": [ [ "12:00", "24:00" ] ],
       "sat": [ [ "12:00", "24:00" ] ],
       "sun": [ [ "12:00", "23:00" ] ]
-  }
 },
 {
   "id": 75,
@@ -1388,7 +1314,6 @@
       "fri": [ [ "11:30", "22:00" ] ],
       "sat": [ [ "11:30", "22:00" ] ],
       "sun": [ [ "11:30", "21:00" ] ]
-  }
 },
 {
   "id": 76,
@@ -1406,10 +1331,26 @@
       "fri": [ [ "08:00", "15:00" ] ],
       "sat": [ [ "08:00", "15:00" ] ],
       "sun": [ [ "Closed" ] ]
-  }
 },
 {
   "id": 77,
+  "name": "Picante Taco",
+  "city": "Baltimore",
+  "cuisine": "Mexican",
+  "price": "$",
+  "address": "411 S High St, Baltimore, MD 21202",
+  "tables": 10,
+  "hours": {
+      "mon": [ [ "11:00", "22:00" ] ],
+      "tue": [ [ "11:00", "22:00" ] ],
+      "wed": [ [ "11:00", "22:00" ] ],
+      "thu": [ [ "11:00", "22:00" ] ],
+      "fri": [ [ "11:00", "23:00" ] ],
+      "sat": [ [ "11:00", "23:00" ] ],
+      "sun": [ [ "11:00", "21:00" ] ]
+},
+{
+  "id": 78,
   "name": "Prima Dopo Cucina & Cocktail House",
   "city": "Baltimore",
   "cuisine": "Italian",
@@ -1424,10 +1365,9 @@
       "fri": [ [ "11:30", "02:00" ] ],
       "sat": [ [ "11:00", "02:00" ] ],
       "sun": [ [ "11:00", "22:00" ] ]
-  }
 },
 {
-  "id": 78,
+  "id": 79,
   "name": "R. House Food Hall",
   "city": "Baltimore",
   "cuisine": "Food Hall / Multi-vendor",
@@ -1442,10 +1382,9 @@
       "fri": [ [ "11:30", "22:00" ] ],
       "sat": [ [ "11:30", "22:00" ] ],
       "sun": [ [ "08:00", "21:00" ] ]
-  }
 },
 {
-  "id": 79,
+  "id": 80,
   "name": "Rec Pier Chop House",
   "city": "Baltimore",
   "cuisine": "Steakhouse / Seafood",
@@ -1460,10 +1399,9 @@
       "fri": [ [ "11:30", "23:00" ] ],
       "sat": [ [ "11:30", "23:00" ] ],
       "sun": [ [ "11:30", "21:00" ] ]
-  }
 },
 {
-  "id": 80,
+  "id": 81,
   "name": "Rusty Scupper",
   "city": "Baltimore",
   "cuisine": "Seafood",
@@ -1478,25 +1416,6 @@
       "fri": [ [ "12:00", "22:00" ] ],
       "sat": [ [ "12:00", "22:00" ] ],
       "sun": [ [ "10:30", "21:00" ] ]
-  }
-},
-{
-  "id": 81,
-  "name": "Rusty Scupper",
-  "city": "Baltimore",
-  "cuisine": "Seafood",
-  "price": "$$$$",
-  "address": "402 Key Hwy, Baltimore, MD 21230",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:30", "21:30" ] ],
-      "tue": [ [ "11:30", "21:30" ] ],
-      "wed": [ [ "11:30", "21:30" ] ],
-      "thu": [ [ "11:30", "21:30" ] ],
-      "fri": [ [ "11:30", "22:30" ] ],
-      "sat": [ [ "11:30", "22:30" ] ],
-      "sun": [ [ "11:30", "21:00" ] ]
-  }
 },
 {
   "id": 82,
@@ -1514,7 +1433,6 @@
       "fri": [ [ "11:30", "23:00" ] ],
       "sat": [ [ "11:30", "23:00" ] ],
       "sun": [ [ "11:30", "21:00" ] ]
-  }
 },
 {
   "id": 83,
@@ -1532,7 +1450,6 @@
       "fri": [ [ "11:30", "23:00" ] ],
       "sat": [ [ "11:30", "23:00" ] ],
       "sun": [ [ "11:30", "21:30" ] ]
-  }
 },
 {
   "id": 84,
@@ -1550,7 +1467,6 @@
       "fri": [ [ "11:00", "21:00" ] ],
       "sat": [ [ "11:00", "21:00" ] ],
       "sun": [ [ "11:30", "18:00" ] ]
-  }
 },
 {
   "id": 85,
@@ -1568,7 +1484,6 @@
       "fri": [ [ "07:00", "15:00" ] ],
       "sat": [ [ "07:00", "15:00" ] ],
       "sun": [ [ "07:00", "15:00" ] ]
-  }
 },
 {
   "id": 86,
@@ -1586,7 +1501,6 @@
       "fri": [ [ "17:00", "23:00" ] ],
       "sat": [ [ "17:00", "23:00" ] ],
       "sun": [ [ "17:00", "21:00" ] ]
-  }
 },
 {
   "id": 87,
@@ -1604,7 +1518,6 @@
       "fri": [ [ "11:30", "22:00" ] ],
       "sat": [ [ "11:30", "22:00" ] ],
       "sun": [ [ "11:30", "21:00" ] ]
-  }
 },
 {
   "id": 88,
@@ -1622,7 +1535,6 @@
       "fri": [ [ "11:30", "21:30" ] ],
       "sat": [ [ "11:30", "21:30" ] ],
       "sun": [ [ "11:30", "21:30" ] ]
-  }
 },
 {
   "id": 89,
@@ -1640,7 +1552,6 @@
       "fri": [ [ "17:00", "23:00" ] ],
       "sat": [ [ "17:00", "23:00" ] ],
       "sun": [ [ "17:00", "21:00" ] ]
-  }
 },
 {
   "id": 90,
@@ -1658,7 +1569,6 @@
       "fri": [ [ "10:00", "22:00" ] ],
       "sat": [ [ "09:00", "22:00" ] ],
       "sun": [ [ "09:00", "21:00" ] ]
-  }
 },
 {
   "id": 91,
@@ -1676,7 +1586,6 @@
       "fri": [ [ "17:00", "22:00" ] ],
       "sat": [ [ "17:00", "22:00" ] ],
       "sun": [ [ "16:00", "21:00" ] ]
-  }
 },
 {
   "id": 92,
@@ -1694,7 +1603,6 @@
       "fri": [ [ "10:30", "22:00" ] ],
       "sat": [ [ "11:00", "22:00" ] ],
       "sun": [ [ "11:00", "22:00" ] ]
-  }
 },
 {
   "id": 93,
@@ -1712,7 +1620,6 @@
       "fri": [ [ "17:00", "23:00" ] ],
       "sat": [ [ "17:00", "23:00" ] ],
       "sun": [ [ "16:45", "21:00" ] ]
-  }
 },
 {
   "id": 94,
@@ -1730,7 +1637,6 @@
       "fri": [ [ "16:00", "23:00" ] ],
       "sat": [ [ "16:00", "23:00" ] ],
       "sun": [ [ "13:00", "21:00" ] ]
-  }
 },
 {
   "id": 95,
@@ -1748,7 +1654,6 @@
       "fri": [ [ "17:00", "23:00" ] ],
       "sat": [ [ "17:00", "23:00" ] ],
       "sun": [ [ "17:00", "21:00" ] ]
-  }
 },
 {
   "id": 96,
@@ -1766,7 +1671,6 @@
       "fri": [ [ "17:00", "23:00" ] ],
       "sat": [ [ "17:00", "23:00" ] ],
       "sun": [ [ "16:00", "21:00" ] ]
-  }
 },
 {
   "id": 97,
@@ -1784,7 +1688,6 @@
       "fri": [ [ "11:30", "23:00" ] ],
       "sat": [ [ "11:30", "23:00" ] ],
       "sun": [ [ "11:30", "21:00" ] ]
-  }
 },
 {
   "id": 98,
@@ -1802,7 +1705,6 @@
       "fri": [ [ "17:00", "23:00" ] ],
       "sat": [ [ "17:00", "23:00" ] ],
       "sun": [ [ "Closed" ] ]
-  }
 },
 {
   "id": 99,
@@ -1820,7 +1722,6 @@
       "fri": [ [ "17:00", "03:00" ] ],
       "sat": [ [ "17:00", "03:00" ] ],
       "sun": [ [ "17:00", "02:00" ] ]
-  }
 },
 {
   "id": 100,
