@@ -3,20 +3,21 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
+const db = require('./data/db'); // ✅ keep only this db import
 
 const app = express();
 const PORT = process.env.PORT || 5050;
-const db = require('./data/db');
 
 app.use(cors());
 app.use(express.json());
 
 // ---------------------------
-// Load dataset (still used for in-memory reservations)
+// Load data from SQLite
 // ---------------------------
-const DATA_PATH = path.join(__dirname, 'data', 'restaurants.json');
-
-let RESTAURANTS = JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'));
+const RESTAURANTS = db.prepare('SELECT * FROM restaurants').all().map(r => ({
+  ...r,
+  hours: JSON.parse(r.hours)
+}));
 
 // In-memory reservations
 const reservations = [];
@@ -103,11 +104,10 @@ app.get('/api/restaurants', (req, res) => {
       } catch {
         parsedHours = null;
       }
-    
-      const open_now = isOpenNow(parsedHours);  // ← no more req.query.now
+
+      const open_now = isOpenNow(parsedHours);
       return { ...r, hours: parsedHours, open_now };
     });
-    
 
     // Apply open_now filter if requested
     let filtered = restaurants;
@@ -153,23 +153,16 @@ app.get('/api/restaurants/:id', (req, res) => {
   }
 });
 
-
 // --------------------------------
 // Reservations (persisted in SQLite)
 // --------------------------------
-
-// Make reservation inside a transaction to avoid double-booking
 const makeReservation = db.transaction(({ restaurantId, name, partySize, date, time }) => {
-  // 1) Confirm restaurant exists + get capacity
   const rest = db.prepare('SELECT id, tables FROM restaurants WHERE id = ?').get(Number(restaurantId));
   if (!rest) return { error: 'Restaurant not found', status: 404 };
 
   const capacity = typeof rest.tables === 'number' ? rest.tables : 5;
-
-  // 2) Snap time to 30-min slot (HH:mm)
   const slot = normalizeTimeToSlot(time);
 
-  // 3) Count existing reservations for that slot
   const count = db.prepare(
     'SELECT COUNT(*) AS n FROM reservations WHERE restaurant_id = ? AND date = ? AND time = ?'
   ).get(rest.id, date, slot).n;
@@ -178,7 +171,6 @@ const makeReservation = db.transaction(({ restaurantId, name, partySize, date, t
     return { error: 'No tables available at this time', status: 409 };
   }
 
-  // 4) Insert reservation
   const info = db.prepare(
     'INSERT INTO reservations (restaurant_id, name, party_size, date, time) VALUES (?, ?, ?, ?, ?)'
   ).run(rest.id, name.trim(), Number(partySize), date, slot);
@@ -216,7 +208,6 @@ app.get('/api/reservations', (_req, res) => {
     res.status(500).json({ error: 'Failed to read reservations' });
   }
 });
-
 
 // ---------------------------
 // Start server

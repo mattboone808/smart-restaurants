@@ -1,5 +1,16 @@
 // frontend/script.js
-const BASE_URL = 'http://localhost:5050';
+
+// 🔎 Auto-detect the backend URL.
+
+const BASE_URL = (() => {
+  const host = window.location.hostname; // e.g., capstone-5502.app.github.dev OR localhost
+  if (host.endsWith('app.github.dev')) {
+    return `https://${host.replace(/-\d+\.app\.github\.dev$/, '-5050.app.github.dev')}`;
+  }
+  return 'http://localhost:5050';
+})();
+console.log('[SmartRestaurants] API:', BASE_URL);
+
 const PREF_KEY = 'sr_prefs_v1';
 
 const form = document.getElementById('searchForm');
@@ -47,7 +58,8 @@ function cardHtml(r) {
 // ✅ Populate City and Cuisine dropdowns dynamically
 async function populateFilters() {
   try {
-    const res = await fetch(`${BASE_URL}/api/restaurants?city=&cuisine=&price=`);
+    // Just hit /api/restaurants with no params to get the full set
+    const res = await fetch(`${BASE_URL}/api/restaurants`);
     if (!res.ok) throw new Error('Failed to fetch restaurants');
     const data = await res.json();
 

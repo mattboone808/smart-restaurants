@@ -1,1710 +1,13 @@
 [
-{
-  "id": 1,
-  "name": "29th Street Tavern",
-  "city": "Baltimore",
-  "cuisine": "Bars",
-  "price": "$",
-  "address": "398 W 29th St, Baltimore, MD 21211",
-  "tables": 11,
-  "hours": {
-      "mon": [ [ "11:00", "02:00" ] ],
-      "tue": [ [ "11:00", "02:00" ] ],
-      "wed": [ [ "11:00", "02:00" ] ],
-      "thu": [ [ "11:00", "02:00" ] ],
-      "fri": [ [ "11:00", "02:00" ] ],
-      "sat": [ [ "11:00", "02:00" ] ],
-      "sun": [ [ "11:00", "02:00" ] ]
-  }
-},
-{
-  "id": 2,
-  "name": "Abbey Burger Bistro",
-  "city": "Baltimore",
-  "cuisine": "American",
-  "price": "$$",
-  "address": "811 S Broadway, Baltimore, MD 21231",
-  "tables": 16,
-  "hours": {
-      "mon": [ [ "16:00", "23:00" ] ],
-      "tue": [ [ "16:00", "23:00" ] ],
-      "wed": [ [ "11:30", "23:00" ] ],
-      "thu": [ [ "11:30", "24:00" ] ],
-      "fri": [ [ "11:30", "24:00" ] ],
-      "sat": [ [ "11:30", "24:00" ] ],
-      "sun": [ [ "11:30", "23:00" ] ]
-  }
-},
-{
-  "id": 3,
-  "name": "Alma Cocina Latina",
-  "city": "Baltimore",
-  "cuisine": "Latin / Venezuelan",
-  "price": "$$$",
-  "address": "24 W North Ave, Baltimore, MD 21201",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "17:00", "22:00" ] ],
-      "tue": [ [ "17:00", "22:00" ] ],
-      "wed": [ [ "17:00", "22:00" ] ],
-      "thu": [ [ "17:00", "22:00" ] ],
-      "fri": [ [ "17:00", "22:00" ] ],
-      "sat": [ [ "17:00", "22:00" ] ],
-      "sun": [ [ "17:00", "22:00" ] ]
-  }
-},
-{
-  "id": 4,
-  "name": "Amicci's",
-  "city": "Baltimore",
-  "cuisine": "Italian",
-  "price": "$$",
-  "address": "231 S High St, Baltimore, MD 21202",
-  "tables": 18,
-  "hours": {
-      "mon": [ [ "11:00", "21:00" ] ],
-      "tue": [ [ "11:00", "21:00" ] ],
-      "wed": [ [ "11:00", "21:00" ] ],
-      "thu": [ [ "11:00", "21:00" ] ],
-      "fri": [ [ "11:00", "22:00" ] ],
-      "sat": [ [ "11:00", "22:00" ] ],
-      "sun": [ [ "11:00", "21:00" ] ]
-  }
-},
-{
-  "id": 5,
-  "name": "Ammoora",
-  "city": "Baltimore",
-  "cuisine": "Lebanese",
-  "price": "$$$$",
-  "address": "751 Key Hwy, Baltimore, MD 21230",
-  "tables": 10,
-  "hours": {
-      "mon": [ [ "Closed" ] ],
-      "tue": [ [ "Closed" ] ],
-      "wed": [ [ "17:00", "22:00" ] ],
-      "thu": [ [ "17:00", "22:00" ] ],
-      "fri": [ [ "16:30", "23:00" ] ],
-      "sat": [ [ "16:30", "23:00" ] ],
-      "sun": [ [ "11:00", "22:00" ] ]
-  }
-},
-{
-  "id": 6,
-  "name": "Ampersea",
-  "city": "Baltimore",
-  "cuisine": "American",
-  "price": "$$$",
-  "address": "1417 Thames St, Baltimore, MD 21231",
-  "tables": 22,
-  "hours": {
-      "mon": [ [ "12:00", "21:00" ] ],
-      "tue": [ [ "12:00", "21:00" ] ],
-      "wed": [ [ "12:00", "21:00" ] ],
-      "thu": [ [ "12:00", "21:00" ] ],
-      "fri": [ [ "12:00", "22:00" ] ],
-      "sat": [ [ "12:00", "23:00" ] ],
-      "sun": [ [ "12:00", "21:00" ] ]
-  }
-},
-{
-  "id": 7,
-  "name": "Kohinoor Restaurant",
-  "city": "Baltimore",
-  "cuisine": "Indian",
-  "price": "$$",
-  "address": "5926 York Rd, Baltimore, MD 21212",
-  "tables": 14,
-  "hours": {
-    "mon": [["12:00", "24:00"]],
-    "tue": [["12:00", "24:00"]],
-    "wed": [["12:00", "24:00"]],
-    "thu": [["12:00", "24:00"]],
-    "fri": [["12:00", "24:00"]],
-    "sat": [["12:00", "24:00"]],
-    "sun": [["12:00", "24:00"]]
-  }
-},
-{
-  "id": 8,
-  "name": "Angeli's Pizzeria",
-  "city": "Baltimore",
-  "cuisine": "Italian",
-  "price": "$$",
-  "address": "413 S High St, Baltimore, MD 21202",
-  "tables": 26,
-  "hours": {
-      "mon": [ [ "16:00", "22:00" ] ],
-      "tue": [ [ "16:00", "22:00" ] ],
-      "wed": [ [ "16:00", "22:00" ] ],
-      "thu": [ [ "16:00", "22:00" ] ],
-      "fri": [ [ "11:00", "23:00" ] ],
-      "sat": [ [ "11:00", "23:00" ] ],
-      "sun": [ [ "11:00", "22:00" ] ]
-  }
-},
-{
-  "id": 9,
-  "name": "Angie's Seafood",
-  "city": "Baltimore",
-  "cuisine": "Seafood",
-  "price": "$$$",
-  "address": "1727 E Pratt St, Baltimore, MD 21231",
-  "tables": 15,
-  "hours": {
-      "mon": [ [ "12:00", "22:00" ] ],
-      "tue": [ [ "12:00", "22:00" ] ],
-      "wed": [ [ "12:00", "22:00" ] ],
-      "thu": [ [ "12:00", "23:00" ] ],
-      "fri": [ [ "12:00", "24:00" ] ],
-      "sat": [ [ "12:00", "24:00" ] ],
-      "sun": [ [ "12:00", "10:00" ] ]
-  }
-},
-{
-  "id": 10,
-  "name": "Applebee's Grill + Bar",
-  "city": "Baltimore",
-  "cuisine": "American",
-  "price": "$$",
-  "address": "6798 Reisterstown Rd, Baltimore, MD 21215",
-  "tables": 25,
-  "hours": {
-      "mon": [ [ "11:30", "23:00" ] ],
-      "tue": [ [ "11:30", "23:00" ] ],
-      "wed": [ [ "11:30", "23:00" ] ],
-      "thu": [ [ "11:30", "23:00" ] ],
-      "fri": [ [ "11:30", "24:00" ] ],
-      "sat": [ [ "11:30", "24:00" ] ],
-      "sun": [ [ "11:30", "23:00" ] ]
-  }
-},
-{
-  "id": 11,
-  "name": "Avenue Kitchen & Bar",
-  "city": "Baltimore",
-  "cuisine": "American",
-  "price": "$$$",
-  "address": "911 W 36th St, Baltimore, MD 21211",
-  "tables": 12,
-  "hours": {
-      "mon": [ [ "12:00", "23:00" ] ],
-      "tue": [ [ "12:00", "23:00" ] ],
-      "wed": [ [ "12:00", "24:00" ] ],
-      "thu": [ [ "12:00", "24:00" ] ],
-      "fri": [ [ "12:00", "24:00" ] ],
-      "sat": [ [ "11:00", "24:00" ] ],
-      "sun": [ [ "11:00", "22:00" ] ]
-  }
-},
-{
-  "id": 12,
-  "name": "Azumi Sushi Bar",
-  "city": "Baltimore",
-  "cuisine": "Japanese / Sushi / Teppanyaki",
-  "price": "$$$",
-  "address": "725 Aliceanna St, Baltimore, MD 21202",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "12:00", "22:00" ] ],
-      "tue": [ [ "12:00", "22:00" ] ],
-      "wed": [ [ "12:00", "22:00" ] ],
-      "thu": [ [ "12:00", "23:00" ] ],
-      "fri": [ [ "12:00", "23:00" ] ],
-      "sat": [ [ "12:00", "23:00" ] ],
-      "sun": [ [ "16:00", "22:00" ] ]
-  }
-},
-{
-  "id": 13,
-  "name": "B&O American Brasserie",
-  "city": "Baltimore",
-  "cuisine": "American",
-  "price": "$$",
-  "address": "2 N Charles St, Baltimore, MD 21201",
-  "tables": 28,
-  "hours": {
-      "mon": [ [ "06:30", "22:00" ] ],
-      "tue": [ [ "06:30", "22:00" ] ],
-      "wed": [ [ "06:30", "22:00" ] ],
-      "thu": [ [ "06:30", "22:00" ] ],
-      "fri": [ [ "06:30", "23:00" ] ],
-      "sat": [ [ "08:00", "23:00" ] ],
-      "sun": [ [ "08:00", "22:00" ] ]
-  }
-},
-{
-  "id": 14,
-  "name": "Bab Alyemen",
-  "city": "Baltimore",
-  "cuisine": "American",
-  "price": "$$",
-  "address": "3320 Greenmount Ave, Baltimore, MD 21218",
-  "tables": 6,
-  "hours": {
-      "mon": [ [ "11:30", "22:00" ] ],
-      "tue": [ [ "11:30", "22:00" ] ],
-      "wed": [ [ "11:30", "22:00" ] ],
-      "thu": [ [ "11:30", "22:00" ] ],
-      "fri": [ [ "11:30", "22:00" ] ],
-      "sat": [ [ "11:30", "22:00" ] ],
-      "sun": [ [ "11:30", "22:00" ] ]
-  }
-},
-{
-  "id": 15,
-  "name": "Baltimore Brewhouse",
-  "city": "Baltimore",
-  "cuisine": "Breakfast & Brunch",
-  "price": "$",
-  "address": "511 W Pratt St, Baltimore, MD 21201",
-  "tables": 10,
-  "hours": {
-      "mon": [ [ "07:00", "15:00" ] ],
-      "tue": [ [ "07:00", "15:00" ] ],
-      "wed": [ [ "07:00", "15:00" ] ],
-      "thu": [ [ "07:00", "15:00" ] ],
-      "fri": [ [ "07:00", "15:00" ] ],
-      "sat": [ [ "07:00", "15:00" ] ],
-      "sun": [ [ "07:00", "15:00" ] ]
-  }
-},
-{
-  "id": 16,
-  "name": "Bao Di",
-  "city": "Baltimore",
-  "cuisine": "Seafood",
-  "price": "$",
-  "address": "3215 Eastern Ave, Baltimore, MD 21224",
-  "tables": 8,
-  "hours": {
-      "mon": [ [ "Closed" ] ],
-      "tue": [ [ "11:00", "21:00" ] ],
-      "wed": [ [ "11:00", "21:00" ] ],
-      "thu": [ [ "11:00", "21:00" ] ],
-      "fri": [ [ "11:00", "23:00" ] ],
-      "sat": [ [ "11:00", "23:00" ] ],
-      "sun": [ [ "11:00", "21:00" ] ]
-  }
-},
-{
-  "id": 17,
-  "name": "Barrel House Tavern",
-  "city": "Baltimore",
-  "cuisine": "American / Tavern",
-  "price": "$$",
-  "address": "tables",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "17:00", "22:00" ] ],
-      "tue": [ [ "17:00", "22:00" ] ],
-      "wed": [ [ "17:00", "22:00" ] ],
-      "thu": [ [ "17:00", "22:00" ] ],
-      "fri": [ [ "17:00", "23:00" ] ],
-      "sat": [ [ "17:00", "23:00" ] ],
-      "sun": [ [ "17:00", "22:00" ] ]
-  }
-},
-{
-  "id": 18,
-  "name": "Be More Thai Restaurant",
-  "city": "Baltimore",
-  "cuisine": "Thai",
-  "price": "$$",
-  "address": "1006 LIght St, Baltimore, MD 21230",
-  "tables": 19,
-  "hours": {
-      "mon": [ [ "11:30", "22:00" ] ],
-      "tue": [ [ "16:00", "22:00" ] ],
-      "wed": [ [ "16:00", "22:00" ] ],
-      "thu": [ [ "11:30", "22:00" ] ],
-      "fri": [ [ "11:30", "22:30" ] ],
-      "sat": [ [ "11:30", "22:30" ] ],
-      "sun": [ [ "11:30", "22:00" ] ]
-  }
-},
-{
-  "id": 19,
-  "name": "Be-One Korean BBQ",
-  "city": "Baltimore",
-  "cuisine": "Korean",
-  "price": "$$",
-  "address": "2016 Maryland Ave, Baltimore, MD 21218",
-  "tables": 12,
-  "hours": {
-      "mon": [ [ "11:00", "22:30" ] ],
-      "tue": [ [ "11:00", "22:30" ] ],
-      "wed": [ [ "11:00", "22:30" ] ],
-      "thu": [ [ "11:00", "22:45" ] ],
-      "fri": [ [ "11:45", "22:45" ] ],
-      "sat": [ [ "11:00", "22:45" ] ],
-      "sun": [ [ "12:00", "22:30" ] ]
-  }
-},
-{
-  "id": 20,
-  "name": "Benny's",
-  "city": "Baltimore",
-  "cuisine": "Italian",
-  "price": "$$",
-  "address": "300 S High St, Baltimore, MD 21202",
-  "tables": 5,
-  "hours": {
-      "mon": [ [ "Closed" ] ],
-      "tue": [ [ "17:00", "22:00" ] ],
-      "wed": [ [ "17:00", "22:00" ] ],
-      "thu": [ [ "17:00", "22:00" ] ],
-      "fri": [ [ "17:00", "22:00" ] ],
-      "sat": [ [ "12:00", "22:00" ] ],
-      "sun": [ [ "12:00", "20:00" ] ]
-  }
-},
-{
-  "id": 21,
-  "name": "Birroteca Baltimore",
-  "city": "Baltimore",
-  "cuisine": "Italian",
-  "price": "$$",
-  "address": "1520 Clipper Rd, Baltimore, MD 21211",
-  "tables": 23,
-  "hours": {
-      "mon": [ [ "Closed" ] ],
-      "tue": [ [ "Closed" ] ],
-      "wed": [ [ "16:00", "20:30" ] ],
-      "thu": [ [ "16:00", "20:30" ] ],
-      "fri": [ [ "16:00", "21:30" ] ],
-      "sat": [ [ "16:00", "21:30" ] ],
-      "sun": [ [ "12:00", "19:30" ] ]
-  }
-},
-{
-  "id": 22,
-  "name": "Blackwall Hitch",
-  "city": "Baltimore",
-  "cuisine": "Seafood",
-  "price": "$$",
-  "address": "700 E Pratt St, Baltimore, MD 21202",
-  "tables": 17,
-  "hours": {
-      "mon": [ [ "11:00", "21:00" ] ],
-      "tue": [ [ "11:00", "21:00" ] ],
-      "wed": [ [ "11:00", "21:00" ] ],
-      "thu": [ [ "11:00", "21:00" ] ],
-      "fri": [ [ "11:00", "22:00" ] ],
-      "sat": [ [ "10:00", "22:00" ] ],
-      "sun": [ [ "10:00", "21:00" ] ]
-  }
-},
-{
-  "id": 23,
-  "name": "Picante Taco",
-  "city": "Baltimore",
-  "cuisine": "Mexican",
-  "price": "$",
-  "address": "411 S High St, Baltimore, MD 21202",
-  "tables": 10,
-  "hours": {
-      "mon": [ [ "11:00", "22:00" ] ],
-      "tue": [ [ "11:00", "22:00" ] ],
-      "wed": [ [ "11:00", "22:00" ] ],
-      "thu": [ [ "11:00", "22:00" ] ],
-      "fri": [ [ "11:00", "23:00" ] ],
-      "sat": [ [ "11:00", "23:00" ] ],
-      "sun": [ [ "11:00", "21:00" ] ]
-  }
-},
-{
-  "id": 24,
-  "name": "BLK Swan",
-  "city": "Baltimore",
-  "cuisine": "American",
-  "price": "$$",
-  "address": "1302 Fleet St, Baltimore, MD 21202",
-  "tables": 13,
-  "hours": {
-      "mon": [ [ "17:00", "24:00" ] ],
-      "tue": [ [ "17:00", "24:00" ] ],
-      "wed": [ [ "11:00", "24:00" ] ],
-      "thu": [ [ "11:00", "24:00" ] ],
-      "fri": [ [ "11:00", "01:00" ] ],
-      "sat": [ [ "10:00", "01:00" ] ],
-      "sun": [ [ "11:00", "23:00" ] ]
-  }
-},
-{
-  "id": 25,
-  "name": "BLK Swan (Harbor East)",
-  "city": "Baltimore",
-  "cuisine": "New American",
-  "price": "$$$",
-  "address": "1302 Fleet St, Baltimore, MD 21202",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "17:00", "24:00" ] ],
-      "tue": [ [ "17:00", "24:00" ] ],
-      "wed": [ [ "17:00", "24:00" ] ],
-      "thu": [ [ "17:00", "24:00" ] ],
-      "fri": [ [ "17:00", "01:00" ] ],
-      "sat": [ [ "10:00", "01:00" ] ],
-      "sun": [ [ "10:00", "24:00" ] ]
-  }
-},
-{
-  "id": 26,
-  "name": "Blue Moon Cafe",
-  "city": "Baltimore",
-  "cuisine": "Breakfast & Brunch",
-  "price": "$$",
-  "address": "1621 Aliceanna St, Baltimore, MD 21231",
-  "tables": 4,
-  "hours": {
-      "mon": [ [ "07:00", "15:00" ] ],
-      "tue": [ [ "07:00", "15:00" ] ],
-      "wed": [ [ "07:00", "15:00" ] ],
-      "thu": [ [ "07:00", "15:00" ] ],
-      "fri": [ [ "07:00", "15:00" ] ],
-      "sat": [ [ "07:00", "15:00" ] ],
-      "sun": [ [ "07:00", "15:00" ] ]
-  }
-},
-{
-  "id": 27,
-  "name": "Blue Moon Café",
-  "city": "Baltimore",
-  "cuisine": "Breakfast / Brunch",
-  "price": "$$",
-  "address": "1621 Aliceanna St, Baltimore, MD 21231",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "07:00", "15:00" ] ],
-      "tue": [ [ "07:00", "15:00" ] ],
-      "wed": [ [ "07:00", "15:00" ] ],
-      "thu": [ [ "07:00", "15:00" ] ],
-      "fri": [ [ "07:00", "15:00" ] ],
-      "sat": [ [ "07:00", "15:00" ] ],
-      "sun": [ [ "07:00", "15:00" ] ]
-  }
-},
-{
-  "id": 28,
-  "name": "Blue Moon Too",
-  "city": "Baltimore",
-  "cuisine": "Breakfast & Brunch",
-  "price": "$$",
-  "address": "1024 Light St, Baltimore, MD 21230",
-  "tables": 24,
-  "hours": {
-      "mon": [ [ "07:00", "15:00" ] ],
-      "tue": [ [ "07:00", "15:00" ] ],
-      "wed": [ [ "07:00", "15:00" ] ],
-      "thu": [ [ "07:00", "15:00" ] ],
-      "fri": [ [ "07:00", "15:00" ] ],
-      "sat": [ [ "07:00", "15:00" ] ],
-      "sun": [ [ "07:00", "15:00" ] ]
-  }
-},
-{
-  "id": 29,
-  "name": "Bmore Seafood",
-  "city": "Baltimore",
-  "cuisine": "Seafood",
-  "price": "$$",
-  "address": "2324 Boston St, Baltimore, MD 21224",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "12:00", "22:00" ] ],
-      "tue": [ [ "12:00", "22:00" ] ],
-      "wed": [ [ "12:00", "22:00" ] ],
-      "thu": [ [ "12:00", "22:00" ] ],
-      "fri": [ [ "12:00", "23:00" ] ],
-      "sat": [ [ "12:00", "23:00" ] ],
-      "sun": [ [ "12:00", "22:00" ] ]
-  }
-},
-{
-  "id": 30,
-  "name": "Bodhi Federal Hill",
-  "city": "Baltimore",
-  "cuisine": "Thai",
-  "price": "$$",
-  "address": "1444 Light St, Baltimore, MD 21230",
-  "tables": 15,
-  "hours": {
-      "mon": [ [ "11:00", "22:00" ] ],
-      "tue": [ [ "11:00", "22:00" ] ],
-      "wed": [ [ "11:00", "22:00" ] ],
-      "thu": [ [ "11:00", "22:00" ] ],
-      "fri": [ [ "11:00", "01:00" ] ],
-      "sat": [ [ "11:00", "01:00" ] ],
-      "sun": [ [ "11:00", "22:00" ] ]
-  }
-},
-{
-  "id": 31,
-  "name": "Cafe 1908",
-  "city": "Baltimore",
-  "cuisine": "Seafood",
-  "price": "$$",
-  "address": "7 W Preston St, Baltimore, MD 21201",
-  "tables": 8,
-  "hours": {
-      "mon": [ [ "8:00", "23:00" ] ],
-      "tue": [ [ "8:00", "23:00" ] ],
-      "wed": [ [ "8:00", "23:00" ] ],
-      "thu": [ [ "8:00", "23:00" ] ],
-      "fri": [ [ "8:00", "23:00" ] ],
-      "sat": [ [ "11:00", "23:00" ] ],
-      "sun": [ [ "12:00", "20:00" ] ]
-  }
-},
-{
-  "id": 32,
-  "name": "Cafe Dear Leon",
-  "city": "Baltimore",
-  "cuisine": "Breakfast & Brunch",
-  "price": "$$",
-  "address": "2929 O'Donnell St, Baltimore, MD 21224",
-  "tables": 13,
-  "hours": {
-      "mon": [ [ "Closed" ] ],
-      "tue": [ [ "06:00", "15:00" ] ],
-      "wed": [ [ "06:00", "15:00" ] ],
-      "thu": [ [ "Closed" ] ],
-      "fri": [ [ "06:00", "15:00" ] ],
-      "sat": [ [ "06:00", "15:00" ] ],
-      "sun": [ [ "06:00", "15:00" ] ]
-  }
-},
-{
-  "id": 33,
-  "name": "Cafe Fili",
-  "city": "Baltimore",
-  "cuisine": "Lebanese",
-  "price": "$$",
-  "address": "816 Cathedral St, Baltimore, MD 21201",
-  "tables": 14,
-  "hours": {
-      "mon": [ [ "08:00", "19:00" ] ],
-      "tue": [ [ "08:00", "19:00" ] ],
-      "wed": [ [ "08:00", "19:00" ] ],
-      "thu": [ [ "08:00", "19:00" ] ],
-      "fri": [ [ "08:00", "19:00" ] ],
-      "sat": [ [ "08:00", "19:00" ] ],
-      "sun": [ [ "09:00", "16:00" ] ]
-  }
-},
-{
-  "id": 34,
-  "name": "Carrabba's Italian Grill",
-  "city": "Baltimore",
-  "cuisine": "Italian",
-  "price": "$$",
-  "address": "7600 Belair Rd, Baltimore, MD 21236",
-  "tables": 30,
-  "hours": {
-      "mon": [ [ "11:00", "22:00" ] ],
-      "tue": [ [ "11:00", "22:00" ] ],
-      "wed": [ [ "11:00", "22:00" ] ],
-      "thu": [ [ "11:00", "22:00" ] ],
-      "fri": [ [ "11:00", "23:00" ] ],
-      "sat": [ [ "11:00", "23:00" ] ],
-      "sun": [ [ "11:00", "21:00" ] ]
-  }
-},
-{
-  "id": 35,
-  "name": "Chachi's",
-  "city": "Baltimore",
-  "cuisine": "American",
-  "price": "$$",
-  "address": "2223 Maryland Ave, Baltimore, MD 21218",
-  "tables": 12,
-  "hours": {
-      "mon": [ [ "Closed" ] ],
-      "tue": [ [ "17:00", "22:00" ] ],
-      "wed": [ [ "17:00", "22:00" ] ],
-      "thu": [ [ "17:00", "22:00" ] ],
-      "fri": [ [ "17:00", "22:00" ] ],
-      "sat": [ [ "17:00", "22:00" ] ],
-      "sun": [ [ "17:00", "22:00" ] ]
-  }
-},
-{
-  "id": 36,
-  "name": "Charleston",
-  "city": "Baltimore",
-  "cuisine": "American",
-  "price": "$$$$",
-  "address": "1000 Lancaster St, Baltimore, MD 21202",
-  "tables": 9,
-  "hours": {
-      "mon": [ [ "17:30", "21:00" ] ],
-      "tue": [ [ "17:30", "21:00" ] ],
-      "wed": [ [ "17:30", "21:00" ] ],
-      "thu": [ [ "17:30", "21:00" ] ],
-      "fri": [ [ "17:00", "21:30" ] ],
-      "sat": [ [ "17:00", "21:30" ] ],
-      "sun": [ [ "17:00", "20:30" ] ]
-  }
-},
-{
-  "id": 37,
-  "name": "Charleston Restaurant",
-  "city": "Baltimore",
-  "cuisine": "Fine Dining / New American",
-  "price": "$$$$",
-  "address": "1000 Lancaster St, Baltimore, MD 21202",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "17:30", "21:00" ] ],
-      "tue": [ [ "17:30", "21:00" ] ],
-      "wed": [ [ "17:30", "21:00" ] ],
-      "thu": [ [ "17:30", "21:00" ] ],
-      "fri": [ [ "17:00", "21:30" ] ],
-      "sat": [ [ "17:00", "21:30" ] ],
-      "sun": [ [ "17:00", "20:30" ] ]
-  }
-},
-{
-  "id": 38,
-  "name": "Charm City Thai Kitchen",
-  "city": "Baltimore",
-  "cuisine": "Thai",
-  "price": "$$",
-  "address": "418 E 30th St, Baltimore, MD 21218",
-  "tables": 20,
-  "hours": {
-      "mon": [ [ "14:00", "03:00" ] ],
-      "tue": [ [ "14:00", "03:00" ] ],
-      "wed": [ [ "14:00", "03:00" ] ],
-      "thu": [ [ "14:00", "03:00" ] ],
-      "fri": [ [ "14:00", "03:00" ] ],
-      "sat": [ [ "14:00", "03:00" ] ],
-      "sun": [ [ "14:00", "03:00" ] ]
-  }
-},
-{
-  "id": 39,
-  "name": "Charmed Kitchen",
-  "city": "Baltimore",
-  "cuisine": "Breakfast & Brunch",
-  "price": "$$",
-  "address": "123 S Chester St, Baltimore, MD 21231",
-  "tables": 3,
-  "hours": {
-      "mon": [ [ "07:00", "21:00" ] ],
-      "tue": [ [ "07:00", "21:00" ] ],
-      "wed": [ [ "07:00", "21:00" ] ],
-      "thu": [ [ "07:00", "21:00" ] ],
-      "fri": [ [ "07:00", "21:00" ] ],
-      "sat": [ [ "08:00", "21:00" ] ],
-      "sun": [ [ "08:00", "11:00" ] ]
-  }
-},
-{
-  "id": 40,
-  "name": "Cinghiale",
-  "city": "Baltimore",
-  "cuisine": "Italian",
-  "price": "$$$",
-  "address": "822 Lancaster St, Baltimore, MD 21202",
-  "tables": 24,
-  "hours": {
-      "mon": [ [ "17:00", "22:00" ] ],
-      "tue": [ [ "11:30", "22:00" ] ],
-      "wed": [ [ "11:30", "22:00" ] ],
-      "thu": [ [ "11:30", "22:00" ] ],
-      "fri": [ [ "11:30", "22:00" ] ],
-      "sat": [ [ "17:00", "22:00" ] ],
-      "sun": [ [ "17:00", "22:00" ] ]
-  }
-},
-{
-  "id": 41,
-  "name": "Circus Bar & Restaurant",
-  "city": "Baltimore",
-  "cuisine": "American",
-  "price": "$$$$",
-  "address": "427 E Baltimore St, Baltimore, MD 21202",
-  "tables": 22,
-  "hours": {
-      "mon": [ [ "12:00", "02:00" ] ],
-      "tue": [ [ "12:00", "02:00" ] ],
-      "wed": [ [ "12:00", "02:00" ] ],
-      "thu": [ [ "12:00", "02:00" ] ],
-      "fri": [ [ "12:00", "02:00" ] ],
-      "sat": [ [ "12:00", "02:00" ] ],
-      "sun": [ [ "12:00", "02:00" ] ]
-  }
-},
-{
-  "id": 42,
-  "name": "Clavel",
-  "city": "Baltimore",
-  "cuisine": "Mexican / Taqueria",
-  "price": "$$",
-  "address": "225 W 23rd St, Baltimore, MD 21211",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "17:00", "23:00" ] ],
-      "tue": [ [ "17:00", "23:00" ] ],
-      "wed": [ [ "17:00", "23:00" ] ],
-      "thu": [ [ "17:00", "23:00" ] ],
-      "fri": [ [ "17:00", "23:00" ] ],
-      "sat": [ [ "17:00", "23:00" ] ],
-      "sun": [ [ "Closed" ] ]
-  }
-},
-{
-  "id": 43,
-  "name": "Clock Restoration",
-  "city": "Baltimore",
-  "cuisine": "American",
-  "price": "$$",
-  "address": "31 S Calvert St, Baltimore, MD 21202",
-  "tables": 14,
-  "hours": {
-      "mon": [ [ "Closed" ] ],
-      "tue": [ [ "12:00", "22:00" ] ],
-      "wed": [ [ "12:00", "22:00" ] ],
-      "thu": [ [ "12:00", "22:00" ] ],
-      "fri": [ [ "12:00", "22:00" ] ],
-      "sat": [ [ "11:00", "22:00" ] ],
-      "sun": [ [ "12:00", "21:00" ] ]
-  }
-},
-{
-  "id": 44,
-  "name": "CookHouse",
-  "city": "Baltimore",
-  "cuisine":"New American",
-  "price": "$$$",
-  "address": "1501 Bolton St, Baltimore, MD 21217",
-  "tables": 17,
-  "hours": {
-    "mon": [["Closed"]],
-    "tue": [["Closed"]],
-    "wed": [["18:00", "22:00"]],
-    "thu": [["18:00", "22:00"]],
-    "fri": [["18:00", "22:00"]],
-    "sat": [["18:00", "01:00"]],
-    "sun": [["Closed"]]
-  }
-},
-{
-  "id": 45,
-  "name": "Costas Inn",
-  "city": "Baltimore",
-  "cuisine": "Seafood",
-  "price": "$$",
-  "address": "4100 N Point Blvd, Baltimore, MD 21222",
-  "tables": 18,
-  "hours": {
-      "mon": [ [ "11:00", "21:00" ] ],
-      "tue": [ [ "11:00", "21:00" ] ],
-      "wed": [ [ "11:00", "21:00" ] ],
-      "thu": [ [ "11:00", "21:00" ] ],
-      "fri": [ [ "11:00", "22:00" ] ],
-      "sat": [ [ "11:00", "22:00" ] ],
-      "sun": [ [ "11:00", "21:00" ] ]
-  }
-},
-{
-  "id": 46,
-  "name": "Costiera",
-  "city": "Baltimore",
-  "cuisine": "Italian",
-  "price": "$$",
-  "address": "415 S Central Ave, Baltimore, MD 21202",
-  "tables": 15,
-  "hours": {
-      "mon": [ [ "16:00", "22:00" ] ],
-      "tue": [ [ "16:00", "22:00" ] ],
-      "wed": [ [ "16:00", "22:00" ] ],
-      "thu": [ [ "16:00", "22:00" ] ],
-      "fri": [ [ "16:00", "22:00" ] ],
-      "sat": [ [ "16:00", "22:00" ] ],
-      "sun": [ [ "Closed" ] ]
-  }
-},
-{
-  "id": 47,
-  "name": "David and Dad's Cafe",
-  "city": "Baltimore",
-  "cuisine": "Breakfast & Brunch",
-  "price": "$",
-  "address": "115 N Charles St, Baltimore, MD 21201",
-  "tables": 17,
-  "hours": {
-      "mon": [ [ "06:30", "15:00" ] ],
-      "tue": [ [ "06:30", "15:00" ] ],
-      "wed": [ [ "06:30", "15:00" ] ],
-      "thu": [ [ "06:30", "15:00" ] ],
-      "fri": [ [ "06:30", "15:00" ] ],
-      "sat": [ [ "08:00", "13:00" ] ],
-      "sun": [ [ "Closed" ] ]
-  }
-},
-{
-  "id": 48,
-  "name": "Dalesio's of Little Italy",
-  "city": "Baltimore",
-  "cuisine": "Italian",
-  "price": "$$",
-  "address": "829 Eastern Ave, Baltimore, MD 21202",
-  "tables": 15,
-  "hours": {
-    "mon": [["17:00", "21:00"]],
-    "tue": [["17:00", "21:00"]],
-    "wed": [["17:00", "21:00"]],
-    "thu": [["17:00", "21:00"]],
-    "fri": [["16:00", "22:00"]],
-    "sat": [["12:00", "22:00"]],
-    "sun": [["Closed"]]
-  }
-},
-{
-  "id": 49,
-  "name": "Dear Charles",
-  "city": "Baltimore",
-  "cuisine": "Breakfast & Brunch",
-  "price": "$$",
-  "address": "3215 N Charles St, Baltimore, MD 21218",
-  "tables": 25,
-  "hours": {
-      "mon": [ [ "07:00", "22:00" ] ],
-      "tue": [ [ "07:00", "22:00" ] ],
-      "wed": [ [ "07:00", "22:00" ] ],
-      "thu": [ [ "07:00", "22:00" ] ],
-      "fri": [ [ "07:00", "22:00" ] ],
-      "sat": [ [ "07:00", "22:00" ] ],
-      "sun": [ [ "07:00", "22:00" ] ]
-  }
-},
-{
-  "id": 50,
-  "name": "Dooby's",
-  "city": "Baltimore",
-  "cuisine": "Asian Fusion",
-  "price": "$$",
-  "address": "802 N Charles St, Baltimore, MD 21201",
-  "tables": 15,
-  "hours": {
-      "mon": [ [ "08:00", "18:00" ] ],
-      "tue": [ [ "08:00", "18:00" ] ],
-      "wed": [ [ "08:00", "18:00" ] ],
-      "thu": [ [ "08:00", "18:00" ] ],
-      "fri": [ [ "08:00", "18:00" ] ],
-      "sat": [ [ "08:00", "18:00" ] ],
-      "sun": [ [ "08:00", "15:00" ] ]
-  }
-},
-{
-  "id": 51,
-  "name": "Duck Duck Goose",
-  "city": "Baltimore",
-  "cuisine": "French",
-  "price": "$$$",
-  "address": "814 S Broadway, Baltimore, MD 21231",
-  "tables": 4,
-  "hours": {
-      "mon": [ [ "17:00", "22:00" ] ],
-      "tue": [ [ "17:00", "22:00" ] ],
-      "wed": [ [ "17:00", "22:00" ] ],
-      "thu": [ [ "17:00", "22:00" ] ],
-      "fri": [ [ "17:00", "23:00" ] ],
-      "sat": [ [ "10:00", "23:00" ] ],
-      "sun": [ [ "10:00", "21:00" ] ]
-  }
-},
-{
-  "id": 52,
-  "name": "EJJI",
-  "city": "Baltimore",
-  "cuisine": "Ramen",
-  "price": "$",
-  "address": "711 S Central Ave Fl 2, Baltimore, MD 21202",
-  "tables": 10,
-  "hours": {
-      "mon": [ [ "11:00", "19:00" ] ],
-      "tue": [ [ "11:00", "19:00" ] ],
-      "wed": [ [ "11:00", "19:00" ] ],
-      "thu": [ [ "11:00", "19:00" ] ],
-      "fri": [ [ "11:00", "19:00" ] ],
-      "sat": [ [ "11:00", "19:00" ] ],
-      "sun": [ [ "11:00", "17:00" ] ]
-  }
-},
-{
-  "id": 53,
-  "name": "Ekiben",
-  "city": "Baltimore",
-  "cuisine": "Asian Fusion",
-  "price": "$$",
-  "address": "1622 Eastern Ave, Baltimore, MD 21231",
-  "tables": 5,
-  "hours": {
-      "mon": [ [ "11:00", "22:00" ] ],
-      "tue": [ [ "11:00", "22:00" ] ],
-      "wed": [ [ "11:00", "22:00" ] ],
-      "thu": [ [ "11:00", "22:00" ] ],
-      "fri": [ [ "11:00", "23:00" ] ],
-      "sat": [ [ "11:00", "23:00" ] ],
-      "sun": [ [ "Closed" ] ]
-  }
-},
-{
-  "id": 54,
-  "name": "Foraged",
-  "city": "Baltimore",
-  "cuisine": "New American / Farm-to-table",
-  "price": "$$$",
-  "address": "1709 N Charles St, Baltimore, MD 21201",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "Closed" ] ],
-      "tue": [ [ "17:00", "21:00" ] ],
-      "wed": [ [ "17:00", "21:00" ] ],
-      "thu": [ [ "17:00", "22:00" ] ],
-      "fri": [ [ "17:00", "22:00" ] ],
-      "sat": [ [ "17:00", "22:00" ] ],
-      "sun": [ [ "17:00", "21:00" ] ]
-  }
-},
-{
-  "id": 55,
-  "name": "Gertrude’s Chesapeake Kitchen",
-  "city": "Baltimore",
-  "cuisine": "Chesapeake / Fine Dining",
-  "price": "$$$",
-  "address": "10 Art Museum Dr, Baltimore, MD 21218",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "Closed" ] ],
-      "tue": [ [ "Closed" ] ],
-      "wed": [
-        [ "11:00", "15:00" ],
-        [ "16:30", "20:00" ]
-      ],
-      "thu": [
-        [ "11:00", "15:00" ],
-        [ "16:30", "20:00" ]
-      ],
-      "fri": [
-        [ "11:00", "15:00" ],
-        [ "16:30", "20:00" ]
-      ],
-      "sat": [
-        [ "11:00", "15:00" ],
-        [ "16:30", "20:00" ]
-      ],
-      "sun": [
-        [ "10:00", "15:00" ],
-        [ "17:00", "19:00" ]
-      ]
-    }
-},
-{
-  "id": 56,
-  "name": "Jano Ethiopian Cuisine & Bar",
-  "city": "Baltimore",
-  "cuisine": "Ethiopian",
-  "price": "$$",
-  "address": "34 S Eutaw St, Baltimore, MD 21201",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:00", "22:00" ] ],
-      "tue": [ [ "11:00", "22:00" ] ],
-      "wed": [ [ "11:00", "22:00" ] ],
-      "thu": [ [ "11:00", "22:00" ] ],
-      "fri": [ [ "11:00", "22:00" ] ],
-      "sat": [ [ "11:00", "22:00" ] ],
-      "sun": [ [ "11:00", "22:00" ] ]
-  }
-},
-{
-  "id": 57,
-  "name": "Kona Grill (Inner Harbor)",
-  "city": "Baltimore",
-  "cuisine": "American / Sushi / Grill",
-  "price": "$$",
-  "address": "1 E Pratt St #103, Baltimore, MD 21202",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:00", "24:00" ] ],
-      "tue": [ [ "11:00", "24:00" ] ],
-      "wed": [ [ "11:00", "24:00" ] ],
-      "thu": [ [ "11:00", "24:00" ] ],
-      "fri": [ [ "11:00", "01:00" ] ],
-      "sat": [ [ "11:00", "01:00" ] ],
-      "sun": [ [ "10:00", "23:00" ] ]
-  }
-},
-{
-  "id": 58,
-  "name": "La Cuchara",
-  "city": "Baltimore",
-  "cuisine": "Basque / Spanish",
-  "price": "$$$",
-  "address": "3600 Clipper Mill Rd, Baltimore, MD 21211",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "17:00", "21:00" ] ],
-      "tue": [ [ "17:00", "21:00" ] ],
-      "wed": [ [ "17:00", "21:00" ] ],
-      "thu": [ [ "17:00", "21:00" ] ],
-      "fri": [ [ "17:00", "22:00" ] ],
-      "sat": [ [ "17:00", "22:00" ] ],
-      "sun": [ [ "17:00", "21:00" ] ]
-  }
-},
-{
-  "id": 59,
-  "name": "La Tavola",
-  "city": "Baltimore",
-  "cuisine": "Italian",
-  "price": "$$$",
-  "address": "248 Albemarle St, Baltimore, MD 21202",
-  "tables": 6,
-  "hours": {
-      "mon": [ [ "Closed" ] ],
-      "tue": [ [ "Closed" ] ],
-      "wed": [ [ "16:00", "22:00" ] ],
-      "thu": [ [ "11:30", "22:00" ] ],
-      "fri": [ [ "11:30", "23:00" ] ],
-      "sat": [ [ "11:30", "23:00" ] ],
-      "sun": [ [ "11:30", "21:00" ] ]
-  }
-},
-{
-  "id": 60,
-  "name": "La Tavola",
-  "city": "Baltimore",
-  "cuisine": "Italian",
-  "price": "$$$",
-  "address": "248 Albemarle St, Baltimore, MD 21202",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "Closed" ] ],
-      "tue": [ [ "Closed" ] ],
-      "wed": [ [ "16:00", "22:00" ] ],
-      "thu": [ [ "11:30", "22:00" ] ],
-      "fri": [ [ "11:30", "22:00" ] ],
-      "sat": [ [ "11:30", "22:00" ] ],
-      "sun": [ [ "11:30", "22:00" ] ]
-  }
-},
-{
-  "id": 61,
-  "name": "Little Donna’s",
-  "city": "Baltimore",
-  "cuisine": "American / Pizza",
-  "price": "$$",
-  "address": "1812 Bank St, Baltimore, MD 21231",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "Closed" ] ],
-      "tue": [ [ "17:00", "21:30" ] ],
-      "wed": [ [ "17:00", "21:30" ] ],
-      "thu": [ [ "17:00", "21:30" ] ],
-      "fri": [ [ "17:00", "22:30" ] ],
-      "sat": [ [ "17:00", "22:30" ] ],
-      "sun": [ [ "Closed" ] ]
-  }
-},
-{
-  "id": 62,
-  "name": "Loch Bar",
-  "city": "Baltimore",
-  "cuisine": "Seafood / Tavern",
-  "price": "$$$",
-  "address": "240 International Dr, Baltimore, MD 21202",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:30", "24:00" ] ],
-      "tue": [ [ "11:30", "24:00" ] ],
-      "wed": [ [ "11:30", "24:00" ] ],
-      "thu": [ [ "11:30", "24:00" ] ],
-      "fri": [ [ "11:00", "24:00" ] ],
-      "sat": [ [ "11:00", "24:00" ] ],
-      "sun": [ [ "11:00", "22:30" ] ]
-  }
-},
-{
-  "id": 63,
-  "name": "Locust Point Steamers",
-  "city": "Baltimore",
-  "cuisine": "Seafood / Crab House",
-  "price": "$$",
-  "address": "1100 E Fort Ave, Baltimore, MD 21230",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:30", "21:00" ] ],
-      "tue": [ [ "11:30", "21:00" ] ],
-      "wed": [ [ "11:30", "21:00" ] ],
-      "thu": [ [ "11:30", "21:00" ] ],
-      "fri": [ [ "11:30", "22:00" ] ],
-      "sat": [ [ "11:30", "22:00" ] ],
-      "sun": [ [ "11:30", "21:00" ] ]
-  }
-},
-{
-  "id": 64,
-  "name": "LP Steamers",
-  "city": "Baltimore",
-  "cuisine": "Seafood",
-  "price": "$$",
-  "address": "1100 E Fort Ave, Baltimore, MD 21230",
-  "tables": 8,
-  "hours": {
-      "mon": [ [ "11:00", "21:00" ] ],
-      "tue": [ [ "11:00", "21:00" ] ],
-      "wed": [ [ "11:00", "21:00" ] ],
-      "thu": [ [ "11:00", "21:00" ] ],
-      "fri": [ [ "11:00", "21:30" ] ],
-      "sat": [ [ "11:00", "21:30" ] ],
-      "sun": [ [ "11:00", "21:30" ] ]
-  }
-},
-{
-  "id": 65,
-  "name": "Maximón",
-  "city": "Baltimore",
-  "cuisine": "Latin / South American",
-  "price": "$$$",
-  "address": "200 International Dr, Baltimore, MD 21202",
-  "tables": 0,
-  "hours": {
-      "mon": [
-        [ "07:00", "10:30" ],
-        [ "11:00", "15:00" ],
-        [ "17:00", "22:00" ]
-      ],
-      "tue": [
-        [ "07:00", "10:30" ],
-        [ "11:00", "15:00" ],
-        [ "17:00", "22:00" ]
-      ],
-      "wed": [
-        [ "07:00", "10:30" ],
-        [ "11:00", "15:00" ],
-        [ "17:00", "22:00" ]
-      ],
-      "thu": [
-        [ "07:00", "10:30" ],
-        [ "11:00", "15:00" ],
-        [ "17:00", "22:00" ]
-      ],
-      "fri": [
-        [ "07:00", "10:30" ],
-        [ "11:00", "15:00" ],
-        [ "17:00", "00:00" ]
-      ],
-      "sat": [
-        [ "11:00", "15:00" ],
-        [ "17:00", "00:00" ]
-      ],
-      "sun": [
-        [ "11:00", "15:00" ],
-        [ "17:00", "22:00" ]
-      ]
-    }
-},
-{
-  "id": 66,
-  "name": "Miss Shirley’s Cafe",
-  "city": "Baltimore",
-  "cuisine": "Breakfast & Brunch",
-  "price": "$$",
-  "address": "750 E Pratt St, Baltimore, MD 21202",
-  "tables": 8,
-  "hours": {
-      "mon": [ [ "08:00", "15:00" ] ],
-      "tue": [ [ "08:00", "15:00" ] ],
-      "wed": [ [ "08:00", "15:00" ] ],
-      "thu": [ [ "08:00", "15:00" ] ],
-      "fri": [ [ "08:00", "15:00" ] ],
-      "sat": [ [ "08:00", "15:00" ] ],
-      "sun": [ [ "08:00", "15:00" ] ]
-  }
-},
-{
-  "id": 67,
-  "name": "Morton’s The Steakhouse",
-  "city": "Baltimore",
-  "cuisine": "Steakhouse / Seafood",
-  "price": "$$$$",
-  "address": "300 S Charles St, Baltimore, MD 21201",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "17:00", "21:00" ] ],
-      "tue": [ [ "17:00", "21:00" ] ],
-      "wed": [ [ "17:00", "21:00" ] ],
-      "thu": [ [ "17:00", "21:00" ] ],
-      "fri": [ [ "17:00", "22:00" ] ],
-      "sat": [ [ "17:00", "22:00" ] ],
-      "sun": [ [ "17:00", "21:00" ] ]
-  }
-},
-{
-  "id": 68,
-  "name": "Nancy By SNAC",
-  "city": "Baltimore",
-  "cuisine": "American / Modern",
-  "price": "$$$",
-  "address": "131 W North Ave, Baltimore, MD 21201",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:30", "21:30" ] ],
-      "tue": [ [ "11:30", "21:30" ] ],
-      "wed": [ [ "11:30", "21:30" ] ],
-      "thu": [ [ "11:30", "21:30" ] ],
-      "fri": [ [ "11:30", "21:30" ] ],
-      "sat": [ [ "11:30", "21:30" ] ],
-      "sun": [ [ "11:30", "21:30" ] ]
-  }
-},
-{
-  "id": 69,
-  "name": "Nick’s Fish House",
-  "city": "Baltimore",
-  "cuisine": "Seafood / Waterfront",
-  "price": "$$$",
-  "address": "2600 Regent St, Baltimore, MD 21224",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:30", "22:00" ] ],
-      "tue": [ [ "11:30", "22:00" ] ],
-      "wed": [ [ "11:30", "22:00" ] ],
-      "thu": [ [ "11:30", "22:00" ] ],
-      "fri": [ [ "11:30", "23:00" ] ],
-      "sat": [ [ "11:30", "23:00" ] ],
-      "sun": [ [ "11:30", "22:00" ] ]
-  }
-},
-{
-  "id": 70,
-  "name": "Noir Restaurant & Lounge (Belvedere Square)",
-  "city": "Baltimore",
-  "cuisine": "Lounge / Modern American",
-  "price": "$$",
-  "address": "800 E Belvedere Ave, Baltimore, MD 21212",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "17:00", "02:00" ] ],
-      "tue": [ [ "17:00", "02:00" ] ],
-      "wed": [ [ "17:00", "02:00" ] ],
-      "thu": [ [ "17:00", "02:00" ] ],
-      "fri": [ [ "17:00", "03:00" ] ],
-      "sat": [ [ "17:00", "03:00" ] ],
-      "sun": [ [ "17:00", "02:00" ] ]
-  }
-},
-{
-  "id": 71,
-  "name": "On the Hill Cafe",
-  "city": "Baltimore",
-  "cuisine": "Cafe / American",
-  "price": "$$",
-  "address": "2580 St Paul St, Baltimore, MD 21218",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "07:00", "15:00" ] ],
-      "tue": [ [ "07:00", "15:00" ] ],
-      "wed": [ [ "07:00", "15:00" ] ],
-      "thu": [ [ "07:00", "15:00" ] ],
-      "fri": [ [ "07:00", "15:00" ] ],
-      "sat": [ [ "07:00", "15:00" ] ],
-      "sun": [ [ "Closed" ] ]
-  }
-},
-{
-  "id": 72,
-  "name": "Ouzo Bay",
-  "city": "Baltimore",
-  "cuisine": "Greek / Seafood",
-  "price": "$$$",
-  "address": "601 E Pratt St, Baltimore, MD 21202",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:30", "22:00" ] ],
-      "tue": [ [ "11:30", "22:00" ] ],
-      "wed": [ [ "11:30", "22:00" ] ],
-      "thu": [ [ "11:30", "22:00" ] ],
-      "fri": [ [ "11:30", "23:00" ] ],
-      "sat": [ [ "11:30", "23:00" ] ],
-      "sun": [ [ "11:30", "21:00" ] ]
-  }
-},
-{
-  "id": 73,
-  "name": "Papi Cuisine",
-  "city": "Baltimore",
-  "cuisine": "Afro-Latin Fusion",
-  "price": "$$",
-  "address": "223 W North Ave, Baltimore, MD 21201",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "17:00", "22:00" ] ],
-      "tue": [ [ "17:00", "22:00" ] ],
-      "wed": [ [ "17:00", "22:00" ] ],
-      "thu": [ [ "17:00", "22:00" ] ],
-      "fri": [ [ "17:00", "23:00" ] ],
-      "sat": [ [ "17:00", "23:00" ] ],
-      "sun": [ [ "Closed" ] ]
-  }
-},
-{
-  "id": 74,
-  "name": "Papi’s Tacos",
-  "city": "Baltimore",
-  "cuisine": "Mexican",
-  "price": "$$",
-  "address": "1703 Aliceanna St, Baltimore, MD 21231",
-  "tables": 6,
-  "hours": {
-      "mon": [ [ "12:00", "23:00" ] ],
-      "tue": [ [ "12:00", "23:00" ] ],
-      "wed": [ [ "12:00", "23:00" ] ],
-      "thu": [ [ "12:00", "23:00" ] ],
-      "fri": [ [ "12:00", "24:00" ] ],
-      "sat": [ [ "12:00", "24:00" ] ],
-      "sun": [ [ "12:00", "23:00" ] ]
-  }
-},
-{
-  "id": 75,
-  "name": "Peppa Flame Restaurant",
-  "city": "Baltimore",
-  "cuisine": "Jamaican / Caribbean",
-  "price": "$$",
-  "address": "1401 E Clement St, Baltimore, MD 21231",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:30", "21:00" ] ],
-      "tue": [ [ "11:30", "21:00" ] ],
-      "wed": [ [ "11:30", "21:00" ] ],
-      "thu": [ [ "11:30", "21:00" ] ],
-      "fri": [ [ "11:30", "22:00" ] ],
-      "sat": [ [ "11:30", "22:00" ] ],
-      "sun": [ [ "11:30", "21:00" ] ]
-  }
-},
-{
-  "id": 76,
-  "name": "Petalō’s",
-  "city": "Baltimore",
-  "cuisine": "Modern American / Café",
-  "price": "$$",
-  "address": "1002 Eastern Ave, Baltimore, MD 21202",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "08:00", "15:00" ] ],
-      "tue": [ [ "08:00", "15:00" ] ],
-      "wed": [ [ "08:00", "15:00" ] ],
-      "thu": [ [ "08:00", "15:00" ] ],
-      "fri": [ [ "08:00", "15:00" ] ],
-      "sat": [ [ "08:00", "15:00" ] ],
-      "sun": [ [ "Closed" ] ]
-  }
-},
-{
-  "id": 77,
-  "name": "Prima Dopo Cucina & Cocktail House",
-  "city": "Baltimore",
-  "cuisine": "Italian",
-  "price": "$$$",
-  "address": "1724 Thames St, Baltimore, MD 21231",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "16:00", "00:00" ] ],
-      "tue": [ [ "16:00", "00:00" ] ],
-      "wed": [ [ "11:30", "00:00" ] ],
-      "thu": [ [ "11:30", "02:00" ] ],
-      "fri": [ [ "11:30", "02:00" ] ],
-      "sat": [ [ "11:00", "02:00" ] ],
-      "sun": [ [ "11:00", "22:00" ] ]
-  }
-},
-{
-  "id": 78,
-  "name": "R. House Food Hall",
-  "city": "Baltimore",
-  "cuisine": "Food Hall / Multi-vendor",
-  "price": "$$",
-  "address": "301 W 29th St, Baltimore, MD 21211",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:30", "15:00" ] ],
-      "tue": [ [ "08:00", "21:00" ] ],
-      "wed": [ [ "08:00", "21:00" ] ],
-      "thu": [ [ "08:00", "21:00" ] ],
-      "fri": [ [ "11:30", "22:00" ] ],
-      "sat": [ [ "11:30", "22:00" ] ],
-      "sun": [ [ "08:00", "21:00" ] ]
-  }
-},
-{
-  "id": 79,
-  "name": "Rec Pier Chop House",
-  "city": "Baltimore",
-  "cuisine": "Steakhouse / Seafood",
-  "price": "$$$$",
-  "address": "1715 Thames St, Baltimore, MD 21231",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:30", "22:00" ] ],
-      "tue": [ [ "11:30", "22:00" ] ],
-      "wed": [ [ "11:30", "22:00" ] ],
-      "thu": [ [ "11:30", "22:00" ] ],
-      "fri": [ [ "11:30", "23:00" ] ],
-      "sat": [ [ "11:30", "23:00" ] ],
-      "sun": [ [ "11:30", "21:00" ] ]
-  }
-},
-{
-  "id": 80,
-  "name": "Rusty Scupper",
-  "city": "Baltimore",
-  "cuisine": "Seafood",
-  "price": "$$$$",
-  "address": "402 Key Hwy, Baltimore, MD 21230",
-  "tables": 10,
-  "hours": {
-      "mon": [ [ "16:00", "21:00" ] ],
-      "tue": [ [ "16:00", "21:00" ] ],
-      "wed": [ [ "16:00", "21:00" ] ],
-      "thu": [ [ "16:00", "21:00" ] ],
-      "fri": [ [ "12:00", "22:00" ] ],
-      "sat": [ [ "12:00", "22:00" ] ],
-      "sun": [ [ "10:30", "21:00" ] ]
-  }
-},
-{
-  "id": 81,
-  "name": "Rusty Scupper",
-  "city": "Baltimore",
-  "cuisine": "Seafood",
-  "price": "$$$$",
-  "address": "402 Key Hwy, Baltimore, MD 21230",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:30", "21:30" ] ],
-      "tue": [ [ "11:30", "21:30" ] ],
-      "wed": [ [ "11:30", "21:30" ] ],
-      "thu": [ [ "11:30", "21:30" ] ],
-      "fri": [ [ "11:30", "22:30" ] ],
-      "sat": [ [ "11:30", "22:30" ] ],
-      "sun": [ [ "11:30", "21:00" ] ]
-  }
-},
-{
-  "id": 82,
-  "name": "Rye Street Tavern",
-  "city": "Baltimore",
-  "cuisine": "American / Tavern",
-  "price": "$$",
-  "address": "3858 Rye St, Baltimore, MD 21230",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:30", "22:00" ] ],
-      "tue": [ [ "11:30", "22:00" ] ],
-      "wed": [ [ "11:30", "22:00" ] ],
-      "thu": [ [ "11:30", "22:00" ] ],
-      "fri": [ [ "11:30", "23:00" ] ],
-      "sat": [ [ "11:30", "23:00" ] ],
-      "sun": [ [ "11:30", "21:00" ] ]
-  }
-},
-{
-  "id": 83,
-  "name": "Saffron Indian Cuisine",
-  "city": "Baltimore",
-  "cuisine": "Indian",
-  "price": "$$",
-  "address": "838 E Belvedere Ave, Baltimore, MD 21212",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:30", "22:00" ] ],
-      "tue": [ [ "11:30", "22:00" ] ],
-      "wed": [ [ "11:30", "22:00" ] ],
-      "thu": [ [ "11:30", "22:00" ] ],
-      "fri": [ [ "11:30", "23:00" ] ],
-      "sat": [ [ "11:30", "23:00" ] ],
-      "sun": [ [ "11:30", "21:30" ] ]
-  }
-},
-{
-  "id": 84,
-  "name": "Samos Greek Island Grill",
-  "city": "Baltimore",
-  "cuisine": "Greek",
-  "price": "$$",
-  "address": "3745 Boston St, Baltimore, MD 21224",
-  "tables": 5,
-  "hours": {
-      "mon": [ [ "11:00", "21:00" ] ],
-      "tue": [ [ "11:00", "21:00" ] ],
-      "wed": [ [ "11:00", "21:00" ] ],
-      "thu": [ [ "11:00", "21:00" ] ],
-      "fri": [ [ "11:00", "21:00" ] ],
-      "sat": [ [ "11:00", "21:00" ] ],
-      "sun": [ [ "11:30", "18:00" ] ]
-  }
-},
-{
-  "id": 85,
-  "name": "Silver Queen Cafe",
-  "city": "Baltimore",
-  "cuisine": "Café / American",
-  "price": "$$",
-  "address": "5429 Harford Rd, Baltimore, MD 21214",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "07:00", "15:00" ] ],
-      "tue": [ [ "07:00", "15:00" ] ],
-      "wed": [ [ "07:00", "15:00" ] ],
-      "thu": [ [ "07:00", "15:00" ] ],
-      "fri": [ [ "07:00", "15:00" ] ],
-      "sat": [ [ "07:00", "15:00" ] ],
-      "sun": [ [ "07:00", "15:00" ] ]
-  }
-},
-{
-  "id": 86,
-  "name": "Sotto Sopra",
-  "city": "Baltimore",
-  "cuisine": "Italian",
-  "price": "$$$",
-  "address": "1207 Reisterstown Rd, Baltimore, MD 21208",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "17:00", "22:00" ] ],
-      "tue": [ [ "17:00", "22:00" ] ],
-      "wed": [ [ "17:00", "22:00" ] ],
-      "thu": [ [ "17:00", "22:00" ] ],
-      "fri": [ [ "17:00", "23:00" ] ],
-      "sat": [ [ "17:00", "23:00" ] ],
-      "sun": [ [ "17:00", "21:00" ] ]
-  }
-},
-{
-  "id": 87,
-  "name": "Tapas Teatro",
-  "city": "Baltimore",
-  "cuisine": "Spanish / Tapas",
-  "price": "$$",
-  "address": "1001 Fleet St, Baltimore, MD 21231",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:30", "21:00" ] ],
-      "tue": [ [ "11:30", "21:00" ] ],
-      "wed": [ [ "11:30", "21:00" ] ],
-      "thu": [ [ "11:30", "21:00" ] ],
-      "fri": [ [ "11:30", "22:00" ] ],
-      "sat": [ [ "11:30", "22:00" ] ],
-      "sun": [ [ "11:30", "21:00" ] ]
-  }
-},
-{
-  "id": 88,
-  "name": "Thames Street Oyster House",
-  "city": "Baltimore",
-  "cuisine": "Seafood",
-  "price": "$$$",
-  "address": "1728 Thames St, Baltimore, MD 21231",
-  "tables": 8,
-  "hours": {
-      "mon": [ [ "16:30", "21:30" ] ],
-      "tue": [ [ "16:30", "21:30" ] ],
-      "wed": [ [ "16:30", "21:30" ] ],
-      "thu": [ [ "16:30", "21:30" ] ],
-      "fri": [ [ "11:30", "21:30" ] ],
-      "sat": [ [ "11:30", "21:30" ] ],
-      "sun": [ [ "11:30", "21:30" ] ]
-  }
-},
-{
-  "id": 89,
-  "name": "The Crown Restaurant",
-  "city": "Baltimore",
-  "cuisine": "New American / Fine Dining",
-  "price": "$$$$",
-  "address": "1910 N Charles St, Baltimore, MD 21201",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "17:00", "22:00" ] ],
-      "tue": [ [ "17:00", "22:00" ] ],
-      "wed": [ [ "17:00", "22:00" ] ],
-      "thu": [ [ "17:00", "22:00" ] ],
-      "fri": [ [ "17:00", "23:00" ] ],
-      "sat": [ [ "17:00", "23:00" ] ],
-      "sun": [ [ "17:00", "21:00" ] ]
-  }
-},
-{
-  "id": 90,
-  "name": "The Food Market",
-  "city": "Baltimore",
-  "cuisine": "American",
-  "price": "$$",
-  "address": "1017 W 36th St, Baltimore, MD 21211",
-  "tables": 7,
-  "hours": {
-      "mon": [ [ "10:00", "21:00" ] ],
-      "tue": [ [ "10:00", "21:00" ] ],
-      "wed": [ [ "10:00", "21:00" ] ],
-      "thu": [ [ "10:00", "21:00" ] ],
-      "fri": [ [ "10:00", "22:00" ] ],
-      "sat": [ [ "09:00", "22:00" ] ],
-      "sun": [ [ "09:00", "21:00" ] ]
-  }
-},
-{
-  "id": 91,
-  "name": "The Helmand",
-  "city": "Baltimore",
-  "cuisine": "Afghan",
-  "price": "$$",
-  "address": "806 N Charles St, Baltimore, MD 21201",
-  "tables": 5,
-  "hours": {
-      "mon": [ [ "Closed" ] ],
-      "tue": [ [ "17:00", "21:00" ] ],
-      "wed": [ [ "17:00", "21:00" ] ],
-      "thu": [ [ "17:00", "21:00" ] ],
-      "fri": [ [ "17:00", "22:00" ] ],
-      "sat": [ [ "17:00", "22:00" ] ],
-      "sun": [ [ "16:00", "21:00" ] ]
-  }
-},
-{
-  "id": 92,
-  "name": "The Kabul",
-  "city": "Baltimore",
-  "cuisine": "Afghan / Mediterranean",
-  "price": "$$",
-  "address": "55 Market Pl., Ste 5505, Baltimore, MD 21202",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "10:30", "22:00" ] ],
-      "tue": [ [ "10:30", "22:00" ] ],
-      "wed": [ [ "10:30", "22:00" ] ],
-      "thu": [ [ "10:30", "22:00" ] ],
-      "fri": [ [ "10:30", "22:00" ] ],
-      "sat": [ [ "11:00", "22:00" ] ],
-      "sun": [ [ "11:00", "22:00" ] ]
-  }
-},
-{
-  "id": 93,
-  "name": "The Prime Rib",
-  "city": "Baltimore",
-  "cuisine": "Steakhouse / Seafood",
-  "price": "$$$$",
-  "address": "1101 N Calvert St, Baltimore, MD 21202",
-  "tables": 0,
-  "hours": {
+  {
+    "id": 1,
+    "name": "29th Street Tavern",
+    "city": "Baltimore",
+    "cuisine": "Bar / Tavern",
+    "price": "$",
+    "address": "398 W 29th St, Baltimore, MD 21211",
+    "tables": 19,
+    "hours": {
       "mon": [ [ "Closed" ] ],
       "tue": [ [ "17:00", "22:00" ] ],
       "wed": [ [ "17:00", "22:00" ] ],
@@ -1712,107 +15,1169 @@
       "fri": [ [ "17:00", "23:00" ] ],
       "sat": [ [ "17:00", "23:00" ] ],
       "sun": [ [ "16:45", "21:00" ] ]
-  }
-},
-{
-  "id": 94,
-  "name": "The Urban Oyster",
-  "city": "Baltimore",
-  "cuisine": "Seafood / Oyster Bar",
-  "price": "$$",
-  "address": "914 W 36th St, Baltimore, MD 21211",
-  "tables": 0,
-  "hours": {
+    }
+  },
+  {
+    "id": 2,
+    "name": "Abbey Burger Bistro",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$",
+    "address": "811 S Broadway, Baltimore, MD 21231",
+    "tables": 22,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Alma Cocina Latina",
+    "city": "Baltimore",
+    "cuisine": "Latin",
+    "price": "$$$",
+    "address": "24 W North Ave, Baltimore, MD 21201",
+    "tables": 24,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 4,
+    "name": "Amicci's",
+    "city": "Baltimore",
+    "cuisine": "Italian",
+    "price": "$$",
+    "address": "231 S High St, Baltimore, MD 21202",
+    "tables": 24,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 5,
+    "name": "Ammoora",
+    "city": "Baltimore",
+    "cuisine": "Mediterranean",
+    "price": "$$$$",
+    "address": "751 Key Hwy, Baltimore, MD 21230",
+    "tables": 28,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 6,
+    "name": "Ampersea",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$$",
+    "address": "1417 Thames St, Baltimore, MD 21231",
+    "tables": 22,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kohinoor Restaurant",
+    "city": "Baltimore",
+    "cuisine": "Indian",
+    "price": "$$",
+    "address": "5926 York Rd, Baltimore, MD 21212",
+    "tables": 18,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 8,
+    "name": "Angeli's Pizzeria",
+    "city": "Baltimore",
+    "cuisine": "Italian",
+    "price": "$$",
+    "address": "413 S High St, Baltimore, MD 21202",
+    "tables": 15,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 9,
+    "name": "Angie's Seafood",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$$",
+    "address": "1727 E Pratt St, Baltimore, MD 21231",
+    "tables": 24,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 10,
+    "name": "Applebee's Grill + Bar",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$",
+    "address": "6798 Reisterstown Rd, Baltimore, MD 21215",
+    "tables": 20,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 11,
+    "name": "Avenue Kitchen & Bar",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$$",
+    "address": "911 W 36th St, Baltimore, MD 21211",
+    "tables": 16,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 12,
+    "name": "Azumi Sushi Bar",
+    "city": "Baltimore",
+    "cuisine": "Asian",
+    "price": "$$$",
+    "address": "725 Aliceanna St, Baltimore, MD 21202",
+    "tables": 28,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 13,
+    "name": "B&O American Brasserie",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$",
+    "address": "2 N Charles St, Baltimore, MD 21201",
+    "tables": 21,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 14,
+    "name": "Bab Alyemen",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$",
+    "address": "3320 Greenmount Ave, Baltimore, MD 21218",
+    "tables": 14,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 15,
+    "name": "Baltimore Brewhouse",
+    "city": "Baltimore",
+    "cuisine": "Breakfast & Brunch",
+    "price": "$",
+    "address": "511 W Pratt St, Baltimore, MD 21201",
+    "tables": 9,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 16,
+    "name": "Bao Di",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$",
+    "address": "3215 Eastern Ave, Baltimore, MD 21224",
+    "tables": 22,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 17,
+    "name": "Barrel House Tavern",
+    "city": "Baltimore",
+    "cuisine": "Bar / Tavern",
+    "price": "$$",
+    "address": "tables",
+    "tables": 16,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 18,
+    "name": "Be More Thai Restaurant",
+    "city": "Baltimore",
+    "cuisine": "Thai",
+    "price": "$$",
+    "address": "1006 LIght St, Baltimore, MD 21230",
+    "tables": 19,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 19,
+    "name": "Be-One Korean BBQ",
+    "city": "Baltimore",
+    "cuisine": "Korean",
+    "price": "$$",
+    "address": "2016 Maryland Ave, Baltimore, MD 21218",
+    "tables": 17,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 20,
+    "name": "Benny's",
+    "city": "Baltimore",
+    "cuisine": "Italian",
+    "price": "$$",
+    "address": "300 S High St, Baltimore, MD 21202",
+    "tables": 13,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 21,
+    "name": "Birroteca Baltimore",
+    "city": "Baltimore",
+    "cuisine": "Italian",
+    "price": "$$",
+    "address": "1520 Clipper Rd, Baltimore, MD 21211",
+    "tables": 15,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 22,
+    "name": "Blackwall Hitch",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$",
+    "address": "700 E Pratt St, Baltimore, MD 21202",
+    "tables": 13,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 23,
+    "name": "Picante Taco",
+    "city": "Baltimore",
+    "cuisine": "Mexican",
+    "price": "$",
+    "address": "411 S High St, Baltimore, MD 21202",
+    "tables": 18,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 24,
+    "name": "BLK Swan",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$",
+    "address": "1302 Fleet St, Baltimore, MD 21202",
+    "tables": 15,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 25,
+    "name": "BLK Swan (Harbor East)",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$$",
+    "address": "1302 Fleet St, Baltimore, MD 21202",
+    "tables": 22,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 26,
+    "name": "Blue Moon Cafe",
+    "city": "Baltimore",
+    "cuisine": "Breakfast & Brunch",
+    "price": "$$",
+    "address": "1621 Aliceanna St, Baltimore, MD 21231",
+    "tables": 6,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 27,
+    "name": "Blue Moon Too",
+    "city": "Baltimore",
+    "cuisine": "Breakfast & Brunch",
+    "price": "$$",
+    "address": "1024 Light St, Baltimore, MD 21230",
+    "tables": 20,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 28,
+    "name": "Bmore Seafood",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$",
+    "address": "2324 Boston St, Baltimore, MD 21224",
+    "tables": 17,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 29,
+    "name": "Bodhi Federal Hill",
+    "city": "Baltimore",
+    "cuisine": "Thai",
+    "price": "$$",
+    "address": "1444 Light St, Baltimore, MD 21230",
+    "tables": 21,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 30,
+    "name": "Cafe 1908",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$",
+    "address": "7 W Preston St, Baltimore, MD 21201",
+    "tables": 14,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 31,
+    "name": "Cafe Dear Leon",
+    "city": "Baltimore",
+    "cuisine": "Breakfast & Brunch",
+    "price": "$$",
+    "address": "2929 O'Donnell St, Baltimore, MD 21224",
+    "tables": 10,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 32,
+    "name": "Cafe Fili",
+    "city": "Baltimore",
+    "cuisine": "Mediterranean",
+    "price": "$$",
+    "address": "816 Cathedral St, Baltimore, MD 21201",
+    "tables": 12,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 33,
+    "name": "Carrabba's Italian Grill",
+    "city": "Baltimore",
+    "cuisine": "Italian",
+    "price": "$$",
+    "address": "7600 Belair Rd, Baltimore, MD 21236",
+    "tables": 26,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 34,
+    "name": "Chachi's",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$",
+    "address": "2223 Maryland Ave, Baltimore, MD 21218",
+    "tables": 14,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 35,
+    "name": "Charleston",
+    "city": "Baltimore",
+    "cuisine": "Fine Dining",
+    "price": "$$$$",
+    "address": "1000 Lancaster St, Baltimore, MD 21202",
+    "tables": 29,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 36,
+    "name": "Charm City Thai Kitchen",
+    "city": "Baltimore",
+    "cuisine": "Thai",
+    "price": "$$",
+    "address": "418 E 30th St, Baltimore, MD 21218",
+    "tables": 19,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 37,
+    "name": "Charmed Kitchen",
+    "city": "Baltimore",
+    "cuisine": "Breakfast & Brunch",
+    "price": "$$",
+    "address": "123 S Chester St, Baltimore, MD 21231",
+    "tables": 6,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 38,
+    "name": "Cinghiale",
+    "city": "Baltimore",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "address": "822 Lancaster St, Baltimore, MD 21202",
+    "tables": 22,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 39,
+    "name": "Circus Bar & Restaurant",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$$$",
+    "address": "427 E Baltimore St, Baltimore, MD 21202",
+    "tables": 18,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 40,
+    "name": "Clavel",
+    "city": "Baltimore",
+    "cuisine": "Mexican",
+    "price": "$$",
+    "address": "225 W 23rd St, Baltimore, MD 21211",
+    "tables": 16,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 41,
+    "name": "Clock Restoration",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$",
+    "address": "31 S Calvert St, Baltimore, MD 21202",
+    "tables": 15,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 42,
+    "name": "CookHouse",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$$",
+    "address": "1501 Bolton St, Baltimore, MD 21217",
+    "tables": 22,
+    "hours": {
       "mon": [ [ "Closed" ] ],
       "tue": [ [ "Closed" ] ],
-      "wed": [ [ "16:00", "22:00" ] ],
-      "thu": [ [ "16:00", "22:00" ] ],
-      "fri": [ [ "16:00", "23:00" ] ],
-      "sat": [ [ "16:00", "23:00" ] ],
-      "sun": [ [ "13:00", "21:00" ] ]
-  }
-},
-{
-  "id": 95,
-  "name": "Topside Tavern",
-  "city": "Baltimore",
-  "cuisine": "American / Tavern",
-  "price": "$$",
-  "address": "tables",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "Closed" ] ]
+    }
+  },
+  {
+    "id": 43,
+    "name": "Costas Inn",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$",
+    "address": "4100 N Point Blvd, Baltimore, MD 21222",
+    "tables": 24,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
       "tue": [ [ "17:00", "22:00" ] ],
       "wed": [ [ "17:00", "22:00" ] ],
       "thu": [ [ "17:00", "22:00" ] ],
       "fri": [ [ "17:00", "23:00" ] ],
       "sat": [ [ "17:00", "23:00" ] ],
-      "sun": [ [ "17:00", "21:00" ] ]
-  }
-},
-{
-  "id": 96,
-  "name": "Valentino’s Restaurant",
-  "city": "Baltimore",
-  "cuisine": "Italian",
-  "price": "$$",
-  "address": "6627 Harford Rd, Baltimore, MD 21214",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "17:00", "22:00" ] ],
-      "tue": [ [ "17:00", "22:00" ] ],
-      "wed": [ [ "17:00", "22:00" ] ],
-      "thu": [ [ "17:00", "22:00" ] ],
-      "fri": [ [ "17:00", "23:00" ] ],
-      "sat": [ [ "17:00", "23:00" ] ],
-      "sun": [ [ "16:00", "21:00" ] ]
-  }
-},
-{
-  "id": 97,
-  "name": "Verde",
-  "city": "Baltimore",
-  "cuisine": "Wood‑fired Pizza",
-  "price": "$$",
-  "address": "tables",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "11:30", "22:00" ] ],
-      "tue": [ [ "11:30", "22:00" ] ],
-      "wed": [ [ "11:30", "22:00" ] ],
-      "thu": [ [ "11:30", "22:00" ] ],
-      "fri": [ [ "11:30", "23:00" ] ],
-      "sat": [ [ "11:30", "23:00" ] ],
-      "sun": [ [ "11:30", "21:00" ] ]
-  }
-},
-{
-  "id": 98,
-  "name": "V‑NO Wine Bar",
-  "city": "Baltimore",
-  "cuisine": "Wine Bar / Small Plates",
-  "price": "$$",
-  "address": "905 S Ann St, Baltimore, MD 21231",
-  "tables": 0,
-  "hours": {
-      "mon": [ [ "17:00", "22:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 44,
+    "name": "Costiera",
+    "city": "Baltimore",
+    "cuisine": "Italian",
+    "price": "$$",
+    "address": "415 S Central Ave, Baltimore, MD 21202",
+    "tables": 16,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
       "tue": [ [ "17:00", "22:00" ] ],
       "wed": [ [ "17:00", "22:00" ] ],
       "thu": [ [ "17:00", "22:00" ] ],
       "fri": [ [ "17:00", "23:00" ] ],
       "sat": [ [ "17:00", "23:00" ] ],
       "sun": [ [ "Closed" ] ]
-  }
-},
-{
-  "id": 99,
-  "name": "Who Know’z Restaurant & Lounge",
-  "city": "Baltimore",
-  "cuisine": "Soul Food / Lounge",
-  "price": "$$",
-  "address": "2101 Maryland Ave, Baltimore, MD 21218",
-  "tables": 0,
-  "hours": {
+    }
+  },
+  {
+    "id": 45,
+    "name": "David and Dad's Cafe",
+    "city": "Baltimore",
+    "cuisine": "Breakfast & Brunch",
+    "price": "$",
+    "address": "115 N Charles St, Baltimore, MD 21201",
+    "tables": 10,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "Closed" ] ]
+    }
+  },
+  {
+    "id": 46,
+    "name": "Dalesio's of Little Italy",
+    "city": "Baltimore",
+    "cuisine": "Italian",
+    "price": "$$",
+    "address": "829 Eastern Ave, Baltimore, MD 21202",
+    "tables": 18,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "Closed" ] ]
+    }
+  },
+  {
+    "id": 47,
+    "name": "Dear Charles",
+    "city": "Baltimore",
+    "cuisine": "Breakfast & Brunch",
+    "price": "$$",
+    "address": "3215 N Charles St, Baltimore, MD 21218",
+    "tables": 20,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 48,
+    "name": "Dooby's",
+    "city": "Baltimore",
+    "cuisine": "Fusion",
+    "price": "$$",
+    "address": "802 N Charles St, Baltimore, MD 21201",
+    "tables": 16,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 49,
+    "name": "Duck Duck Goose",
+    "city": "Baltimore",
+    "cuisine": "French",
+    "price": "$$$",
+    "address": "814 S Broadway, Baltimore, MD 21231",
+    "tables": 24,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 50,
+    "name": "EJJI",
+    "city": "Baltimore",
+    "cuisine": "Asian",
+    "price": "$",
+    "address": "711 S Central Ave Fl 2, Baltimore, MD 21202",
+    "tables": 12,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 51,
+    "name": "Ekiben",
+    "city": "Baltimore",
+    "cuisine": "Fusion",
+    "price": "$$",
+    "address": "1622 Eastern Ave, Baltimore, MD 21231",
+    "tables": 12,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "Closed" ] ]
+    }
+  },
+  {
+    "id": 52,
+    "name": "Foraged",
+    "city": "Baltimore",
+    "cuisine": "Fine Dining",
+    "price": "$$$",
+    "address": "1709 N Charles St, Baltimore, MD 21201",
+    "tables": 22,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "17:00", "21:00" ] ]
+    }
+  },
+  {
+    "id": 53,
+    "name": "Gertrude’s Chesapeake Kitchen",
+    "city": "Baltimore",
+    "cuisine": "Fine Dining",
+    "price": "$$$",
+    "address": "10 Art Museum Dr, Baltimore, MD 21218",
+    "tables": 24,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "Closed" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "17:00", "21:00" ] ]
+    }
+  },
+  {
+    "id": 54,
+    "name": "Jano Ethiopian Cuisine & Bar",
+    "city": "Baltimore",
+    "cuisine": "Other",
+    "price": "$$",
+    "address": "34 S Eutaw St, Baltimore, MD 21201",
+    "tables": 12,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 55,
+    "name": "Kona Grill (Inner Harbor)",
+    "city": "Baltimore",
+    "cuisine": "Asian",
+    "price": "$$",
+    "address": "1 E Pratt St #103, Baltimore, MD 21202",
+    "tables": 22,
+    "hours": {
+      "mon": [ [ "17:00", "22:00" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 56,
+    "name": "La Cuchara",
+    "city": "Baltimore",
+    "cuisine": "Mediterranean",
+    "price": "$$$",
+    "address": "3600 Clipper Mill Rd, Baltimore, MD 21211",
+    "tables": 22,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "17:00", "21:00" ] ]
+    }
+  },
+  {
+    "id": 57,
+    "name": "La Tavola",
+    "city": "Baltimore",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "address": "248 Albemarle St, Baltimore, MD 21202",
+    "tables": 18,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "Closed" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "17:00", "21:00" ] ]
+    }
+  },
+  {
+    "id": 58,
+    "name": "Little Donna’s",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$",
+    "address": "1812 Bank St, Baltimore, MD 21231",
+    "tables": 16,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "21:30" ] ],
+      "wed": [ [ "17:00", "21:30" ] ],
+      "thu": [ [ "17:00", "21:30" ] ],
+      "fri": [ [ "17:00", "22:30" ] ],
+      "sat": [ [ "17:00", "22:30" ] ],
+      "sun": [ [ "Closed" ] ]
+    }
+  },
+  {
+    "id": 59,
+    "name": "Loch Bar",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$$",
+    "address": "240 International Dr, Baltimore, MD 21202",
+    "tables": 22,
+    "hours": {
+      "mon": [ [ "17:00", "22:00" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 60,
+    "name": "Locust Point Steamers",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$",
+    "address": "1100 E Fort Ave, Baltimore, MD 21230",
+    "tables": 20,
+    "hours": {
+      "mon": [ [ "17:00", "21:00" ] ],
+      "tue": [ [ "17:00", "21:00" ] ],
+      "wed": [ [ "17:00", "21:00" ] ],
+      "thu": [ [ "17:00", "21:00" ] ],
+      "fri": [ [ "17:00", "22:00" ] ],
+      "sat": [ [ "17:00", "22:00" ] ],
+      "sun": [ [ "17:00", "21:00" ] ]
+    }
+  },
+  {
+    "id": 61,
+    "name": "Maximón",
+    "city": "Baltimore",
+    "cuisine": "Latin",
+    "price": "$$$",
+    "address": "200 International Dr, Baltimore, MD 21202",
+    "tables": 24,
+    "hours": {
+      "mon": [ [ "17:00", "22:00" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "17:00", "22:00" ] ]
+    }
+  },
+  {
+    "id": 62,
+    "name": "Miss Shirley’s Cafe",
+    "city": "Baltimore",
+    "cuisine": "Breakfast & Brunch",
+    "price": "$$",
+    "address": "750 E Pratt St, Baltimore, MD 21202",
+    "tables": 8,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 63,
+    "name": "Morton’s The Steakhouse",
+    "city": "Baltimore",
+    "cuisine": "Steakhouse",
+    "price": "$$$$",
+    "address": "300 S Charles St, Baltimore, MD 21201",
+    "tables": 26,
+    "hours": {
+      "mon": [ [ "17:00", "21:00" ] ],
+      "tue": [ [ "17:00", "21:00" ] ],
+      "wed": [ [ "17:00", "21:00" ] ],
+      "thu": [ [ "17:00", "21:00" ] ],
+      "fri": [ [ "17:00", "22:00" ] ],
+      "sat": [ [ "17:00", "22:00" ] ],
+      "sun": [ [ "17:00", "21:00" ] ]
+    }
+  },
+  {
+    "id": 64,
+    "name": "Nancy By SNAC",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$$",
+    "address": "131 W North Ave, Baltimore, MD 21201",
+    "tables": 14,
+    "hours": {
+      "mon": [ [ "17:00", "21:30" ] ],
+      "tue": [ [ "17:00", "21:30" ] ],
+      "wed": [ [ "17:00", "21:30" ] ],
+      "thu": [ [ "17:00", "21:30" ] ],
+      "fri": [ [ "17:00", "21:30" ] ],
+      "sat": [ [ "17:00", "21:30" ] ],
+      "sun": [ [ "17:00", "21:30" ] ]
+    }
+  },
+  {
+    "id": 65,
+    "name": "Nick’s Fish House",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$$",
+    "address": "2600 Regent St, Baltimore, MD 21224",
+    "tables": 22,
+    "hours": {
+      "mon": [ [ "11:30", "22:00" ] ],
+      "tue": [ [ "11:30", "22:00" ] ],
+      "wed": [ [ "11:30", "22:00" ] ],
+      "thu": [ [ "11:30", "22:00" ] ],
+      "fri": [ [ "11:30", "23:00" ] ],
+      "sat": [ [ "11:30", "23:00" ] ],
+      "sun": [ [ "11:30", "22:00" ] ]
+    }
+  },
+  {
+    "id": 66,
+    "name": "Noir Restaurant & Lounge (Belvedere Square)",
+    "city": "Baltimore",
+    "cuisine": "Bar / Tavern",
+    "price": "$$",
+    "address": "800 E Belvedere Ave, Baltimore, MD 21212",
+    "tables": 18,
+    "hours": {
       "mon": [ [ "17:00", "02:00" ] ],
       "tue": [ [ "17:00", "02:00" ] ],
       "wed": [ [ "17:00", "02:00" ] ],
@@ -1820,24 +1185,531 @@
       "fri": [ [ "17:00", "03:00" ] ],
       "sat": [ [ "17:00", "03:00" ] ],
       "sun": [ [ "17:00", "02:00" ] ]
-  }
-},
-{
-  "id": 100,
-  "name": "Woodberry Kitchen",
-  "city": "Baltimore",
-  "cuisine": "New American / Farm‑to‑Table",
-  "price": "$$$$",
-  "address": "2010 Clifton Ave, Baltimore, MD 21216",
-  "tables": 0,
-  "hours": {
+    }
+  },
+  {
+    "id": 67,
+    "name": "On the Hill Cafe",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$",
+    "address": "2580 St Paul St, Baltimore, MD 21218",
+    "tables": 9,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "Closed" ] ]
+    }
+  },
+  {
+    "id": 68,
+    "name": "Ouzo Bay",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$$",
+    "address": "601 E Pratt St, Baltimore, MD 21202",
+    "tables": 27,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 69,
+    "name": "Papi Cuisine",
+    "city": "Baltimore",
+    "cuisine": "Latin",
+    "price": "$$",
+    "address": "223 W North Ave, Baltimore, MD 21201",
+    "tables": 18,
+    "hours": {
+      "mon": [ [ "17:00", "22:00" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "Closed" ] ]
+    }
+  },
+  {
+    "id": 70,
+    "name": "Papi’s Tacos",
+    "city": "Baltimore",
+    "cuisine": "Mexican",
+    "price": "$$",
+    "address": "1703 Aliceanna St, Baltimore, MD 21231",
+    "tables": 20,
+    "hours": {
+      "mon": [ [ "12:00", "23:00" ] ],
+      "tue": [ [ "12:00", "23:00" ] ],
+      "wed": [ [ "12:00", "23:00" ] ],
+      "thu": [ [ "12:00", "23:00" ] ],
+      "fri": [ [ "12:00", "24:00" ] ],
+      "sat": [ [ "12:00", "24:00" ] ],
+      "sun": [ [ "12:00", "23:00" ] ]
+    }
+  },
+  {
+    "id": 71,
+    "name": "Peppa Flame Restaurant",
+    "city": "Baltimore",
+    "cuisine": "Caribbean",
+    "price": "$$",
+    "address": "1401 E Clement St, Baltimore, MD 21231",
+    "tables": 14,
+    "hours": {
+      "mon": [ [ "11:30", "21:00" ] ],
+      "tue": [ [ "11:30", "21:00" ] ],
+      "wed": [ [ "11:30", "21:00" ] ],
+      "thu": [ [ "11:30", "21:00" ] ],
+      "fri": [ [ "11:30", "22:00" ] ],
+      "sat": [ [ "11:30", "22:00" ] ],
+      "sun": [ [ "11:30", "21:00" ] ]
+    }
+  },
+  {
+    "id": 72,
+    "name": "Petalō’s",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$",
+    "address": "1002 Eastern Ave, Baltimore, MD 21202",
+    "tables": 12,
+    "hours": {
+      "mon": [ [ "08:00", "15:00" ] ],
+      "tue": [ [ "08:00", "15:00" ] ],
+      "wed": [ [ "08:00", "15:00" ] ],
+      "thu": [ [ "08:00", "15:00" ] ],
+      "fri": [ [ "08:00", "15:00" ] ],
+      "sat": [ [ "08:00", "15:00" ] ],
+      "sun": [ [ "Closed" ] ]
+    }
+  },
+  {
+    "id": 73,
+    "name": "Prima Dopo Cucina & Cocktail House",
+    "city": "Baltimore",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "address": "1724 Thames St, Baltimore, MD 21231",
+    "tables": 22,
+    "hours": {
+      "mon": [ [ "16:00", "00:00" ] ],
+      "tue": [ [ "16:00", "00:00" ] ],
+      "wed": [ [ "11:30", "00:00" ] ],
+      "thu": [ [ "11:30", "02:00" ] ],
+      "fri": [ [ "11:30", "02:00" ] ],
+      "sat": [ [ "11:00", "02:00" ] ],
+      "sun": [ [ "11:00", "22:00" ] ]
+    }
+  },
+  {
+    "id": 74,
+    "name": "R. House Food Hall",
+    "city": "Baltimore",
+    "cuisine": "Food Hall",
+    "price": "$$",
+    "address": "301 W 29th St, Baltimore, MD 21211",
+    "tables": 30,
+    "hours": {
+      "mon": [ [ "11:30", "15:00" ] ],
+      "tue": [ [ "08:00", "21:00" ] ],
+      "wed": [ [ "08:00", "21:00" ] ],
+      "thu": [ [ "08:00", "21:00" ] ],
+      "fri": [ [ "11:30", "22:00" ] ],
+      "sat": [ [ "11:30", "22:00" ] ],
+      "sun": [ [ "08:00", "21:00" ] ]
+    }
+  },
+  {
+    "id": 75,
+    "name": "Rec Pier Chop House",
+    "city": "Baltimore",
+    "cuisine": "Steakhouse",
+    "price": "$$$$",
+    "address": "1715 Thames St, Baltimore, MD 21231",
+    "tables": 24,
+    "hours": {
+      "mon": [ [ "11:30", "22:00" ] ],
+      "tue": [ [ "11:30", "22:00" ] ],
+      "wed": [ [ "11:30", "22:00" ] ],
+      "thu": [ [ "11:30", "22:00" ] ],
+      "fri": [ [ "11:30", "23:00" ] ],
+      "sat": [ [ "11:30", "23:00" ] ],
+      "sun": [ [ "11:30", "21:00" ] ]
+    }
+  },
+  {
+    "id": 76,
+    "name": "Rusty Scupper",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$$$",
+    "address": "402 Key Hwy, Baltimore, MD 21230",
+    "tables": 10,
+    "hours": {
+      "mon": [ [ "16:00", "21:00" ] ],
+      "tue": [ [ "16:00", "21:00" ] ],
+      "wed": [ [ "16:00", "21:00" ] ],
+      "thu": [ [ "16:00", "21:00" ] ],
+      "fri": [ [ "12:00", "22:00" ] ],
+      "sat": [ [ "12:00", "22:00" ] ],
+      "sun": [ [ "10:30", "21:00" ] ]
+    }
+  },
+  {
+    "id": 77,
+    "name": "Rye Street Tavern",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$",
+    "address": "3858 Rye St, Baltimore, MD 21230",
+    "tables": 22,
+    "hours": {
+      "mon": [ [ "11:30", "22:00" ] ],
+      "tue": [ [ "11:30", "22:00" ] ],
+      "wed": [ [ "11:30", "22:00" ] ],
+      "thu": [ [ "11:30", "22:00" ] ],
+      "fri": [ [ "11:30", "23:00" ] ],
+      "sat": [ [ "11:30", "23:00" ] ],
+      "sun": [ [ "11:30", "21:00" ] ]
+    }
+  },
+  {
+    "id": 78,
+    "name": "Saffron Indian Cuisine",
+    "city": "Baltimore",
+    "cuisine": "Indian",
+    "price": "$$",
+    "address": "838 E Belvedere Ave, Baltimore, MD 21212",
+    "tables": 14,
+    "hours": {
+      "mon": [ [ "11:30", "22:00" ] ],
+      "tue": [ [ "11:30", "22:00" ] ],
+      "wed": [ [ "11:30", "22:00" ] ],
+      "thu": [ [ "11:30", "22:00" ] ],
+      "fri": [ [ "11:30", "23:00" ] ],
+      "sat": [ [ "11:30", "23:00" ] ],
+      "sun": [ [ "11:30", "21:30" ] ]
+    }
+  },
+  {
+    "id": 79,
+    "name": "Samos Greek Island Grill",
+    "city": "Baltimore",
+    "cuisine": "Greek",
+    "price": "$$",
+    "address": "3745 Boston St, Baltimore, MD 21224",
+    "tables": 12,
+    "hours": {
+      "mon": [ [ "11:00", "21:00" ] ],
+      "tue": [ [ "11:00", "21:00" ] ],
+      "wed": [ [ "11:00", "21:00" ] ],
+      "thu": [ [ "11:00", "21:00" ] ],
+      "fri": [ [ "11:00", "21:00" ] ],
+      "sat": [ [ "11:00", "21:00" ] ],
+      "sun": [ [ "11:30", "18:00" ] ]
+    }
+  },
+  {
+    "id": 80,
+    "name": "Silver Queen Cafe",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$",
+    "address": "5429 Harford Rd, Baltimore, MD 21214",
+    "tables": 10,
+    "hours": {
+      "mon": [ [ "07:00", "15:00" ] ],
+      "tue": [ [ "07:00", "15:00" ] ],
+      "wed": [ [ "07:00", "15:00" ] ],
+      "thu": [ [ "07:00", "15:00" ] ],
+      "fri": [ [ "07:00", "15:00" ] ],
+      "sat": [ [ "07:00", "15:00" ] ],
+      "sun": [ [ "07:00", "15:00" ] ]
+    }
+  },
+  {
+    "id": 81,
+    "name": "Sotto Sopra",
+    "city": "Baltimore",
+    "cuisine": "Italian",
+    "price": "$$$",
+    "address": "1207 Reisterstown Rd, Baltimore, MD 21208",
+    "tables": 18,
+    "hours": {
+      "mon": [ [ "17:00", "22:00" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "17:00", "21:00" ] ]
+    }
+  },
+  {
+    "id": 82,
+    "name": "Tapas Teatro",
+    "city": "Baltimore",
+    "cuisine": "Spanish",
+    "price": "$$",
+    "address": "1001 Fleet St, Baltimore, MD 21231",
+    "tables": 14,
+    "hours": {
+      "mon": [ [ "11:30", "21:00" ] ],
+      "tue": [ [ "11:30", "21:00" ] ],
+      "wed": [ [ "11:30", "21:00" ] ],
+      "thu": [ [ "11:30", "21:00" ] ],
+      "fri": [ [ "11:30", "22:00" ] ],
+      "sat": [ [ "11:30", "22:00" ] ],
+      "sun": [ [ "11:30", "21:00" ] ]
+    }
+  },
+  {
+    "id": 83,
+    "name": "Thames Street Oyster House",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$$",
+    "address": "1728 Thames St, Baltimore, MD 21231",
+    "tables": 16,
+    "hours": {
+      "mon": [ [ "16:30", "21:30" ] ],
+      "tue": [ [ "16:30", "21:30" ] ],
+      "wed": [ [ "16:30", "21:30" ] ],
+      "thu": [ [ "16:30", "21:30" ] ],
+      "fri": [ [ "11:30", "21:30" ] ],
+      "sat": [ [ "11:30", "21:30" ] ],
+      "sun": [ [ "11:30", "21:30" ] ]
+    }
+  },
+  {
+    "id": 84,
+    "name": "The Crown Restaurant",
+    "city": "Baltimore",
+    "cuisine": "Fine Dining",
+    "price": "$$$$",
+    "address": "1910 N Charles St, Baltimore, MD 21201",
+    "tables": 12,
+    "hours": {
+      "mon": [ [ "17:00", "22:00" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "17:00", "21:00" ] ]
+    }
+  },
+  {
+    "id": 85,
+    "name": "The Food Market",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$",
+    "address": "1017 W 36th St, Baltimore, MD 21211",
+    "tables": 14,
+    "hours": {
+      "mon": [ [ "10:00", "21:00" ] ],
+      "tue": [ [ "10:00", "21:00" ] ],
+      "wed": [ [ "10:00", "21:00" ] ],
+      "thu": [ [ "10:00", "21:00" ] ],
+      "fri": [ [ "10:00", "22:00" ] ],
+      "sat": [ [ "09:00", "22:00" ] ],
+      "sun": [ [ "09:00", "21:00" ] ]
+    }
+  },
+  {
+    "id": 86,
+    "name": "The Helmand",
+    "city": "Baltimore",
+    "cuisine": "Other",
+    "price": "$$",
+    "address": "806 N Charles St, Baltimore, MD 21201",
+    "tables": 12,
+    "hours": {
       "mon": [ [ "Closed" ] ],
       "tue": [ [ "17:00", "21:00" ] ],
       "wed": [ [ "17:00", "21:00" ] ],
       "thu": [ [ "17:00", "21:00" ] ],
       "fri": [ [ "17:00", "22:00" ] ],
       "sat": [ [ "17:00", "22:00" ] ],
+      "sun": [ [ "16:00", "21:00" ] ]
+    }
+  },
+  {
+    "id": 87,
+    "name": "The Kabul",
+    "city": "Baltimore",
+    "cuisine": "Mediterranean",
+    "price": "$$",
+    "address": "55 Market Pl., Ste 5505, Baltimore, MD 21202",
+    "tables": 14,
+    "hours": {
+      "mon": [ [ "10:30", "22:00" ] ],
+      "tue": [ [ "10:30", "22:00" ] ],
+      "wed": [ [ "10:30", "22:00" ] ],
+      "thu": [ [ "10:30", "22:00" ] ],
+      "fri": [ [ "10:30", "22:00" ] ],
+      "sat": [ [ "11:00", "22:00" ] ],
+      "sun": [ [ "11:00", "22:00" ] ]
+    }
+  },
+  {
+    "id": 88,
+    "name": "The Prime Rib",
+    "city": "Baltimore",
+    "cuisine": "Steakhouse",
+    "price": "$$$$",
+    "address": "1101 N Calvert St, Baltimore, MD 21202",
+    "tables": 22,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  },
+  {
+    "id": 89,
+    "name": "The Urban Oyster",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$",
+    "address": "914 W 36th St, Baltimore, MD 21211",
+    "tables": 12,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "Closed" ] ],
+      "wed": [ [ "16:00", "22:00" ] ],
+      "thu": [ [ "16:00", "22:00" ] ],
+      "fri": [ [ "16:00", "23:00" ] ],
+      "sat": [ [ "16:00", "23:00" ] ],
+      "sun": [ [ "13:00", "21:00" ] ]
+    }
+  },
+  {
+    "id": 90,
+    "name": "Topside Tavern",
+    "city": "Baltimore",
+    "cuisine": "Bar / Tavern",
+    "price": "$$",
+    "address": "Mount Vernon, Baltimore, MD",
+    "tables": 14,
+    "hours": {
+      "mon": [ [ "17:00", "22:00" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "17:00", "21:00" ] ]
+    }
+  },
+  {
+    "id": 91,
+    "name": "Valentino’s Restaurant",
+    "city": "Baltimore",
+    "cuisine": "Italian",
+    "price": "$$",
+    "address": "6627 Harford Rd, Baltimore, MD 21214",
+    "tables": 14,
+    "hours": {
+      "mon": [ [ "17:00", "22:00" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:00", "21:00" ] ]
+    }
+  },
+  {
+    "id": 92,
+    "name": "Verde",
+    "city": "Baltimore",
+    "cuisine": "Pizza",
+    "price": "$$",
+    "address": "641 S Montford Ave, Baltimore, MD 21224",
+    "tables": 18,
+    "hours": {
+      "mon": [ [ "11:30", "22:00" ] ],
+      "tue": [ [ "11:30", "22:00" ] ],
+      "wed": [ [ "11:30", "22:00" ] ],
+      "thu": [ [ "11:30", "22:00" ] ],
+      "fri": [ [ "11:30", "23:00" ] ],
+      "sat": [ [ "11:30", "23:00" ] ],
+      "sun": [ [ "11:30", "21:00" ] ]
+    }
+  },
+  {
+    "id": 93,
+    "name": "V-NO Wine Bar",
+    "city": "Baltimore",
+    "cuisine": "Bar / Tavern",
+    "price": "$$",
+    "address": "905 S Ann St, Baltimore, MD 21231",
+    "tables": 8,
+    "hours": {
+      "mon": [ [ "17:00", "22:00" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
       "sun": [ [ "Closed" ] ]
     }
-}
+  },
+  {
+    "id": 94,
+    "name": "Who Know’z Restaurant & Lounge",
+    "city": "Baltimore",
+    "cuisine": "Soul Food",
+    "price": "$$",
+    "address": "2101 Maryland Ave, Baltimore, MD 21218",
+    "tables": 20,
+    "hours": {
+      "mon": [ [ "17:00", "02:00" ] ],
+      "tue": [ [ "17:00", "02:00" ] ],
+      "wed": [ [ "17:00", "02:00" ] ],
+      "thu": [ [ "17:00", "02:00" ] ],
+      "fri": [ [ "17:00", "03:00" ] ],
+      "sat": [ [ "17:00", "03:00" ] ],
+      "sun": [ [ "17:00", "02:00" ] ]
+    }
+  },
+  {
+    "id": 95,
+    "name": "Woodberry Kitchen",
+    "city": "Baltimore",
+    "cuisine": "American",
+    "price": "$$$$",
+    "address": "2010 Clifton Ave, Baltimore, MD 21216",
+    "tables": 10,
+    "hours": {
+      "mon": [ [ "Closed" ] ],
+      "tue": [ [ "17:00", "22:00" ] ],
+      "wed": [ [ "17:00", "22:00" ] ],
+      "thu": [ [ "17:00", "22:00" ] ],
+      "fri": [ [ "17:00", "23:00" ] ],
+      "sat": [ [ "17:00", "23:00" ] ],
+      "sun": [ [ "16:45", "21:00" ] ]
+    }
+  }
 ]
+
+
+

@@ -2,11 +2,14 @@ const Database = require('better-sqlite3');
 const fs = require('fs');
 const path = require('path');
 
-const dbPath = path.resolve(__dirname, '../restaurants.db'); // output DB here
-const schemaPath = path.resolve(__dirname, '../sql/schema.sql');
-const dataPath = path.resolve(__dirname, '../data/restaurants.json');
+// ✅ Database will be created at /backend/restaurants.db
+const dbPath = path.resolve(__dirname, '../restaurants.db');
 
-const schema = fs.readFileSync(path.join(__dirname, 'schema.sql'), 'utf-8');
+// ✅ These are both in the same folder as this script now
+const schemaPath = path.resolve(__dirname, './schema.sql');
+const dataPath = path.resolve(__dirname, './restaurants.json');
+
+const schema = fs.readFileSync(schemaPath, 'utf-8');
 const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
 const db = new Database(dbPath);
@@ -21,7 +24,7 @@ const tx = db.transaction(rows => {
   for (const r of rows) {
     insert.run({
       ...r,
-      hours: JSON.stringify(r.hours) // store as JSON text
+      hours: JSON.stringify(r.hours) // store hours as JSON text
     });
   }
 });

@@ -12,7 +12,6 @@
       <span class="navbar-brand mb-0 h1">🍽️ Smart Restaurants</span>
       <div class="d-flex gap-3">
         <a class="nav-link" href="./index.html">Search</a>
-        <a class="nav-link" href="./recommendations.html">Recommendations</a>
       </div>
     </div>
   </nav>
@@ -22,11 +21,15 @@
     <form id="searchForm" class="row g-2 align-items-end mb-3">
       <div class="col-12 col-md-4">
         <label for="cityInput" class="form-label">City</label>
-        <input id="cityInput" class="form-control" placeholder="e.g., Austin" />
+        <select id="cityInput" class="form-select">
+          <option value="">Any</option>
+        </select>
       </div>
       <div class="col-12 col-md-4">
         <label for="cuisineInput" class="form-label">Cuisine</label>
-        <input id="cuisineInput" class="form-control" placeholder="e.g., Italian" />
+        <select id="cuisineInput" class="form-select">
+          <option value="">Any</option>
+        </select>
       </div>
       <div class="col-6 col-md-2">
         <label for="priceInput" class="form-label">Price</label>
@@ -72,7 +75,6 @@
               <div class="col-6">
                 <label class="form-label">Date</label>
                 <input id="resDate" type="date" class="form-control" />
-
               </div>
               <div class="col-6">
                 <label class="form-label">Time</label>
