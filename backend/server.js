@@ -6,7 +6,7 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 5050;
-const db = require('./data/db');
+const db = require('./db');
 
 app.use(cors());
 app.use(express.json());
@@ -14,8 +14,7 @@ app.use(express.json());
 // ---------------------------
 // Load dataset (still used for in-memory reservations)
 // ---------------------------
-const DATA_PATH = path.join(__dirname, 'data', 'restaurants.json');
-
+const DATA_PATH = path.join(__dirname, 'restaurants.json');
 let RESTAURANTS = JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'));
 
 // In-memory reservations
@@ -28,11 +27,11 @@ function timeToMin(hhmm) {
   const [h, m] = hhmm.split(':').map(Number);
   return h * 60 + m;
 }
-function isOpenNow(hoursObj, nowInput) {
-  if (!hoursObj) return false;
-  const days = ['sun','mon','tue','wed','thu','fri','sat'];
 
-  const now = nowInput ? new Date(nowInput) : new Date();
+function isOpenNow(hoursObj) {
+  if (!hoursObj) return false;
+  const days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+  const now = new Date(); // always use current server time
   if (isNaN(now.getTime())) return false;
 
   const dayKey = days[now.getDay()];
@@ -70,40 +69,95 @@ function countReservationsForSlot(restaurantId, date, time) {
 // ---------------------------
 app.get('/api/health', (_req, res) => res.json({ ok: true }));
 
-// GET /api/restaurants?city=&cuisine=&price=&open_now=true&now=ISO
+// --------------------------------
+// Get restaurants (with filters and open_now)
+// --------------------------------
 app.get('/api/restaurants', (req, res) => {
   try {
     const { city = '', cuisine = '', price = '' } = req.query;
 
-  const wantOpen = open_now === 'true';
-  const cCity = city.trim().toLowerCase();
-  const cCuis = cuisine.trim().toLowerCase();
-  const cPrice = price.trim();
+    // Debug print to see what's coming in
+    console.log('open_now query param:', req.query.open_now, 'now:', req.query.now);
 
-  // Require at least one filter (city, cuisine, price, or open_now=true)
-  const anyFilter = Boolean(cCity) || Boolean(cCuis) || Boolean(cPrice) || wantOpen;
-  if (!anyFilter) {
-    return res.status(400).json({
-      error: 'Please provide at least one filter: city, cuisine, price, or open_now=true'
+    let query = 'SELECT * FROM restaurants WHERE 1=1';
+    const params = [];
+
+    if (city) {
+      query += ' AND LOWER(city) LIKE ?';
+      params.push(`%${city.toLowerCase()}%`);
+    }
+    if (cuisine) {
+      query += ' AND LOWER(cuisine) LIKE ?';
+      params.push(`%${cuisine.toLowerCase()}%`);
+    }
+    if (price) {
+      query += ' AND price = ?';
+      params.push(price);
+    }
+
+    const rows = db.prepare(query).all(...params);
+
+    // ✅ Parse hours JSON and compute open_now
+    const restaurants = rows.map(r => {
+      let parsedHours;
+      try {
+        parsedHours = JSON.parse(r.hours);
+      } catch {
+        parsedHours = null;
+      }
+    
+      const open_now = isOpenNow(parsedHours);  // ← no more req.query.now
+      return { ...r, hours: parsedHours, open_now };
     });
+    
+
+    // Apply open_now filter if requested
+    let filtered = restaurants;
+    if (req.query.open_now === 'true') {
+      filtered = restaurants.filter(r => r.open_now);
+    }
+
+    res.json(filtered);
+  } catch (err) {
+    console.error('DB error:', err);
+    res.status(500).json({ error: 'Database query failed' });
   }
-
-  let results = RESTAURANTS.filter(r => {
-    const matchCity = cCity ? (r.city || '').toLowerCase().includes(cCity) : true;
-    const matchCuisine = cCuis ? (r.cuisine || '').toLowerCase().includes(cCuis) : true;
-    const matchPrice = cPrice ? (r.price || '') === cPrice : true;
-    return matchCity && matchCuisine && matchPrice;
-  });
-
-  results = results.map(r => ({ ...r, open_now: isOpenNow(r.hours, now) }));
-
-  if (wantOpen) results = results.filter(r => r.open_now);
-
-  res.json(results.slice(0, 50));
 });
 
-// POST /api/reservations
-// Body: { restaurantId, name, partySize, date: 'YYYY-MM-DD', time: 'HH:mm' }
+// --------------------------------
+// Get a single restaurant by ID
+// --------------------------------
+app.get('/api/restaurants/:id', (req, res) => {
+  try {
+    const id = Number(req.params.id);
+    if (isNaN(id)) {
+      return res.status(400).json({ error: 'Invalid restaurant ID' });
+    }
+
+    const row = db.prepare('SELECT * FROM restaurants WHERE id = ?').get(id);
+    if (!row) {
+      return res.status(404).json({ error: 'Restaurant not found' });
+    }
+
+    // Parse hours JSON
+    let parsedHours;
+    try {
+      parsedHours = JSON.parse(row.hours);
+    } catch {
+      parsedHours = null;
+    }
+
+    const open_now = isOpenNow(parsedHours);
+    res.json({ ...row, hours: parsedHours, open_now });
+  } catch (err) {
+    console.error('DB error:', err);
+    res.status(500).json({ error: 'Database query failed' });
+  }
+});
+
+// --------------------------------
+// Reservations (still in-memory for now)
+// --------------------------------
 app.post('/api/reservations', (req, res) => {
   const { restaurantId, name, partySize, date, time } = req.body || {};
   if (!restaurantId || !name || !partySize || !date || !time) {
@@ -112,7 +166,7 @@ app.post('/api/reservations', (req, res) => {
   const rest = RESTAURANTS.find(r => String(r.id) === String(restaurantId));
   if (!rest) return res.status(404).json({ error: 'Restaurant not found' });
 
-  const capacity = typeof rest.tables === 'number' ? rest.tables : 5; // default capacity if missing
+  const capacity = typeof rest.tables === 'number' ? rest.tables : 5;
   const existing = countReservationsForSlot(restaurantId, date, time);
 
   if (existing >= capacity) {
@@ -135,38 +189,7 @@ app.post('/api/reservations', (req, res) => {
   res.status(201).json({ ...record, tablesRemaining, capacity });
 });
 
-// Debug: list reservations
 app.get('/api/reservations', (_req, res) => res.json(reservations));
-
-/**
- * GET /api/recommendations
- * Query: city, cuisine, excludeId, limit=3, open_now=true|false, now=ISO
- * Returns: up to N highest-rated matches, with computed open_now.
- */
-app.get('/api/recommendations', (req, res) => {
-  const { city = '', cuisine = '', excludeId = '', limit = '3', open_now = '', now = '' } = req.query;
-  const cCity = city.trim().toLowerCase();
-  const cCuis = cuisine.trim().toLowerCase();
-  const lim = Math.max(1, Math.min(12, parseInt(limit, 10) || 3));
-  const wantOpen = open_now === 'true';
-
-  let pool = RESTAURANTS.filter(r => {
-    const matchCity = cCity ? (r.city || '').toLowerCase() === cCity : true;
-    const matchCuis = cCuis ? (r.cuisine || '').toLowerCase() === cCuis : true;
-    const notExcluded = String(r.id) !== String(excludeId);
-    return matchCity && matchCuis && notExcluded;
-  });
-
-  if (pool.length === 0) {
-    pool = RESTAURANTS.filter(r => String(r.id) !== String(excludeId));
-  }
-
-  pool = pool.map(r => ({ ...r, open_now: isOpenNow(r.hours, now) }));
-  if (wantOpen) pool = pool.filter(r => r.open_now);
-
-  pool.sort((a, b) => (b.rating || 0) - (a.rating || 0) || a.name.localeCompare(b.name));
-  res.json(pool.slice(0, lim));
-});
 
 // ---------------------------
 // Start server
