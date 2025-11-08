@@ -667,7 +667,7 @@
   "name": "Connie's Chicken & Waffles",
   "city": "Baltimore",
   "cuisine": "Southern / Soul Food",
-  "price": "address",
+  "price": "$",
   "address": "222 N Charles St, Baltimore, MD 21201",
   "tables": 0,
   "hours": {
@@ -854,7 +854,7 @@
   "name": "Facci Ristorante",
   "city": "Baltimore",
   "cuisine": "Italian",
-  "price": "address",
+  "price": "$$$",
   "address": "414 Light St, Baltimore, MD 21202",
   "tables": 0,
   "hours": {
@@ -971,7 +971,7 @@
   "name": "La Calle",
   "city": "Baltimore",
   "cuisine": "Mexican",
-  "price": "address",
+  "price": "$$",
   "address": "623 S Broadway, Baltimore, MD 21231",
   "tables": 0,
   "hours": {
@@ -1252,7 +1252,7 @@
   "name": "Ovenbird Bakery",
   "city": "Baltimore",
   "cuisine": "Bakery / Cafe",
-  "price": "address",
+  "price": "$",
   "address": "3925 Gough St Ste 2, Baltimore, MD 21224",
   "tables": 0,
   "hours": {
