@@ -1,3 +1,11 @@
+-- Project: Smart Restaurants
+-- File: schema.sql
+-- Description:
+--   This file defines the database structure for the Smart Restaurants app.
+--   It creates tables for restaurants and reservations, and adds an index
+--   to make reservation lookups faster.
+
+
 -- Rebuild base data table
 DROP TABLE IF EXISTS restaurants;
 CREATE TABLE restaurants (
@@ -11,7 +19,7 @@ CREATE TABLE restaurants (
   hours TEXT -- JSON string
 );
 
--- New: persistent reservations
+-- Create reservations table (stores each booking)
 DROP TABLE IF EXISTS reservations;
 CREATE TABLE reservations (
   id INTEGER PRIMARY KEY,
@@ -24,6 +32,6 @@ CREATE TABLE reservations (
   FOREIGN KEY (restaurant_id) REFERENCES restaurants(id)
 );
 
--- Helpful index for availability checks
+-- Index for availability checks
 CREATE INDEX IF NOT EXISTS idx_resv_rest_date_time
   ON reservations(restaurant_id, date, time);

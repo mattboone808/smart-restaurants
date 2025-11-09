@@ -1,9 +1,15 @@
-// frontend/script.js
+/*
+  Project: Smart Restaurants
+  File: script.js
+  Description:
+    This script handles the frontend logic for the Smart Restaurants web app.
+    It connects to the backend API, populates filters dynamically, performs
+    search queries, displays restaurant results, and handles reservation requests.
+*/
 
-// 🔎 Auto-detect the backend URL.
-
+// Auto-detect the backend URL - supports GitHub Codespaces and localhost
 const BASE_URL = (() => {
-  const host = window.location.hostname; // e.g., capstone-5502.app.github.dev OR localhost
+  const host = window.location.hostname;
   if (host.endsWith('app.github.dev')) {
     return `https://${host.replace(/-\d+\.app\.github\.dev$/, '-5050.app.github.dev')}`;
   }
@@ -11,15 +17,14 @@ const BASE_URL = (() => {
 })();
 console.log('[SmartRestaurants] API:', BASE_URL);
 
-const PREF_KEY = 'sr_prefs_v1';
-
+// Connect to HTML elements
 const form = document.getElementById('searchForm');
 const resultsEl = document.getElementById('results');
 const statusEl = document.getElementById('status');
 const priceEl = document.getElementById('priceInput');
 const openNowEl = document.getElementById('openNowCheck');
 
-// Modal elements
+// Reservation form
 let reserveModal;
 const resRestaurantId = document.getElementById('resRestaurantId');
 const resName = document.getElementById('resName');
@@ -28,10 +33,12 @@ const resDate = document.getElementById('resDate');
 const resTime = document.getElementById('resTime');
 const reserveBtn = document.getElementById('reserveSubmit');
 
+// Display "Searching" after Search button is pressed or displays an error message
 function setStatus(msg, type = 'secondary') {
   statusEl.innerHTML = msg ? `<div class="alert alert-${type} py-2">${msg}</div>` : '';
 }
 
+// Makes a card for each restaurant in the results list
 function cardHtml(r) {
   return `
   <div class="col-12 col-sm-6 col-md-4">
@@ -55,21 +62,24 @@ function cardHtml(r) {
   </div>`;
 }
 
-// ✅ Populate City and Cuisine dropdowns dynamically
+// Fills the City and Cuisine dropdowns using data from the database file
 async function populateFilters() {
   try {
-    // Just hit /api/restaurants with no params to get the full set
+    // Gets all restaurants to see which cities and cuisines exist
     const res = await fetch(`${BASE_URL}/api/restaurants`);
     if (!res.ok) throw new Error('Failed to fetch restaurants');
     const data = await res.json();
 
     const citySet = new Set();
     const cuisineSet = new Set();
+
+    // Collect city and cuisine names
     data.forEach(r => {
       if (r.city) citySet.add(r.city.trim());
       if (r.cuisine) cuisineSet.add(r.cuisine.trim());
     });
 
+    // Fills in the dropdown menus
     const cityInput = document.getElementById('cityInput');
     const cuisineInput = document.getElementById('cuisineInput');
 
@@ -91,6 +101,7 @@ async function populateFilters() {
   }
 }
 
+// Searches for restaurants based on what the user selected
 async function search(evt) {
   evt?.preventDefault();
 
@@ -99,6 +110,7 @@ async function search(evt) {
   const price = priceEl.value;
   const open_now = openNowEl.checked ? 'true' : '';
 
+  // If no filters are chosen, shows a helpful hint
   if (!city && !cuisine && !price && !open_now) {
     setStatus('Enter or select filters, then press Search.', 'secondary');
     resultsEl.innerHTML = '';
@@ -108,16 +120,19 @@ async function search(evt) {
   setStatus('Searching…', 'info');
 
   try {
+    // Build the search URL
     const url = new URL('/api/restaurants', BASE_URL);
     if (city) url.searchParams.set('city', city);
     if (cuisine) url.searchParams.set('cuisine', cuisine);
     if (price) url.searchParams.set('price', price);
     if (open_now) url.searchParams.set('open_now', open_now);
 
+    // Ask the server for matching restaurants
     const res = await fetch(url);
-    if (!res.ok) throw new Error('HTTP ' + res.status);
+    if (!res.ok) throw new Error('Server error: ' + res.status);
     const data = await res.json();
 
+    // Show the results or a “no matches” message
     resultsEl.innerHTML = data.length
       ? data.map(cardHtml).join('')
       : '<p class="text-muted">No matches found.</p>';
@@ -129,6 +144,7 @@ async function search(evt) {
   }
 }
 
+// Opens the reservation form when the user clicks “Reserve”
 resultsEl.addEventListener('click', (e) => {
   const btn = e.target.closest('button[data-action="reserve"]');
   if (!btn) return;
@@ -138,6 +154,7 @@ resultsEl.addEventListener('click', (e) => {
   reserveModal.show();
 });
 
+// Sends the reservation info to the server
 reserveBtn.addEventListener('click', async () => {
   const payload = {
     restaurantId: resRestaurantId.value,
@@ -146,31 +163,41 @@ reserveBtn.addEventListener('click', async () => {
     date: resDate.value,
     time: resTime.value
   };
+
+  // Check that all fields are filled in
   if (!payload.restaurantId || !payload.name || !payload.partySize || !payload.date || !payload.time) {
     alert('Please complete all fields.');
     return;
   }
+
   try {
+    // Send reservation to the backend
     const res = await fetch(`${BASE_URL}/api/reservations`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
     });
+
+    // Handle the case where no tables are left
     if (res.status === 409) {
       const err = await res.json();
       alert(err.error || 'No tables available.');
       return;
     }
-    if (!res.ok) throw new Error('HTTP ' + res.status);
+
+    if (!res.ok) throw new Error('Server error: ' + res.status);
+
+    // Show a success message
     const data = await res.json();
     reserveModal?.hide();
     alert(`Reservation confirmed! #${data.id}\nTables remaining: ${data.tablesRemaining}/${data.capacity}`);
   } catch (e) {
     console.error(e);
-    alert('Reservation failed. Try again.');
+    alert('Could not make the reservation. Please try again.');
   }
 });
 
+// Run the startup functions
 form.addEventListener('submit', search);
 setStatus('Select filters and press Search.', 'secondary');
 resultsEl.innerHTML = '';
