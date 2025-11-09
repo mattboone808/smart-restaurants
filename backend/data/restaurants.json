@@ -1708,6 +1708,114 @@
       "sat": [ [ "17:00", "23:00" ] ],
       "sun": [ [ "16:45", "21:00" ] ]
     }
+  },
+  {
+    "id": 96,
+    "name": "The Green Turtle Sports Bar & Grille",
+    "city": "Baltimore",
+    "cuisine":"American",
+    "price": "$$",
+    "address": "3803 Boston St, Baltimore, MD 21224",
+    "tables": 30,
+    "hours": {
+      "mon": [["11:00", "23:00"]],
+      "tue": [["11:00", "23:00"]],
+      "wed": [["11:00", "23:00"]],
+      "thu": [["11:00", "23:00"]],
+      "fri": [["11:00", "24:00"]],
+      "sat": [["11:00", "24:00"]],
+      "sun": [["11:00", "24:00"]]
+    }
+  },
+  {
+    "id": 97,
+    "name": "The Capital Grille",
+    "city": "Baltimore",
+    "cuisine": "Steakhouse",
+    "price": "$$$",
+    "address": "500 E Pratt St, Baltimore, MD 21202",
+    "tables": 25,
+    "hours": {
+      "mon": [["11:30", "21:00"]],
+      "tue": [["11:30", "21:00"]],
+      "wed": [["11:30", "21:00"]],
+      "thu": [["11:30", "21:00"]],
+      "fri": [["11:30", "22:00"]],
+      "sat": [["16:00", "22:00"]],
+      "sun": [["16:00", "21:00"]]
+    }
+  },
+  {
+    "id": 98,
+    "name": "Outback Steakhouse",
+    "city": "Baltimore",
+    "cuisine": "Steakhouse",
+    "price": "$$",
+    "address": "2400 Boston St, Baltimore, MD 21224",
+    "tables": 30,
+    "hours": {
+      "mon": [["11:00", "22:00"]],
+      "tue": [["11:00", "22:00"]],
+      "wed": [["11:00", "22:00"]],
+      "thu": [["11:00", "22:00"]],
+      "fri": [["11:00", "22:00"]],
+      "sat": [["11:00", "22:00"]],
+      "sun": [["11:00", "21:00"]]
+    }
+  },
+  {
+    "id": 99,
+    "name": "Ruth's Chris Steak House",
+    "city": "Baltimore",
+    "cuisine": "Steakhouse",
+    "price": "$$$",
+    "address": "711 Eastern Ave, Baltimore, MD 21202",
+    "tables": 28,
+    "hours": {
+      "mon": [["16:00", "22:00"]],
+      "tue": [["16:00", "22:00"]],
+      "wed": [["16:00", "22:00"]],
+      "thu": [["16:00", "22:00"]],
+      "fri": [["16:00", "23:00"]],
+      "sat": [["16:00", "23:00"]],
+      "sun": [["16:00", "21:00"]]
+    }
+  },
+  {
+    "id": 100,
+    "name": "Mama's on the Half Shell",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$",
+    "address": "2901 O'donnell St, Baltimore, MD 21224",
+    "tables": 20,
+    "hours": {
+      "mon": [["11:00", "22:00"]],
+      "tue": [["11:00", "22:00"]],
+      "wed": [["11:00", "22:00"]],
+      "thu": [["11:00", "22:00"]],
+      "fri": [["11:00", "24:00"]],
+      "sat": [["09:00", "24:00"]],
+      "sun": [["09:00", "22:00"]]
+    }
+  },
+  {
+    "id": 101,
+    "name": "The Choptank",
+    "city": "Baltimore",
+    "cuisine": "Seafood",
+    "price": "$$$",
+    "address": "1641 Aliceanna St, Baltimore, MD 21231",
+    "tables": 18,
+    "hours": {
+      "mon": [["12:00", "24:00"]],
+      "tue": [["12:00", "24:00"]],
+      "wed": [["12:00", "24:00"]],
+      "thu": [["12:00", "24:00"]],
+      "fri": [["12:00", "24:00"]],
+      "sat": [["11:00", "24:00"]],
+      "sun": [["11:00", "24:00"]]
+    }
   }
 ]
 
