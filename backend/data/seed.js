@@ -12,7 +12,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Set the database file path 
-const dbPath = path.resolve(__dirname, '../restaurants.db');
+const dbPath = path.resolve(__dirname, './restaurants.db');
 
 // Point to the schema and data files in this same folder
 const schemaPath = path.resolve(__dirname, './schema.sql');
