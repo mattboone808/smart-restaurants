@@ -45,7 +45,7 @@ Download from https://code.visualstudio.com/
 In VS Code, press Cmd+Shift+X (Mac) or Ctrl+Shift+X (Windows),
 search “Live Server” by Ritwick Dey, and click Install.
 
-# Steps
+# Steps for running the application
 1. Open the smart-restaurants folder in Visual Studio Code
 
 2. Navigate to the backend folder
