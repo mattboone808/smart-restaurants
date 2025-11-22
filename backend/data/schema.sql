@@ -5,11 +5,21 @@
 --   It creates tables for restaurants and reservations, and adds an index
 --   to make reservation lookups faster.
 
+-- Turn off foreign key checks while dropping tables
+
+PRAGMA foreign_keys = OFF;
+
+-- Drop child tables first
+DROP TABLE IF EXISTS reservations;
 
 -- Rebuild base data table
 DROP TABLE IF EXISTS restaurants;
+
+-- Re-enable foreign key checks
+PRAGMA foreign_keys = ON;
+
 CREATE TABLE restaurants (
-  id INTEGER PRIMARY KEY,
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT NOT NULL,
   city TEXT,
   cuisine TEXT,
