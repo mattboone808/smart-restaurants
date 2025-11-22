@@ -16,11 +16,14 @@ const dbPath = path.resolve(__dirname, './restaurants.db');
 
 // Point to the schema and data files in this same folder
 const schemaPath = path.resolve(__dirname, './schema.sql');
-const dataPath = path.resolve(__dirname, './restaurants.json');
+const dataPaths = [
+  path.resolve(__dirname, './restaurants.json'),
+  path.resolve(__dirname, './restaurantsFrederick.json')
+];
 
 // Read in the schema and data files
 const schema = fs.readFileSync(schemaPath, 'utf-8');
-const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+const data = dataPaths.map(p => JSON.parse(fs.readFileSync(p, 'utf8'))).flat();
 
 // Create or open the database
 const db = new Database(dbPath);
