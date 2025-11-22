@@ -1,0 +1,919 @@
+[
+    {
+        "id": 1,
+        "name": "Marlin Moon Restaurant",
+        "city": "Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$$",
+        "address": "3301 Atlantic Ave, Ocean City, MD 21842",
+        "tables": 20,
+        "hours": {
+            "mon": [["07:30", "22:00"]],
+            "tue": [["07:30", "22:00"]],
+            "wed": [["07:30", "22:00"]],
+            "thu": [["07:30", "22:00"]],
+            "fri": [["07:30", "22:00"]],
+            "sat": [["07:30", "22:00"]],
+            "sun": [["07:30", "22:00"]]
+        }
+    },
+    {
+        "id": 2,
+        "name": "The Surfside Rooster",
+        "city": "Ocean City",
+        "cuisine": "American",
+        "price": "$$",
+        "address": "12507 Sunset Ave, Ocean City, MD 21842",
+        "tables": 25,
+        "hours": {
+            "mon": [["08:00", "14:00"]],
+            "tue": [["08:00", "14:00"]],
+            "wed": [["08:00", "14:00"]],
+            "thu": [["08:00", "14:00"]],
+            "fri": [["08:00", "21:00"]],
+            "sat": [["08:00", "14:00"]],
+            "sun": [["08:00", "14:00"]]
+        }
+    },
+    {
+        "id": 3,
+        "name": "Coastal Salt",
+        "city":"Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$",
+        "address": "1601 Atlantic Ave, Ocean City, MD 21842",
+        "tables": 24,
+        "hours": {
+            "mon": [["Closed"]],
+            "tue": [["Closed"]],
+            "wed": [["Closed"]],
+            "thu": [["11:00", "21:00"]],
+            "fri": [["11:00", "21:00"]],
+            "sat": [["11:00", "21:00"]],
+            "sun": [["11:00", "21:00"]]
+        }
+    },
+    {
+        "id": 4,
+        "name": "Longboard Cafe",
+        "city": "Ocean City",
+        "cuisine": "American",
+        "price": "$$",
+        "address": "6701 Coastal Hwy, Ocean City, MD 21842",
+        "tables": 20,
+        "hours": {
+            "mon": [["11:00", "21:00"]],
+            "tue": [["Closed"]],
+            "wed": [["11:00", "21:00"]],
+            "thu": [["11:00", "21:00"]],
+            "fri": [["11:00", "21:30"]],
+            "sat": [["11:00", "21:30"]],
+            "sun": [["11:00", "21:00"]]
+        }
+    },
+    {
+        "id": 5,
+        "name": "Barn 34",
+        "city":"Ocean City",
+        "cuisine": "Breakfast & Brunch",
+        "price": "$$",
+        "address": "3400 Coastal Hwy, Ocean City, MD 21842",
+        "tables": 18,
+        "hours": {
+            "mon": [["Closed"]],
+            "tue": [["Closed"]],
+            "wed": [["Closed"]],
+            "thu": [["Closed"]],
+            "fri": [["08:00", "14:00"]],
+            "sat": [["08:00", "14:00"]],
+            "sun": [["08:00", "14:00"]]
+        }
+    },
+    {
+        "id": 6,
+        "name": "The Hobbit Restaurant",
+        "city": "Ocean City",
+        "cuisine": "American",
+        "price": "$$$",
+        "address": "121 81st St, Ocean City, MD 21842",
+        "tables": 20,
+        "hours": {
+            "mon": [["17:00", "21:00"]],
+            "tue": [["17:00", "21:00"]],
+            "wed": [["17:00", "21:00"]],
+            "thu": [["17:00", "21:00"]],
+            "fri": [["16:30", "21:30"]],
+            "sat": [["16:30", "21:30"]],
+            "sun": [["17:00", "21:00"]]
+        }
+    },
+    {
+        "id": 7,
+        "name": "The Shark on the Harbor",
+        "city": "Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$",
+        "address": "12924 Sunset Ave, Ocean City, MD 21842",
+        "tables": 16,
+        "hours": {
+            "mon": [["11:30", "21:00"]],
+            "tue": [["15:00", "21:00"]],
+            "wed": [["15:00", "21:00"]],
+            "thu": [["11:30", "21:00"]],
+            "fri": [["11:30", "21:30"]],
+            "sat": [["11:30", "21:30"]],
+            "sun": [["11:30", "21:00"]]
+        }
+    },
+    {
+        "id": 8,
+        "name": "Fager's Island",
+        "city":"Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$$",
+        "address": "201 60th St, Ocean City, MD 21842",
+        "tables": 28,
+        "hours": {
+            "mon": [["11:00", "24:00"]],
+            "tue": [["11:00", "24:00"]],
+            "wed": [["11:00", "24:00"]],
+            "thu": [["11:00", "24:00"]],
+            "fri": [["11:00", "24:00"]],
+            "sat": [["11:00", "24:00"]],
+            "sun": [["11:00", "24:00"]]
+        }
+    },
+    {
+        "id": 9,
+        "name": "Sunset Grille",
+        "city": "Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$",
+        "address": "12933 Sunset Ave, Ocean City, MD 21842",
+        "tables": 26,
+        "hours": {
+            "mon": [["Closed"]],
+            "tue": [["Closed"]],
+            "wed": [["16:00", "22:00"]],
+            "thu": [["16:00", "22:00"]],
+            "fri": [["11:30", "22:00"]],
+            "sat": [["11:30", "22:00"]],
+            "sun": [["Closed"]]
+        }
+    },
+    {
+        "id": 10,
+        "name": "Surfin' Betty's Burger Bar",
+        "city": "Ocean City",
+        "cuisine": "American",
+        "price": "$$",
+        "address": "1501 Philadelphia Ave, Ocean City, MD 21842",
+        "tables": 14,
+        "hours": {
+            "mon": [["11:00", "21:00"]],
+            "tue": [["11:00", "21:00"]],
+            "wed": [["11:00", "21:00"]],
+            "thu": [["11:00", "21:00"]],
+            "fri": [["11:00", "21:00"]],
+            "sat": [["11:00", "21:00"]],
+            "sun": [["11:00", "21:00"]]
+        }
+    },
+    {
+        "id": 11,
+        "name": "Whiskers Saloon",
+        "city": "Ocean City",
+        "cuisine": "Bar / Tavern",
+        "price": "$$",
+        "address": "11805L Coastal Hwy, Ocean City, MD 21842",
+        "tables": 15,
+        "hours": {
+            "mon": [["15:00", "24:00"]],
+            "tue": [["15:00", "24:00"]],
+            "wed": [["15:00", "24:00"]],
+            "thu": [["15:00", "24:00"]],
+            "fri": [["15:00", "24:00"]],
+            "sat": [["15:00", "24:00"]],
+            "sun": [["15:00", "22:00"]]
+        }
+    },
+    {
+        "id": 12,
+        "name": "Papi's Tacos Ocean City",
+        "city": "Ocean City",
+        "cuisine": "Mexican",
+        "price": "$$",
+        "address": "1500 Philadelphia Ave, Ocean City, MD 21842",
+        "tables": 22,
+        "hours": {
+            "mon": [["11:30", "21:00"]],
+            "tue": [["11:30", "21:00"]],
+            "wed": [["11:30", "21:00"]],
+            "thu": [["11:30", "21:00"]],
+            "fri": [["11:30", "22:00"]],
+            "sat": [["10:30", "22:00"]],
+            "sun": [["10:30", "21:00"]]
+        }
+    },
+    {
+        "id": 13,
+        "name": "Shotti's Point Luna's",
+        "city": "Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$",
+        "address": "12702 Old Bridge Rd, Ocean City, MD 21842",
+        "tables": 20,
+        "hours": {
+            "mon": [["11:00", "22:00"]],
+            "tue": [["11:00", "22:00"]],
+            "wed": [["11:00", "22:00"]],
+            "thu": [["11:00", "22:00"]],
+            "fri": [["11:00", "22:00"]],
+            "sat": [["11:00", "22:00"]],
+            "sun": [["11:00", "22:00"]]
+        }
+    },
+    {
+        "id": 14,
+        "name": "Captain's Galley Crab Cake Shack",
+        "city": "Ocean City",
+        "cuisine": "Seafood", 
+        "price": "$$",
+        "address": "9936 Stephen Decatur Hwy Unit 401, Ocean City, MD 21842",
+        "tables": 18,
+        "hours": {
+            "mon": [["11:00", "20:00"]],
+            "tue": [["11:00", "20:00"]],
+            "wed": [["11:00", "20:00"]],
+            "thu": [["11:00", "20:00"]],
+            "fri": [["11:00", "20:00"]],
+            "sat": [["11:00", "20:00"]],
+            "sun": [["11:00", "20:00"]]
+        }
+    },
+    {
+        "id": 15,
+        "name": "Fast Eddies",
+        "city":"Ocean City",
+        "cuisine": "Bar / Tavern",
+        "price": "$",
+        "address": "11805 Coastal Hwy Ste T, Ocean City, MD 21842",
+        "tables": 16,
+        "hours": {
+            "mon": [["15:00", "21:00"]],
+            "tue": [["15:00", "21:00"]],
+            "wed": [["15:00", "21:00"]],
+            "thu": [["15:00", "22:00"]],
+            "fri": [["12:00", "23:00"]],
+            "sat": [["12:00", "23:00"]],
+            "sun": [["12:00", "21:00"]]
+        }
+    },
+    {
+        "id": 16,
+        "name": "Cafe Mirage",
+        "city": "Ocean City",
+        "cuisine": "American",
+        "price": "$$",
+        "address": "12817 Coastal Hwy, Ocean City, MD 21842",
+        "tables": 25,
+        "hours": {
+            "mon": [["Closed"]],
+            "tue": [["Closed"]],
+            "wed": [["Closed"]],
+            "thu": [["16:00", "21:00"]],
+            "fri": [["16:00", "21:00"]],
+            "sat": [["16:00", "21:00"]],
+            "sun": [["16:00", "21:00"]]
+        }
+    },
+    {
+        "id": 17,
+        "name": "Saltwater 75",
+        "city": "Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$",
+        "address": "115 75th St, Ocean City, MD 21842",
+        "tables": 20,
+        "hours": {
+            "mon": [["11:00", "24:00"]],
+            "tue": [["11:00", "24:00"]],
+            "wed": [["11:00", "24:00"]],
+            "thu": [["11:00", "24:00"]],
+            "fri": [["11:00", "24:00"]],
+            "sat": [["11:00", "24:00"]],
+            "sun": [["11:00", "24:00"]]
+        }
+    },
+    {
+        "id": 18,
+        "name": "Kalamata Meze Bar",
+        "city": "Ocean City",
+        "cuisine": "Mediterranean",
+        "price": "$$",
+        "address": "12849 Ocean Gateway, Ocean City, MD 21842",
+        "tables": 14,
+        "hours": {
+            "mon": [["12:00", "22:00"]],
+            "tue": [["12:00", "22:00"]],
+            "wed": [["12:00", "22:00"]],
+            "thu": [["12:00", "22:00"]],
+            "fri": [["12:00", "22:00"]],
+            "sat": [["12:00", "22:00"]],
+            "sun": [["12:00", "22:00"]]
+        }
+    },
+    {
+        "id": 19,
+        "name": "Del Marva Boil Company", 
+        "city":"Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$",
+        "address": "14308 Coastal Hwy Unit 5, Ocean City, MD 21842",
+        "tables": 15,
+        "hours": {
+            "mon": [["12:30", "14:00"]],
+            "tue": [["Closed"]],
+            "wed": [["Closed"]],
+            "thu": [["Closed"]],
+            "fri": [["Closed"]],
+            "sat": [["Closed"]],
+            "sun": [["Closed"]]
+        }
+    },
+    {
+        "id": 20,
+        "name": "Ocean 13",
+        "city":"Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$",
+        "address": "106 32nd St, Ocean City, MD 21842",
+        "tables": 18,
+        "hours": {
+            "mon": [["15:00", "21:00"]],
+            "tue": [["Closed"]],
+            "wed": [["Closed"]],
+            "thu": [["15:00", "22:00"]],
+            "fri": [["15:00", "22:00"]],
+            "sat": [["15:00", "22:00"]],
+            "sun": [["15:00", "21:00"]]
+        }
+    },
+    {
+        "id": 21,
+        "name": "Cantina Los Agaves Mexican Grill",
+        "city":"Ocean City",
+        "cuisine": "Mexican",
+        "price": "$$",
+        "address": "12720 Ocean Gateway Ste 7, Ocean City, MD 21842",
+        "tables": 22,
+        "hours": {
+            "mon": [["11:00", "23:00"]],
+            "tue": [["11:00", "23:00"]],
+            "wed": [["11:00", "23:00"]],
+            "thu": [["11:00", "23:00"]],
+            "fri": [["11:00", "23:00"]],
+            "sat": [["11:00", "23:00"]],
+            "sun": [["11:00", "23:00"]]
+        }
+    },
+    {
+        "id": 22,
+        "name": "Ristorante Antipasti",
+        "city":"Ocean City",
+        "cuisine": "Italian",
+        "price": "$$$",
+        "address": "3101 Philadelphia Ave, Ocean City, MD 21842",
+        "tables": 26,
+        "hours": {
+            "mon": [["17:00", "21:30"]],
+            "tue": [["17:00", "21:30"]],
+            "wed": [["17:00", "21:30"]],
+            "thu": [["17:00", "21:30"]],
+            "fri": [["17:00", "21:30"]],
+            "sat": [["17:00", "21:30"]],
+            "sun": [["17:00", "21:30"]]
+        }
+    },
+    {
+        "id": "23",
+        "name": "Liquid Therapy",
+        "city":"Ocean City",
+        "cuisine": "Bar / Tavern",
+        "price": "$$",
+        "address": "4501 Coastal Hwy, Ocean City, MD 21842",
+        "tables": 20,
+        "hours": {
+            "mon": [["12:00", "21:00"]],
+            "tue": [["12:00", "21:00"]],
+            "wed": [["12:00", "21:00"]],
+            "thu": [["12:00", "21:00"]],
+            "fri": [["12:00", "21:00"]],
+            "sat": [["12:00", "21:00"]],
+            "sun": [["12:00", "21:00"]]
+        }
+    },
+    {
+        "id": 24,
+        "name": "Sea Star Diner",
+        "city":"Ocean City",
+        "cuisine": "Breakfast & Brunch",
+        "price": "$$",
+        "address": "7302 Coastal Hwy, Ocean City, MD 21842",
+        "tables": 26,
+        "hours": {
+            "mon": [["07:00", "13:30"]],
+            "tue": [["07:00", "13:30"]],
+            "wed": [["07:00", "13:30"]],
+            "thu": [["07:00", "13:30"]],
+            "fri": [["07:00", "13:30"]],
+            "sat": [["07:00", "13:30"]],
+            "sun": [["07:00", "13:30"]]
+        }
+    },
+    {
+        "id": 25,
+        "name": "Hooper's Crab House",
+        "city":"Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$$",
+        "address": "12913 Ocean Gtwy, Ocean City, MD 21842",
+        "tables": 34,
+        "hours": {
+            "mon": [["11:30", "21:00"]],
+            "tue": [["11:30", "21:00"]],
+            "wed": [["11:30", "21:00"]],
+            "thu": [["11:30", "21:00"]],
+            "fri": [["11:30", "21:00"]],
+            "sat": [["11:30", "21:00"]],
+            "sun": [["11:30", "21:00"]]
+        }
+    },
+    {
+        "id": 26,
+        "name": "Toast",
+        "city":"Ocean City",
+        "cuisine": "Italian",
+        "price": "$$",
+        "address": "221 Wicomico St, Ocean City, MD 21842",
+        "tables": 26,
+        "hours": {
+            "mon": [["12:00", "21:00"]],
+            "tue": [["12:00", "21:00"]],
+            "wed": [["12:00", "21:00"]],
+            "thu": [["12:00", "21:00"]],
+            "fri": [["12:00", "21:00"]],
+            "sat": [["12:00", "21:00"]],
+            "sun": [["12:00", "21:00"]]
+        }
+    },
+    {
+        "id": 27,
+        "name": "Micky Fins Bar & Grill",
+        "city":"Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$",
+        "address": "12952 Inlet Isle Ln, Ocean City, MD 21842",
+        "tables": 25,
+        "hours": {
+            "mon": [["Closed"]],
+            "tue": [["Closed"]],
+            "wed": [["16:00", "21:00"]],
+            "thu": [["16:00", "21:00"]],
+            "fri": [["11:30", "21:30"]],
+            "sat": [["11:30", "21:30"]],
+            "sun": [["11:30", "21:00"]]
+        }
+    },
+    {
+        "id": 28,
+        "name": "Ocho Rios Jerk and Tings",
+        "city":"Ocean City",
+        "cuisine": "Caribbean",
+        "price": "$$",
+        "address": "11805 Coastal Hwy, Ocean City, MD 21842",
+        "tables": 10,
+        "hours": {
+            "mon": [["Closed"]],
+            "tue": [["Closed"]],
+            "wed": [["11:00", "20:00"]],
+            "thu": [["11:00", "20:00"]],
+            "fri": [["11:00", "21:00"]],
+            "sat": [["11:00", "21:00"]],
+            "sun": [["11:00", "20:00"]]
+        }
+    },
+    {
+        "id": 29,
+        "name": "Liberatore's",
+        "city":"Ocean City",
+        "cuisine": "Bar / Tavern",
+        "price": "$$$",
+        "address": "12825 Coastal Hwy, Ocean City, MD 21842",
+        "tables": 16,
+        "hours": {
+            "mon": [["16:00", "22:00"]],
+            "tue": [["16:00", "22:00"]],
+            "wed": [["16:00", "22:00"]],
+            "thu": [["16:00", "22:00"]],
+            "fri": [["16:00", "22:00"]],
+            "sat": [["16:00", "22:00"]],
+            "sun": [["16:00", "22:00"]]
+        }
+    },
+    {
+        "id": 30,
+        "name": "Cheese Wheel Pasta",
+        "city":"Ocean City",
+        "cuisine": "Italian",
+        "price": "$$",
+        "address": "1101 Atlantic Ave Store A, Ocean City, MD 21842",
+        "tables": 8,
+        "hours": {
+            "mon": [["Closed"]],
+            "tue": [["Closed"]],
+            "wed": [["Closed"]],
+            "thu": [["Closed"]],
+            "fri": [["Closed"]],
+            "sat": [["Closed"]],
+            "sun": [["12:00", "12:30"]]
+        }
+    },
+    {
+        "id": 31,
+        "name": "Pho-Char Grill",
+        "city":"Ocean City",
+        "cuisine": "Vietnamese",
+        "price": "$$",
+        "address": "11805 Coastal Hwy, Ocean City, MD 21842",
+        "tables": 16,
+        "hours": {
+            "mon": [["11:00" , "21:00"]],
+            "tue": [["11:00" , "21:00"]],
+            "wed": [["11:00" , "21:00"]],
+            "thu": [["11:00" , "21:00"]],
+            "fri": [["11:00" , "21:30"]],
+            "sat": [["11:00" , "21:30"]],
+            "sun": [["11:00" , "21:00"]]
+        }
+    },
+    {
+        "id": 32,
+        "name": "OC Street Food",
+        "city":"Ocean City",
+        "cuisine": "Mediterranean",
+        "price": "$$",
+        "address": "11505 Coastal Hwy, Ocean City, MD 21842",
+        "tables": 10,
+        "hours": {
+            "mon": [["11:00", "21:00"]],
+            "tue": [["11:00", "21:00"]],
+            "wed": [["11:00", "21:00"]],
+            "thu": [["11:00", "21:00"]],
+            "fri": [["11:00", "21:00"]],
+            "sat": [["11:00", "21:00"]],
+            "sun": [["11:00", "20:00"]]
+        }
+    },
+    {
+        "id": 33,
+        "name": "The Coconut Club",
+        "city":"Ocean City",
+        "cuisine": "Bar / Tavern",
+        "price": "$$",
+        "address": "208 Baltimore Ave, Ocean City, MD 21842",
+        "tables": 24,
+        "hours": {
+            "mon": [["12:00", "20:00"]],
+            "tue": [["12:00", "20:00"]],
+            "wed": [["12:00", "20:00"]],
+            "thu": [["12:00", "20:00"]],
+            "fri": [["12:00", "23:00"]],
+            "sat": [["12:00", "23:00"]],
+            "sun": [["12:00", "23:00"]]
+        }
+    },
+    {
+        "id": 34,
+        "name": "Northside Pit & Pub",
+        "city":"Ocean City",
+        "cuisine": "American",
+        "price": "$$",
+        "address": "12701 Coastal Hwy Ste 8, Ocean City, MD 21842",
+        "tables": 28,
+        "hours": {
+            "mon": [["11:00", "24:00"]],
+            "tue": [["11:00", "24:00"]],
+            "wed": [["11:00", "24:00"]],
+            "thu": [["11:00", "24:00"]],
+            "fri": [["11:00", "24:00"]],
+            "sat": [["11:00", "24:00"]],
+            "sun": [["11:00", "24:00"]]
+        }
+    },
+    {
+        "id": 35,
+        "name": "Reel Inn Restaurant & Dock Bar",
+        "city":"Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$",
+        "address": "419 14th St Unit 66, Ocean City, MD 21842",
+        "tables": 32,
+        "hours": {
+            "mon": [["11:00", "24:00"]],
+            "tue": [["11:00", "24:00"]],
+            "wed": [["11:00", "24:00"]],
+            "thu": [["11:00", "24:00"]],
+            "fri": [["11:00", "24:00"]],
+            "sat": [["11:00", "24:00"]],
+            "sun": [["11:00", "24:00"]]
+        }
+    },
+    {
+        "id": 36,
+        "name": "Harrison's Harbor Watch Restaurant",
+        "city":"Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$$",
+        "address": "806 S Atlantic Ave, Ocean City, MD 21842",
+        "tables": 36,
+        "hours": {
+            "mon": [["Closed"]],
+            "tue": [["Closed"]],
+            "wed": [["Closed"]],
+            "thu": [["16:00", "21:00"]],
+            "fri": [["11:30", "21:00"]],
+            "sat": [["11:30", "21:00"]],
+            "sun": [["11:30", "21:00"]]
+        }
+    },
+    {
+        "id": 37,
+        "name": "Pancho & Lefty's OC",
+        "city":"Ocean City",
+        "cuisine": "Mexican",
+        "price": "$$",
+        "address": "12911 Ocean Gateway, Ocean City, MD 21842",
+        "tables": 16,
+        "hours": {
+            "mon": [["16:00", "21:00"]],
+            "tue": [["16:00", "21:00"]],
+            "wed": [["16:00", "21:00"]],
+            "thu": [["16:00", "21:00"]],
+            "fri": [["16:00", "21:00"]],
+            "sat": [["12:00", "21:00"]],
+            "sun": [["12:00", "21:00"]]
+        }
+    },
+    {
+        "id": 38,
+        "name": "Albertino's Brick Oven & Eatery",
+        "city":"Ocean City",
+        "cuisine": "Italian",
+        "price": "$$",
+        "address": "13117 Coastal Hwy, Ocean City, MD 21842",
+        "tables": 25,
+        "hours": {
+            "mon": [["11:00", "21:00"]],
+            "tue": [["11:00", "21:00"]],
+            "wed": [["11:00", "21:00"]],
+            "thu": [["11:00", "21:00"]],
+            "fri": [["16:00", "22:00"]],
+            "sat": [["16:00", "22:00"]],
+            "sun": [["11:00", "21:00"]]
+        }
+    },
+    {
+        "id": 39,
+        "name": "OC Wasabi",
+        "city": "Ocean City",
+        "cuisine": "Asian",
+        "price": "$$",
+        "address": "3316 Coastal Hwy, Ocean City, MD 21842",
+        "tables": 20,
+        "hours": {
+            "mon": [["12:00", "22:30"]],
+            "tue": [["12:00", "22:30"]],
+            "wed": [["12:00", "22:30"]],
+            "thu": [["12:00", "22:30"]],
+            "fri": [["12:00", "22:30"]],
+            "sat": [["12:00", "22:30"]],
+            "sun": [["12:00", "22:30"]]
+        }
+    },
+    {
+        "id": 40, 
+        "name": "The Shrimp Boat",
+        "city":"Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$",
+        "address": "9724 Stephen Decatur Hwy Rt 611, Ocean City, MD 21842",
+        "tables": 22,
+        "hours": {
+            "mon": [["Closed"]],
+            "tue": [["Closed"]],
+            "wed": [["Closed"]],
+            "thu": [["10:00", "20:00"]],
+            "fri": [["10:00", "20:00"]],
+            "sat": [["10:00", "20:00"]],
+            "sun": [["10:00", "20:00"]]
+        }
+    },
+    {
+        "id": 41,
+        "name": "The Bonfire Restaurant",
+        "city":"Ocean City",
+        "cuisine": "Seafood", 
+        "price": "$$$",
+        "address": "7009 Coastal Hwy, Ocean City, MD 21842",
+        "tables": 40,
+        "hours": {
+            "mon": [["Closed"]],
+            "tue": [["Closed"]],
+            "wed": [["Closed"]],
+            "thu": [["12:00", "19:00"]],
+            "fri": [["16:00", "20:00"]],
+            "sat": [["16:00", "20:00"]],
+            "sun": [["Closed"]]
+        }
+    },
+    {
+        "id": 42,
+        "name": "8th Street Smash Burger",
+        "city":"Ocean City",
+        "cuisine": "American",
+        "price": "$",
+        "address": "801 Atlantic Ave, Ocean City, MD 21842",
+        "tables": 15,
+        "hours": {
+            "mon": [["10:30", "21:00"]],
+            "tue": [["10:30", "21:00"]],
+            "wed": [["10:30", "21:00"]],
+            "thu": [["10:30", "21:00"]],
+            "fri": [["10:30", "21:00"]],
+            "sat": [["10:30", "21:00"]],
+            "sun": [["10:30", "21:00"]]
+        }
+    },
+    {
+        "id": 43,
+        "name": "Oc Poke sushi teriyaki house",
+        "city":"Ocean City",
+        "cuisine": "Asian",
+        "price": "$$",
+        "address": "215 S Baltimore Ave, Ocean City, MD 21842",
+        "tables": 24,
+        "hours": {
+            "mon": [["11:00", "22:00"]],
+            "tue": [["11:00", "22:00"]],
+            "wed": [["11:00", "22:00"]],
+            "thu": [["11:00", "22:00"]],
+            "fri": [["11:00", "22:30"]],
+            "sat": [["11:00", "22:30"]],
+            "sun": [["11:00", "22:00"]]
+        }
+    },
+    {
+        "id": 44,
+        "name": "Thai O Cha",
+        "city":"Ocean City",
+        "cuisine": "Thai",
+        "price": "$$",
+        "address": "13727 Coastal Hwy, Ocean City, MD 21842",
+        "tables": 20,
+        "hours": {
+            "mon": [["16:00", "20:00"]],
+            "tue": [["Closed"]],
+            "wed": [["Closed"]],
+            "thu": [["16:00", "20:00"]],
+            "fri": [["16:00", "20:30"]],
+            "sat": [["12:00", "20:30"]],
+            "sun": [["12:00", "20:00"]]
+        }
+    },
+    {
+        "id": 45,
+        "name": "BLU Crabhouse & Raw Bar",
+        "city":"Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$",
+        "address": "2305 Philadelphia Ave, Ocean City, MD 21842",
+        "tables": 30,
+        "hours": {
+            "mon": [["Closed"]],
+            "tue": [["Closed"]],
+            "wed": [["15:00", "21:30"]],
+            "thu": [["15:00", "21:30"]],
+            "fri": [["15:00", "21:30"]],
+            "sat": [["15:00", "21:30"]],
+            "sun": [["15:00", "21:30"]]
+        }
+    },
+    {
+        "id": 46,
+        "name": "Sello's Italian Oven & Bar",
+        "city":"Ocean City",
+        "cuisine": "Italian",
+        "price": "$$",
+        "address": "9802 Golf Course Rd, Ocean City, MD 21842",
+        "tables": 28,
+        "hours": {
+            "mon": [["17:00", "21:30"]],
+            "tue": [["17:00", "21:30"]],
+            "wed": [["17:00", "21:30"]],
+            "thu": [["17:00", "21:30"]],
+            "fri": [["16:00", "22:00"]],
+            "sat": [["16:00", "22:00"]],
+            "sun": [["17:00", "21:30"]]
+        }
+    },
+    {
+        "id": 47,
+        "name": "Higgins Crab House",
+        "city": "Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$$",
+        "address": "3102 Coastal Hwy, Ocean City, MD 21842",
+        "hours": {
+            "mon": [["Closed"]],
+            "tue": [["Closed"]],
+            "wed": [["Closed"]],
+            "thu": [["Closed"]],
+            "fri": [["12:00", "20:00"]],
+            "sat": [["12:00", "20:30"]],
+            "sun": [["12:00", "20:00"]]
+        }
+    },
+    {
+        "id": 48,
+        "name": "The Embers Restaurant",
+        "city": "Ocean City",
+        "cuisine": "Seafood",
+        "price": "$$$",
+        "address": "2305 Philadelphia Ave, Ocean City, MD 21842",
+        "tables": 40,
+        "hours": {
+            "mon": [["17:00", "21:30"]],
+            "tue": [["17:00", "21:30"]],
+            "wed": [["17:00", "21:30"]],
+            "thu": [["17:00", "21:30"]],
+            "fri": [["17:00", "21:30"]],
+            "sat": [["17:00", "21:30"]],
+            "sun": [["17:00", "21:30"]]
+        }
+    },
+    {
+        "id": 49,
+        "name": "Sakura Japanese Steakhouse",
+        "city":"Ocean City",
+        "cuisine": "Asian",
+        "price": "$$",
+        "address": "12741 Ocean Gateway, Ocean City, MD 21842",
+        "tables": 20,
+        "hours": {
+            "mon": [["12:00", "21:00"]],
+            "tue": [["12:00", "21:00"]],
+            "wed": [["12:00", "21:00"]],
+            "thu": [["12:00", "21:00"]],
+            "fri": [["12:00", "21:00"]],
+            "sat": [["12:00", "21:00"]],
+            "sun": [["12:00", "21:00"]]
+        }
+    },
+    {
+        "id": 50,
+        "name": "Outback Steakhouse",
+        "city":"Ocean City",
+        "cuisine": "Steakhouse",
+        "price": "$$",
+        "address": "12741 Ocean Gateway Ste 920, Ocean City, MD 21842",
+        "tables": 28,
+        "hours": {
+            "mon": [["14:00", "21:00"]],
+            "tue": [["14:00", "21:00"]],
+            "wed": [["14:00", "21:00"]],
+            "thu": [["14:00", "21:00"]],
+            "fri": [["14:00", "22:00"]],
+            "sat": [["11:00", "22:00"]],
+            "sun": [["11:00", "21:00"]]
+        }
+    },
+    {
+        "id": 51,
+        "name": "De Lazy Lizard",
+        "city": "Ocean City",
+        "cuisine": "American",
+        "price": "$$",
+        "address": "305 N 1st St, Ocean City, MD 21842",
+        "tables": 35,
+        "hours": {
+            "mon": [["11:00", "23:00"]],
+            "tue": [["11:00", "23:00"]],
+            "wed": [["11:00", "23:00"]],
+            "thu": [["11:00", "23:00"]],
+            "fri": [["11:00", "23:00"]],
+            "sat": [["11:00", "23:00"]],
+            "sun": [["11:00", "23:00"]]
+        }
+    }
+]
