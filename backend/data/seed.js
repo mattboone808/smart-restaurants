@@ -33,8 +33,8 @@ db.exec(schema);
 
 // Prepare an insert statement for adding restaurant records
 const insert = db.prepare(`
-  INSERT INTO restaurants (id, name, city, cuisine, price, address, tables, hours)
-  VALUES (@id, @name, @city, @cuisine, @price, @address, @tables, @hours)
+  INSERT INTO restaurants (name, city, cuisine, price, address, tables, hours)
+  VALUES (@name, @city, @cuisine, @price, @address, @tables, @hours)
 `);
 
 // Insert all the restaurant data in one transaction
