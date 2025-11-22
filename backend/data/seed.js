@@ -19,7 +19,8 @@ const schemaPath = path.resolve(__dirname, './schema.sql');
 const dataPaths = [
   path.resolve(__dirname, './restaurants.json'),
   path.resolve(__dirname, './restaurantsFrederick.json'),
-  path.resolve(__dirname, './annapolis.json')
+  path.resolve(__dirname, './annapolis.json'),
+  path.resolve(__dirname, './restaurantsOC.json')
 ];
 
 // Read in the schema and data files
