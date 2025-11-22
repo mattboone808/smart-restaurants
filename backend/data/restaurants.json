@@ -311,7 +311,7 @@
     "city": "Baltimore",
     "cuisine": "Thai",
     "price": "$$",
-    "address": "1006 LIght St, Baltimore, MD 21230",
+    "address": "1006 Light St, Baltimore, MD 21230",
     "tables": 19,
     "hours": {
       "mon": [ [ "Closed" ] ],
