@@ -2,14 +2,14 @@
   Project: Smart Restaurants
   File: server.js
   Description:
-    This is the backend for the Smart Restaurants web app.
-    It uses Express to handle API requests, connects to the SQLite database,
-    and manages restaurant searches and reservations.
+    Express backend for the Smart Restaurants app, providing
+    restaurant search, profiles, favorites, reviews,
+    reservations, and recommendation endpoints.
 */
 
-const express = require('express');
-const cors = require('cors');
-const db = require('./data/db'); // connects to the SQLite database
+const express = require("express");
+const cors = require("cors");
+const db = require("./data/db");
 
 const app = express();
 const PORT = process.env.PORT || 5050;
@@ -17,205 +17,449 @@ const PORT = process.env.PORT || 5050;
 app.use(cors());
 app.use(express.json());
 
-// Load all restaurant data from the database
-const RESTAURANTS = db.prepare('SELECT * FROM restaurants').all().map(r => ({
-  ...r,
-  hours: JSON.parse(r.hours)
-}));
+// Active user (temporary)
+let currentUserId = 1;
 
-// Keeps track of reservations (temporary in memory)
-const reservations = [];
-
-
-// Helper functions
-
-// Turns a time string like "14:30" into total minutes
-function timeToMin(hhmm) {
-  if (!hhmm || typeof hhmm !== 'string' || !hhmm.includes(':')) return null;
-  const [h, m] = hhmm.split(':').map(Number);
-  if (isNaN(h) || isNaN(m)) return null;
-  return h * 60 + m;
-}
-
-// Checks if a restaurant is currently open
-function isOpenNow(hoursObj) {
-  if (!hoursObj || typeof hoursObj !== 'object') return false;
-
-  const days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
-  const now = new Date();
-  const dayKey = days[now.getDay()];
-  const today = Array.isArray(hoursObj[dayKey]) ? hoursObj[dayKey] : [];
-  const curMin = now.getHours() * 60 + now.getMinutes();
-
-  return today.some(range => {
-    if (!Array.isArray(range) || range.length < 2) return false;
-    const [start, end] = range;
-    const s = timeToMin(start);
-    const e = timeToMin(end);
-    if (s === null || e === null || s === e) return false;
-
-    // Handles overnight hours
-    if (e > s) return curMin >= s && curMin < e;
-    return curMin >= s || curMin < e;
-  });
-}
-
-// Rounds a given time to the nearest 30-minute interval
-function normalizeTimeToSlot(hhmm) {
-  if (!hhmm || typeof hhmm !== 'string' || !hhmm.includes(':')) return '00:00';
-  const [h, m] = hhmm.split(':').map(Number);
-  if (isNaN(h) || isNaN(m)) return '00:00';
-  const slotMin = m < 30 ? 0 : 30;
-  const pad = (n) => String(n).padStart(2, '0');
-  return `${pad(h)}:${slotMin === 0 ? '00' : '30'}`;
-}
-
-// Counts how many reservations exist for a restaurant time slot
-function countReservationsForSlot(restaurantId, date, time) {
-  const t = normalizeTimeToSlot(time);
-  return reservations.filter(
-    r =>
-      String(r.restaurantId) === String(restaurantId) &&
-      r.date === date &&
-      normalizeTimeToSlot(r.time) === t
-  ).length;
+function parseHours(str) {
+  try { return JSON.parse(str); }
+  catch { return null; }
 }
 
 
-// Routes
+// Health check
+app.get("/api/health", (_req, res) => res.json({ ok: true }));
 
-// Test route to confirm server is working
-app.get('/api/health', (_req, res) => res.json({ ok: true }));
 
-// Get all restaurants
-app.get('/api/restaurants', (req, res) => {
+// Get restaurants
+app.get("/api/restaurants", (req, res) => {
   try {
-    const { city = '', cuisine = '', price = '' } = req.query;
-    let query = 'SELECT * FROM restaurants WHERE 1=1';
+    const { city = "", cuisine = "", price = "" } = req.query;
+    let query = "SELECT * FROM restaurants WHERE 1=1";
     const params = [];
 
     if (city) {
-      query += ' AND LOWER(city) LIKE ?';
+      query += " AND LOWER(city) LIKE ?";
       params.push(`%${city.toLowerCase()}%`);
     }
     if (cuisine) {
-      query += ' AND LOWER(cuisine) LIKE ?';
+      query += " AND LOWER(cuisine) LIKE ?";
       params.push(`%${cuisine.toLowerCase()}%`);
     }
     if (price) {
-      query += ' AND price = ?';
+      query += " AND price = ?";
       params.push(price);
     }
 
     const rows = db.prepare(query).all(...params);
 
-    // Parse hours and check open status
-    const restaurants = rows.map(r => {
-      let parsedHours;
-      try {
-        parsedHours = JSON.parse(r.hours);
-      } catch {
-        parsedHours = null;
-      }
-      const open_now = isOpenNow(parsedHours);
-      return { ...r, hours: parsedHours, open_now };
-    });
-
-    // If user asked for only open restaurants
-    let filtered = restaurants;
-    if (req.query.open_now === 'true') {
-      filtered = restaurants.filter(r => r.open_now);
-    }
-
-    res.json(filtered);
-  } catch (err) {
-    console.error('DB error:', err);
-    res.status(500).json({ error: 'Database query failed' });
+    res.json(
+      rows.map(r => ({
+        ...r,
+        hours: parseHours(r.hours),
+        open_now: false
+      }))
+    );
+  } catch {
+    res.status(500).json({ error: "Database query failed" });
   }
 });
 
-// Get one restaurant by its ID
-app.get('/api/restaurants/:id', (req, res) => {
+
+// Get single restaurant
+app.get("/api/restaurants/:id", (req, res) => {
   try {
     const id = Number(req.params.id);
-    if (isNaN(id)) return res.status(400).json({ error: 'Invalid restaurant ID' });
+    if (isNaN(id)) return res.status(400).json({ error: "Invalid restaurant ID" });
 
-    const row = db.prepare('SELECT * FROM restaurants WHERE id = ?').get(id);
-    if (!row) return res.status(404).json({ error: 'Restaurant not found' });
+    const r = db.prepare("SELECT * FROM restaurants WHERE id = ?").get(id);
+    if (!r) return res.status(404).json({ error: "Restaurant not found" });
 
-    let parsedHours;
-    try {
-      parsedHours = JSON.parse(row.hours);
-    } catch {
-      parsedHours = null;
+    res.json({
+      ...r,
+      hours: parseHours(r.hours),
+      open_now: false
+    });
+  } catch {
+    res.status(500).json({ error: "Database query failed" });
+  }
+});
+
+
+// Create reservation
+const makeReservation = db.transaction(
+  ({ restaurantId, name, partySize, date, time }) => {
+    const rest = db
+      .prepare("SELECT id, tables FROM restaurants WHERE id = ?")
+      .get(Number(restaurantId));
+
+    if (!rest) return { error: "Restaurant not found", status: 404 };
+
+    const capacity = typeof rest.tables === "number" ? rest.tables : 5;
+
+    const count = db
+      .prepare(`
+        SELECT COUNT(*) AS n
+        FROM reservations
+        WHERE restaurant_id = ?
+          AND date = ?
+          AND time = ?
+      `)
+      .get(rest.id, date, time).n;
+
+    if (count >= capacity) {
+      return { error: "No tables available at this time", status: 409 };
     }
 
-    const open_now = isOpenNow(parsedHours);
-    res.json({ ...row, hours: parsedHours, open_now });
-  } catch (err) {
-    console.error('DB error:', err);
-    res.status(500).json({ error: 'Database query failed' });
+    const info = db.prepare(`
+      INSERT INTO reservations (restaurant_id, user_id, name, party_size, date, time)
+      VALUES (?, ?, ?, ?, ?, ?)
+    `).run(rest.id, currentUserId, name.trim(), Number(partySize), date, time);
+
+    const row = db.prepare("SELECT * FROM reservations WHERE id = ?")
+      .get(info.lastInsertRowid);
+
+    return {
+      record: {
+        ...row,
+        capacity,
+        tablesRemaining: Math.max(0, capacity - (count + 1))
+      },
+      status: 201
+    };
   }
-});
+);
 
-// Make a reservation (saves to SQLite)
-const makeReservation = db.transaction(({ restaurantId, name, partySize, date, time }) => {
-  const rest = db.prepare('SELECT id, tables FROM restaurants WHERE id = ?').get(Number(restaurantId));
-  if (!rest) return { error: 'Restaurant not found', status: 404 };
-
-  const capacity = typeof rest.tables === 'number' ? rest.tables : 5;
-  const slot = normalizeTimeToSlot(time);
-
-  const count = db.prepare(
-    'SELECT COUNT(*) AS n FROM reservations WHERE restaurant_id = ? AND date = ? AND time = ?'
-  ).get(rest.id, date, slot).n;
-
-  if (count >= capacity) {
-    return { error: 'No tables available at this time', status: 409 };
-  }
-
-  const info = db.prepare(
-    'INSERT INTO reservations (restaurant_id, name, party_size, date, time) VALUES (?, ?, ?, ?, ?)'
-  ).run(rest.id, name.trim(), Number(partySize), date, slot);
-
-  const tablesRemaining = Math.max(0, capacity - (count + 1));
-  const row = db.prepare('SELECT * FROM reservations WHERE id = ?').get(info.lastInsertRowid);
-  return { record: { ...row, capacity, tablesRemaining }, status: 201 };
-});
-
-// Add a new reservation
-app.post('/api/reservations', (req, res) => {
+app.post("/api/reservations", (req, res) => {
   const { restaurantId, name, partySize, date, time } = req.body || {};
   if (!restaurantId || !name || !partySize || !date || !time) {
-    return res.status(400).json({ error: 'Missing fields' });
+    return res.status(400).json({ error: "Missing fields" });
   }
 
   try {
     const result = makeReservation({ restaurantId, name, partySize, date, time });
     if (result.error) return res.status(result.status).json({ error: result.error });
-    return res.status(201).json(result.record);
-  } catch (err) {
-    console.error('Reservation error:', err);
-    res.status(500).json({ error: 'Failed to create reservation' });
+    res.status(201).json(result.record);
+  } catch {
+    res.status(500).json({ error: "Failed to create reservation" });
   }
 });
 
-// Get the latest 100 reservations
-app.get('/api/reservations', (_req, res) => {
+
+// Reservations for active user
+app.get("/api/user/reservations", (req, res) => {
   try {
-    const rows = db.prepare(
-      'SELECT * FROM reservations ORDER BY datetime(created_at) DESC LIMIT 100'
-    ).all();
+    const rows = db.prepare(`
+      SELECT 
+        rv.*,
+        rest.name AS restaurant_name,
+        rest.city AS restaurant_city,
+        rest.cuisine AS restaurant_cuisine,
+        rest.address AS restaurant_address
+      FROM reservations rv
+      JOIN restaurants rest ON rest.id = rv.restaurant_id
+      WHERE rv.user_id = ?
+      ORDER BY rv.date ASC, rv.time ASC
+    `).all(currentUserId);
+
     res.json(rows);
   } catch (err) {
-    console.error('Read reservations error:', err);
-    res.status(500).json({ error: 'Failed to read reservations' });
+    console.error("Reservations fetch error:", err);
+    res.status(500).json({ error: "Failed to load reservations" });
   }
 });
 
-// Start the server
-console.log('Starting Express server...');
-const server = app.listen(PORT, () => {
-  console.log(`✅ API running on http://localhost:${PORT}`);
+
+// Profiles
+app.get("/api/users", (req, res) => {
+  try {
+    const users = db.prepare("SELECT * FROM users ORDER BY id").all();
+    res.json(users);
+  } catch {
+    res.status(500).json({ error: "Failed to load users" });
+  }
 });
-server.on('error', (e) => console.error('❌ server error:', e));
+
+app.post("/api/users", (req, res) => {
+  const { name, email, preferred_cuisine } = req.body;
+  if (!name) return res.status(400).json({ error: "Name is required" });
+
+  try {
+    const row = db.prepare(`
+      INSERT INTO users (name, email, preferred_cuisine)
+      VALUES (?, ?, ?)
+    `).run(name, email || "", preferred_cuisine || "");
+
+    res.status(201).json({ id: row.lastInsertRowid });
+  } catch {
+    res.status(500).json({ error: "Failed to create profile" });
+  }
+});
+
+app.post("/api/users/select", (req, res) => {
+  const { user_id } = req.body;
+  if (!user_id) return res.status(400).json({ error: "User ID required" });
+  currentUserId = Number(user_id);
+  res.json({ ok: true });
+});
+
+app.get("/api/users/active", (req, res) => {
+  try {
+    const row = db.prepare("SELECT * FROM users WHERE id = ?").get(currentUserId);
+    if (!row) return res.status(404).json({ error: "Active user not found" });
+    res.json(row);
+  } catch {
+    res.status(500).json({ error: "Failed to load active user" });
+  }
+});
+
+
+// Favorites
+app.get("/api/user/favorites", (req, res) => {
+  try {
+    const rows = db.prepare(`
+      SELECT r.*
+      FROM favorites f
+      JOIN restaurants r ON r.id = f.restaurant_id
+      WHERE f.user_id = ?
+      ORDER BY f.created_at DESC
+    `).all(currentUserId);
+
+    res.json(rows);
+  } catch {
+    res.status(500).json({ error: "Failed to load favorites" });
+  }
+});
+
+app.post("/api/user/favorites", (req, res) => {
+  const { restaurant_id } = req.body;
+  if (!restaurant_id) return res.status(400).json({ error: "Missing restaurant_id" });
+
+  try {
+    db.prepare(`
+      INSERT INTO favorites (user_id, restaurant_id)
+      VALUES (?, ?)
+    `).run(currentUserId, restaurant_id);
+
+    res.json({ ok: true });
+  } catch (err) {
+    if (err.message.includes("UNIQUE")) {
+      return res.status(409).json({ error: "Already in favorites" });
+    }
+    res.status(500).json({ error: "Failed to add favorite" });
+  }
+});
+
+app.delete("/api/user/favorites", (req, res) => {
+  const { restaurant_id } = req.body;
+  if (!restaurant_id) return res.status(400).json({ error: "Missing restaurant_id" });
+
+  try {
+    db.prepare(`
+      DELETE FROM favorites
+      WHERE user_id = ? AND restaurant_id = ?
+    `).run(currentUserId, restaurant_id);
+
+    res.json({ ok: true });
+  } catch {
+    res.status(500).json({ error: "Failed to remove favorite" });
+  }
+});
+
+
+// Reviews
+app.post("/api/reviews", (req, res) => {
+  const userId = currentUserId;
+  const { restaurant_id, rating, review_text } = req.body;
+
+  if (!restaurant_id || !rating)
+    return res.status(400).json({ error: "Missing fields" });
+
+  try {
+    db.prepare(`
+      INSERT INTO reviews (user_id, restaurant_id, rating, review_text)
+      VALUES (?, ?, ?, ?)
+    `).run(userId, restaurant_id, rating, review_text || "");
+
+    res.status(201).json({ ok: true });
+  } catch (err) {
+    if (err.message.includes("UNIQUE")) {
+      return res.status(409).json({ error: "You already reviewed this restaurant." });
+    }
+    res.status(500).json({ error: "Failed to submit review" });
+  }
+});
+
+app.get("/api/user/reviews", (req, res) => {
+  try {
+    const rows = db.prepare(`
+      SELECT r.*, rest.name AS restaurant_name
+      FROM reviews r
+      JOIN restaurants rest ON rest.id = r.restaurant_id
+      WHERE r.user_id = ?
+      ORDER BY datetime(r.created_at) DESC
+    `).all(currentUserId);
+
+    res.json(rows);
+  } catch {
+    res.status(500).json({ error: "Failed to load reviews" });
+  }
+});
+
+app.put("/api/reviews/:id", (req, res) => {
+  const userId = currentUserId;
+  const reviewId = Number(req.params.id);
+  const { rating, review_text } = req.body || {};
+
+  if (!reviewId || !rating) {
+    return res.status(400).json({ error: "Missing review id or rating" });
+  }
+  if (!Number.isInteger(rating) || rating < 1 || rating > 5) {
+    return res.status(400).json({ error: "Rating must be 1–5" });
+  }
+
+  try {
+    const existing = db
+      .prepare("SELECT * FROM reviews WHERE id = ? AND user_id = ?")
+      .get(reviewId, userId);
+
+    if (!existing) {
+      return res.status(404).json({ error: "Review not found" });
+    }
+
+    db.prepare(`
+      UPDATE reviews
+      SET rating = ?, review_text = ?
+      WHERE id = ? AND user_id = ?
+    `).run(rating, review_text || "", reviewId, userId);
+
+    res.json({ ok: true });
+  } catch {
+    res.status(500).json({ error: "Failed to update review" });
+  }
+});
+
+app.delete("/api/reviews/:id", (req, res) => {
+  const userId = currentUserId;
+  const reviewId = Number(req.params.id);
+
+  if (!reviewId) return res.status(400).json({ error: "Missing review id" });
+
+  try {
+    const info = db
+      .prepare("DELETE FROM reviews WHERE id = ? AND user_id = ?")
+      .run(reviewId, userId);
+
+    if (info.changes === 0) {
+      return res.status(404).json({ error: "Review not found" });
+    }
+
+    res.json({ ok: true });
+  } catch {
+    res.status(500).json({ error: "Failed to delete review" });
+  }
+});
+
+
+// Recommendations
+app.get("/api/user/recommendations", (req, res) => {
+  const userId = currentUserId;
+
+  try {
+    const user = db.prepare("SELECT * FROM users WHERE id = ?").get(userId);
+
+    const favorites = db.prepare(`
+      SELECT r.*
+      FROM favorites f
+      JOIN restaurants r ON r.id = f.restaurant_id
+      WHERE f.user_id = ?
+    `).all(userId);
+
+    const reviews = db.prepare(`
+      SELECT r.*, rest.cuisine
+      FROM reviews r
+      JOIN restaurants rest ON rest.id = r.restaurant_id
+      WHERE r.user_id = ?
+    `).all(userId);
+
+    const all = db.prepare("SELECT * FROM restaurants").all();
+
+    const favCuisines = new Set(favorites.map(f => f.cuisine));
+    const highRatedCuisines = new Set(
+      reviews.filter(r => r.rating >= 4).map(r => r.cuisine)
+    );
+
+    const reviewedIds  = new Set(reviews.map(r => r.restaurant_id));
+    const favoriteIds  = new Set(favorites.map(r => r.id));
+
+    const scored = all
+      .filter(r => !favoriteIds.has(r.id) && !reviewedIds.has(r.id))
+      .map(r => {
+        let score = 0;
+        if (user.preferred_cuisine && r.cuisine === user.preferred_cuisine) score += 3;
+        if (favCuisines.has(r.cuisine)) score += 2;
+        if (highRatedCuisines.has(r.cuisine)) score += 2;
+        return { ...r, score };
+      })
+      .filter(r => r.score > 0);
+
+    const cuisineGroups = {};
+    for (const r of scored) {
+      if (!cuisineGroups[r.cuisine]) cuisineGroups[r.cuisine] = [];
+      cuisineGroups[r.cuisine].push(r);
+    }
+
+    function shuffle(arr) {
+      return arr.sort(() => Math.random() - 0.5);
+    }
+
+    for (const c in cuisineGroups) {
+      cuisineGroups[c] = shuffle(cuisineGroups[c]);
+    }
+
+    const cuisinesSorted = Object.keys(cuisineGroups).sort((a, b) => {
+      return cuisineGroups[b][0].score - cuisineGroups[a][0].score;
+    });
+
+    const final = cuisinesSorted.slice(0, 3).map(c => cuisineGroups[c][0]);
+
+    res.json(final);
+
+  } catch (err) {
+    console.error("Recommendation error:", err);
+    res.status(500).json({ error: "Failed to load recommendations" });
+  }
+});
+
+
+// Cancel reservation
+app.delete("/api/user/reservations/:id", (req, res) => {
+  const userId = currentUserId;
+  const reservationId = Number(req.params.id);
+
+  if (!reservationId) return res.status(400).json({ error: "Invalid reservation ID" });
+
+  try {
+    const existing = db.prepare(`
+      SELECT * FROM reservations
+      WHERE id = ? AND name = (
+        SELECT name FROM users WHERE id = ?
+      )
+    `).get(reservationId, userId);
+
+    if (!existing) return res.status(404).json({ error: "Reservation not found" });
+
+    db.prepare("DELETE FROM reservations WHERE id = ?").run(reservationId);
+
+    res.json({ ok: true });
+  } catch {
+    res.status(500).json({ error: "Failed to cancel reservation" });
+  }
+});
+
+
+// Start server
+console.log("Starting Express server…");
+const server = app.listen(PORT, () => {
+  console.log(`API running at http://localhost:${PORT}`);
+});
+server.on("error", e => console.error("Server error:", e));

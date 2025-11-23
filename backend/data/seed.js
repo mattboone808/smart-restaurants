@@ -2,56 +2,84 @@
   Project: Smart Restaurants
   File: seed.js
   Description:
-    This script builds and fills the SQLite database for the Smart Restaurants app.
-    It runs the SQL commands from schema.sql to set up the tables,
-    then loads data from restaurants.json and saves it to the database.
+    Rebuilds the SQLite database using schema.sql and loads restaurant data
+    from multiple JSON files into the restaurants table.
 */
 
-const Database = require('better-sqlite3');
-const fs = require('fs');
-const path = require('path');
+const Database = require("better-sqlite3");
+const fs = require("fs");
+const path = require("path");
 
-// Set the database file path 
-const dbPath = path.resolve(__dirname, './restaurants.db');
+/* Database paths */
+const dbPath = path.resolve(__dirname, "./restaurants.db");
+const schemaPath = path.resolve(__dirname, "./schema.sql");
 
-// Point to the schema and data files in this same folder
-const schemaPath = path.resolve(__dirname, './schema.sql');
-const dataPaths = [
-  path.resolve(__dirname, './restaurants.json'),
-  path.resolve(__dirname, './restaurantsFrederick.json'),
-  path.resolve(__dirname, './annapolis.json'),
-  path.resolve(__dirname, './restaurantsOC.json')
+/* JSON data files */
+const cityFiles = [
+  "Baltimore.json",
+  "Annapolis.json",
+  "Frederick.json",
+  "OC.json"
 ];
 
-// Read in the schema and data files
-const schema = fs.readFileSync(schemaPath, 'utf-8');
-const data = dataPaths.map(p => JSON.parse(fs.readFileSync(p, 'utf8'))).flat();
+/* Load schema */
+const schema = fs.readFileSync(schemaPath, "utf-8");
 
-// Create or open the database
+/* Load all restaurant entries into one array */
+let data = [];
+
+for (const file of cityFiles) {
+  const filePath = path.resolve(__dirname, file);
+
+  if (!fs.existsSync(filePath)) {
+    console.warn(`⚠ Missing file: ${file}, skipping`);
+    continue;
+  }
+
+  try {
+    const entries = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    data.push(...entries);
+  } catch (err) {
+    console.error(`❌ Failed to parse ${file}:`, err);
+  }
+}
+
+/* Create database and apply schema */
 const db = new Database(dbPath);
-
-// Build the tables using the schema
 db.exec(schema);
 
-// Prepare an insert statement for adding restaurant records
+/* Insert restaurants (SQLite auto-generates IDs) */
 const insert = db.prepare(`
   INSERT INTO restaurants (name, city, cuisine, price, address, tables, hours)
   VALUES (@name, @city, @cuisine, @price, @address, @tables, @hours)
 `);
 
-// Insert all the restaurant data in one transaction
 const tx = db.transaction(rows => {
   for (const r of rows) {
     insert.run({
-      ...r,
-      hours: JSON.stringify(r.hours) // store hours as JSON text
+      name: r.name,
+      city: r.city,
+      cuisine: r.cuisine,
+      price: r.price,
+      address: r.address,
+      tables: r.tables,
+      hours: JSON.stringify(r.hours)
     });
   }
 });
 
-// Run the transaction with the imported data
 tx(data);
 
-// Confirm how many restaurants were added
-const count = db.prepare('SELECT COUNT(*) AS n FROM restaurants').get().n;
-console.log(`✅ Seeded ${count} restaurants into ${dbPath}`);
+/* Summary output */
+const restaurantCount = db.prepare("SELECT COUNT(*) AS n FROM restaurants").get().n;
+const userCount       = db.prepare("SELECT COUNT(*) AS n FROM users").get().n;
+const favoritesCount  = db.prepare("SELECT COUNT(*) AS n FROM favorites").get().n;
+const reviewsCount    = db.prepare("SELECT COUNT(*) AS n FROM reviews").get().n;
+
+console.log("\n================ DATABASE SEEDED ================");
+console.log(`🍽️ Restaurants inserted:   ${restaurantCount}`);
+console.log(`👤 Users in database:       ${userCount}`);
+console.log(`⭐ Favorites count:          ${favoritesCount}`);
+console.log(`📝 Reviews count:            ${reviewsCount}`);
+console.log(`📁 Database file:            ${dbPath}`);
+console.log("=================================================\n");

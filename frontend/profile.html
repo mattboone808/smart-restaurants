@@ -1,0 +1,149 @@
+<!--
+  Project: Smart Restaurants
+  File: profile.html
+  Description:
+    This page allows users to manage profiles, view and update their personal details,
+    browse and remove favorites, read and manage reviews, monitor upcoming reservations,
+    and generate personalized restaurant recommendations.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar bg-white border-bottom">
+    <div class="container d-flex justify-content-between">
+      <span class="navbar-brand mb-0 h1">🍽️ Smart Restaurants</span>
+      <div class="d-flex gap-3">
+        <a class="nav-link" href="./index.html">Search</a>
+        <a class="nav-link active fw-bold" href="./profile.html">Profile</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+
+    <h2 class="mb-4">User Profile</h2>
+
+    <!-- Select Profile -->
+    <div class="mb-3">
+      <label class="form-label fw-bold">Select Existing Profile</label>
+      <select id="profileSelect" class="form-select w-auto">
+        <option value="">(none)</option>
+      </select>
+    </div>
+
+    <!-- Create Profile Button -->
+    <button id="createProfileBtn" class="btn btn-primary mb-4">
+      + Create New Profile
+    </button>
+
+    <!-- Create Profile Form -->
+    <div id="createProfileSection" class="card p-3 mb-4" style="display:none;">
+      <h5>Create Profile</h5>
+
+      <div class="mb-2">
+        <label class="form-label">Name</label>
+        <input id="newProfileName" class="form-control">
+      </div>
+
+      <div class="mb-2">
+        <label class="form-label">Email</label>
+        <input id="newProfileEmail" class="form-control" placeholder="optional">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Preferred Cuisine</label>
+        <select id="newProfileCuisine" class="form-select">
+          <option value="">Any</option>
+        </select>
+      </div>
+
+      <button id="saveProfileBtn" class="btn btn-success">Save Profile</button>
+    </div>
+
+    <!-- Active Profile -->
+    <div class="card p-3 mb-4">
+      <h5>Active Profile</h5>
+
+      <p><strong>Name:</strong> <span id="profileName"></span></p>
+      <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+      <p><strong>Preferred Cuisine:</strong> <span id="profileCuisine"></span></p>
+      <p><strong>Member Since:</strong> <span id="profileCreated"></span></p>
+
+      <button id="editProfileBtn" class="btn btn-outline-secondary mt-2">
+        Edit Profile
+      </button>
+    </div>
+
+    <!-- Edit Profile Form -->
+    <div id="editProfileSection" class="card p-3 mb-4" style="display:none;">
+      <h5>Edit Profile</h5>
+
+      <div class="mb-2">
+        <label class="form-label">Name</label>
+        <input id="editProfileName" class="form-control">
+      </div>
+
+      <div class="mb-2">
+        <label class="form-label">Email</label>
+        <input id="editProfileEmail" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Preferred Cuisine</label>
+        <select id="editProfileCuisine" class="form-select">
+          <option value="">Any</option>
+        </select>
+      </div>
+
+      <button id="updateProfileBtn" class="btn btn-success me-2">Save Changes</button>
+      <button id="cancelEditBtn" class="btn btn-outline-secondary">Cancel</button>
+    </div>
+
+    <!-- Favorites -->
+    <div class="card p-3 mb-4">
+      <h5>Your Favorites</h5>
+      <ul id="favoritesList" class="list-group"></ul>
+    </div>
+
+    <!-- Reviews -->
+    <div class="card p-3 mb-4">
+      <h5>Your Reviews</h5>
+      <ul id="reviewsList" class="list-group"></ul>
+    </div>
+
+    <!-- Reservations -->
+    <div class="card p-3 mb-4">
+      <h5>Your Upcoming Reservations</h5>
+      <ul id="reservationsList" class="list-group"></ul>
+    </div>
+
+    <!-- Recommendations -->
+    <div class="card p-3 mb-4">
+      <h5>Restaurant Recommendations</h5>
+
+      <button id="generateRecsBtn" class="btn btn-info mb-3">
+        Generate Recommendations
+      </button>
+
+      <div id="recommendationsList" class="row g-3">
+        <p class="text-muted mb-0">
+          Click “Generate Recommendations” to see suggestions based on your favorites & reviews.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="./profile.js"></script>
+</body>
+</html>
