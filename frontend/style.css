@@ -21,8 +21,9 @@ html, body {
   
   /* ===== Navbar ===== */
   .navbar {
-    background-color: #4b362b !important;
+    background-color: #777474 !important;
     border-bottom: 2px solid #3a2a21;
+    font-family: 'Times New Roman', Times, serif;
   }
   
   .navbar .navbar-brand {
