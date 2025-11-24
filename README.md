@@ -3,12 +3,14 @@ Smart Restaurants — Restaurant Finder Web App
 # Description:
 Smart Restaurants is a lightweight web application that allows users to search for restaurants by city, cuisine, rating, or price range. Phase I features include the abilities to view restaurants by search and filter criteria and make simple reservations that are saved in a local SQLite database.
 
+Phase II expands the application with user profiles, favorites, ratings and written reviews, and a personalized recommendation engine that suggests restaurants based on user preferences and past activity.
+
 
 # Technologies Used
 
-Languages: JavaScript (Node.js), HTML
+Languages: JavaScript (Node.js), HTML, CSS
 
-Frameworks/Libraries: Express, better-sqlite3, CORS
+Frameworks/Libraries: Express, better-sqlite3, Bootstrap, CORS
 
 Database: SQLite
 
@@ -45,7 +47,7 @@ Download from https://code.visualstudio.com/
 In VS Code, press Cmd+Shift+X (Mac) or Ctrl+Shift+X (Windows),
 search “Live Server” by Ritwick Dey, and click Install.
 
-# Steps for running the application
+# Steps
 1. Open the smart-restaurants folder in Visual Studio Code
 
 2. Navigate to the backend folder
@@ -66,10 +68,10 @@ Right-click index.html → “Open with Live Server.”
 7. The app should open automatically in your browser
 (typically at http://127.0.0.1:5500/frontend/index.html).
 
-8. You are now running the web app and can search for restaurants 
-   and create reservations that are stored in the local database
+8. You are now running the app and can now search restaurants, create reservations, 
+   manage profiles, add favorites, write reviews, and generate recommendations.
 
-# Features
+# Phase I Features
 
 - Search restaurants by city, cuisine, or price range
 
@@ -80,3 +82,18 @@ Right-click index.html → “Open with Live Server.”
 - Rebuild database anytime via npm run seed
 
 - Clear modular structure (backend/ for API, frontend/ for UI)
+
+# Phase II Features
+
+- User Profiles: Create, select, and edit user accounts
+
+- Favorites: Save favorite restaurants and remove them at any time
+
+- Ratings/Reviews: Submit, edit, or delete reviews with 1-5 star ratings
+
+- Reccomendations: Suggests restaurants based on the users: 
+    preferred cuisine
+    Favorited restaurants
+    Ratings
+    
+- UI style enhancements
