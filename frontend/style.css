@@ -13,7 +13,7 @@ html, body {
     background-repeat: repeat;
     background-attachment: fixed;
     font-family: "Inter", Arial, sans-serif;
-    color: #3a2f2f;
+    color: #000000;
     margin: 0;
     padding: 0;
   }
@@ -22,22 +22,25 @@ html, body {
   /* ===== Navbar ===== */
   .navbar {
     background-color: #777474 !important;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/166/630/original/banner-with-gray-and-white-geometric-diamonds-vector.jpg");
     border-bottom: 2px solid #3a2a21;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
   }
   
   .navbar .navbar-brand {
-    color: #f7e7d4 !important;
+    color: #eb880f !important;
     font-weight: 600;
+    font-size: 1.5rem;
   }
   
   .navbar .nav-link {
-    color: #e9d7c3 !important;
+    color: #ff9f31 !important;
     font-weight: 500;
   }
   
   .navbar .nav-link.active {
-    color: #ffd8a6 !important;
+    color: #c26e00 !important;
     font-weight: 600;
   }
   
