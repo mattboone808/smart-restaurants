@@ -1,22 +1,20 @@
-/*
-  Project: Smart Restaurants
-  File: db.js
-  Description:
-    Opens the SQLite database (restaurants.db) and makes the connection
-    available to the rest of the backend.
-*/
+// Project: Smart Restaurants
+// File: db.js
+// Description:
+//   Opens the SQLite database (restaurants.db) and makes the connection
+//   for use throughout the backend.
 
-const Database = require('better-sqlite3');
-const path = require('path');
+const Database = require("better-sqlite3");
+const path = require("path");
 
-// Find the restaurants.db file inside the backend folder
-const dbPath = path.join(__dirname, './restaurants.db');
+// Path to restaurants.db
+const dbPath = path.join(__dirname, "restaurants.db");
 
-// Open the database
+// Open database
 const db = new Database(dbPath, { fileMustExist: true });
 
-// Startup message
-console.log(`✅ Connected to ${dbPath}`);
+// Log connection on startup
+console.log(`Connected to database at ${dbPath}`);
 
-// Let other files use this database connection
+// Export connection
 module.exports = db;

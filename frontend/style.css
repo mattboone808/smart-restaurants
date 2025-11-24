@@ -1,0 +1,188 @@
+/* 
+  Project: Smart Restaurants
+  File: style.css
+  Description:
+    styled homepage, navbar, cards, buttons, inputs, and profile sections.
+*/
+
+
+/* ===== Background ===== */
+html, body {
+    background-color: #f5eee5 !important;
+    background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: "Inter", Arial, sans-serif;
+    color: #3a2f2f;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* ===== Navbar ===== */
+  .navbar {
+    background-color: #4b362b !important;
+    border-bottom: 2px solid #3a2a21;
+  }
+  
+  .navbar .navbar-brand {
+    color: #f7e7d4 !important;
+    font-weight: 600;
+  }
+  
+  .navbar .nav-link {
+    color: #e9d7c3 !important;
+    font-weight: 500;
+  }
+  
+  .navbar .nav-link.active {
+    color: #ffd8a6 !important;
+    font-weight: 600;
+  }
+  
+  
+  /* ===== Headings ===== */
+  h2, h5 {
+    color: #5a4a42;
+    font-weight: 600;
+  }
+  
+  
+  /* ===== Profile Sections ===== */
+  .profile-section {
+    background: #fbf3e7 !important;
+    border: 1px solid #e0d2c2;
+    border-radius: 14px;
+    box-shadow: 0 2px 5px rgba(80, 60, 45, 0.08);
+  }
+  
+  .profile-section h5:hover {
+    text-decoration: none !important;
+  }
+  
+  
+  /* ===== Inputs & Selects ===== */
+  .form-control,
+  .form-select {
+    border-radius: 8px;
+    border: 1px solid #d9c8bb;
+    background-color: #fffdfa;
+    color: #4b3c34;
+  }
+  
+  .form-control:focus,
+  .form-select:focus {
+    border-color: #b3693e;
+    box-shadow: 0 0 0 0.2rem rgba(179, 105, 62, 0.15);
+  }
+  
+  ::placeholder {
+    color: #b8a79c;
+  }
+  
+  
+  /* ===== Buttons ===== */
+  .btn-primary {
+    background-color: #b3693e;
+    border-color: #a65d33;
+  }
+  
+  .btn-primary:hover {
+    background-color: #9b532a;
+    border-color: #8e4a25;
+  }
+  
+  .btn-outline-primary {
+    color: #b3693e;
+    border-color: #b3693e;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #b3693e;
+    color: white;
+  }
+  
+  .btn-warning {
+    background-color: #d1a052 !important;
+    border-color: #c49347 !important;
+  }
+  
+  .btn-danger,
+  .btn-outline-danger:hover {
+    background-color: #c95b44 !important;
+    border-color: #c44f38 !important;
+  }
+  
+  .btn-outline-danger {
+    color: #c44f38 !important;
+    border-color: #c44f38 !important;
+  }
+  
+  .btn-group-sm > .btn {
+    padding: 0.2rem 0.45rem;
+  }
+  
+  
+  /* ===== Lists ===== */
+  .list-group-item {
+    background-color: #fffdf9;
+    border-color: #e5d6c9;
+    color: #4b3c34;
+  }
+  
+  
+  /* ===== Modals ===== */
+  .modal-content {
+    border-radius: 12px;
+    background-color: #fffaf5;
+    border: 1px solid #e4d5c4;
+  }
+  
+  .modal-header .modal-title {
+    color: #5a4a42;
+    font-weight: 600;
+  }
+  
+  
+  /* ===== Restaurant Cards ===== */
+  #results .card,
+  #recommendationsList .card {
+    background: #fdf7f1 !important;
+    border: 1px solid #e1d3c4;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(120, 95, 80, 0.12);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    backdrop-filter: blur(2px);
+  }
+  
+  #results .card:hover,
+  #recommendationsList .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 18px rgba(120, 95, 80, 0.20);
+  }
+  
+  #results .card-title,
+  #recommendationsList .card-title {
+    font-family: "Poppins", "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #5a3f33;
+  }
+  
+  #results .text-muted,
+  #recommendationsList .text-muted {
+    color: #7d6b61 !important;
+  }
+  
+  #results .badge,
+  #recommendationsList .badge {
+    background-color: #ffe3ba !important;
+    color: #7a4b1e !important;
+    border: 1px solid #ffcf88;
+  }
+  
+  #results .card .btn,
+  #recommendationsList .card .btn {
+    border-radius: 8px;
+  }
+  
